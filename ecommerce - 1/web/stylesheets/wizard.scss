@@ -1,0 +1,383 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.wizard {
+  font-size: 18px;
+  .navbar-default {
+    @media (min-width: $screen-sm-min) {
+      .navbar-nav {
+        li {
+          a {
+            color: #000000;
+            font-weight: bold;
+            .icon-user {
+              background-image: url("../images/icon/icon-login_2.png");
+            }
+            .icon-menu {
+              background-image: url("../images/icon/icon-menu_2.png");
+            }
+          }
+          &.dropdown {
+            .dropdown-menu {
+              li {
+                a {
+                  color: #ffffff;
+                  &:hover,
+                  &:focus {
+                    text-decoration: none;
+                    color: $brand-nav_link;
+                  }
+                }
+                &.active > a {
+                  &,
+                  &:hover,
+                  &:focus {
+                    color: $brand-nav_link;
+                    text-decoration: none;
+                    outline: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .jumbotron {
+    background-color: $brand-primary;
+    margin-top: 38px;
+    padding: 15px 20px;
+    text-align: center;
+    @media (min-width: $screen-md-min) {
+      margin-bottom: 65px;
+    }
+    @media (min-width: 1441px) {
+      margin-top: 70px;
+    }
+    h1, .h1 {
+      font-size: 36px;
+      @media (min-width: 1441px) {
+        font-size: 48px;
+      }
+    }
+  }
+  .h2, h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .form-select {
+    .step {
+      padding-bottom: 40px;
+      padding-top: 40px;
+      &.step-1 {
+        padding-top: 0;
+        .button-group {
+          @media (min-width: $screen-sm-min) {
+            margin-top: 60px;
+          }
+          @media (min-width: 1600px) {
+            margin-top: 100px;
+          }
+        }
+      }
+      &.step-3 {
+        .button-group {
+          margin: 0 auto;
+          max-width: 480px;
+          .btn {
+            background-color: rgba(240, 243, 247, 0.5);
+            height: 105px;
+            padding-top: 25px;
+            width: 150px;
+            @media (max-width: $screen-xs-max) {
+              width: 95%;
+            }
+            .header {
+              display: block;
+              font-size: 18px;
+              line-height: 1;
+            }
+            .date {
+              display: block;
+              font-size: 32px;
+              line-height: 1;
+            }
+          }
+        }
+        p {
+          text-align: center;
+        }
+        .form-group {
+          margin: 0 auto;
+          max-width: 480px;
+          text-align: center;
+          label {
+            display: block;
+            font-size: 32px;
+            font-weight: bold;
+          }
+          .input-group.date {
+            margin-bottom: 25px;
+            width: 100%;
+            .form-control {
+              margin-bottom: 0;
+            }
+          }
+          .input-group-addon {
+            background-color: $brand-primary;
+            border: none;
+            color: #ffffff;
+            height: 50px;
+            width: 50px;
+          }
+          .form-control {
+            border: none;
+            @include box-shadow(none);
+            border-bottom: 4px solid #f0f3f7;
+            margin-bottom: 25px;
+            text-align: center;
+            height: 50px;
+            font-size: 18px;
+          }
+        }
+
+      }
+      @media (min-width: $screen-sm-min) {
+        padding-bottom: 60px;
+        padding-top: 60px;
+      }
+      @media (min-width: 1600px) {
+        margin: 100px auto;
+        text-align: center;
+      }
+      &:nth-child(2n) {
+        background-color: rgba(247, 249, 251, 0.5);
+      }
+      @media (max-width: $screen-xs-max) {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
+    .button-group {
+      @media (min-width: $screen-md-min) {
+        margin: 0 100px;
+      }
+      @media (min-width: 1600px) {
+        margin: 0 auto;
+        max-width: 60%;
+      }
+      .btn {
+        background-color: transparent;
+        border-color: transparent;
+        color: #000000;
+        float: left;
+        padding: 0;
+        height: 245px;
+        position: relative;
+        overflow: hidden;
+        width: 45%;
+        margin-bottom: 20px;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        @media (min-width: $screen-sm-min) {
+          width: 15%;
+          margin-bottom: 40px;
+          margin-left: 0.7%;
+          margin-right: 0.7%;
+        }
+        @media (min-width: 1600px) {
+          margin-bottom: 80px;
+        }
+        &.active {
+          border-color: $brand-primary;
+          @include box-shadow(none);
+          outline: none;
+          .type {
+            background-color: $brand-primary;
+            font-weight: bold;
+          }
+          .fa-stack {
+            display: block;
+          }
+        }
+        &:active,
+        &:focus,
+        &.focus {
+          @include box-shadow(none);
+          outline: none;
+        }
+        img {
+          max-height: 195px;
+          max-width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          @include translate(-50%, -50%);
+        }
+        .type {
+          background-color: transparent;
+          display: block;
+          padding: 10px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          white-space: normal;
+          @media (min-width: $screen-md-min) {
+            font-size: 15px;
+            height: 41px;
+            &.two {
+              line-height: 1;
+              padding-top: 6px;
+            }
+          }
+          @media (min-width: 1900px) {
+            font-size: 18px;
+            height: 46px;
+            &.two {
+              padding-top: 5px;
+            }
+          }
+        }
+        .fa-stack {
+          display: none;
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          .fa-stack-2x {
+            color: $brand-primary;
+          }
+          .fa-stack-1x {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .btn-finale {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+      height: 80px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      min-width: 290px;
+      @media  (min-width: $screen-sm-min) {
+        &.btn-finale-fin {
+          margin-top: 49px;
+          min-width: 480px;
+        }
+      }
+      @media (max-width: $screen-xs-max) {
+        min-width: 100%;
+      }
+    }
+    .btn-link {
+      color: #000000;
+      display: block;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+    .input-block {
+      .form-control {
+        background-color: rgba(240, 243, 247, 0.9);
+        @include box-shadow(none);
+        border: none;
+        color: #000000;
+        font-size: 32px;
+        height: 130px;
+        margin: 0 auto 40px;
+        max-width: 70%;
+        text-align: center;
+        @media (min-width: 1600px) {
+          margin-bottom: 65px;
+        }
+        @media (max-width: $screen-xs-max) {
+          font-size: 18px;
+          height: 80px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.datepicker {
+  font-size: 18px;
+  padding: 0;
+}
+
+.datepicker .table-condensed {
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+  @include box-shadow(none);
+}
+
+.datepicker .table-condensed .prev {
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+}
+
+.datepicker .table-condensed .prev:hover, .brief .brief-two_col .datepicker .table-condensed .prev:focus, .brief .brief-two_col .datepicker .table-condensed .prev:active {
+  background-color: $brand-primary;
+}
+
+.datepicker .table-condensed .datepicker-switch {
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+  text-transform: uppercase;
+}
+
+.datepicker .table-condensed .datepicker-switch:hover, .brief .brief-two_col .datepicker .table-condensed .datepicker-switch:focus, .brief .brief-two_col .datepicker .table-condensed .datepicker-switch:active {
+  background-color: $brand-primary;
+}
+
+.datepicker .table-condensed .next {
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+}
+
+.datepicker .table-condensed .next:hover, .brief .brief-two_col .datepicker .table-condensed .next:focus, .brief .brief-two_col .datepicker .table-condensed .next:active {
+  background-color: $brand-primary;
+}
+
+.datepicker .table-condensed .dow {
+  color: #b3b3b3;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.datepicker .table-condensed .day {
+  border: 1px solid #e6e6e6;
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.datepicker .table-condensed .today {
+  background-color: $brand-primary;
+}
+
+.datepicker .table-condensed .active {
+  background-color: $brand-primary;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+  @include border-bottom-radius(0);
+  @include border-top-radius(0);
+  width: 35px;
+  height: 35px;
+}
+
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+  background-color: $brand-primary;
+}
+
+.big-form {
+  .form-control {
+    font-size: 32px !important;
+    font-weight: 600;
+  }
+}

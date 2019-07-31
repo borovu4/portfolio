@@ -1,0 +1,169 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.feedback {
+  background-color: #efefef;
+  border-top: 1px solid #e1e1e1;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  .img-responsive {
+    margin: 0 auto;
+  }
+  .feedback-name {
+    color: #242731;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    span {
+      color: #45474e;
+      display: block;
+      font-family: $font-family-sub;
+      font-size: 15px;
+      font-weight: 400;
+      margin-top: 5px;
+    }
+  }
+  .form-title {
+    color: $brand-info;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 19px;
+    text-transform: uppercase;
+    .form-title-sub {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 17px;
+      margin-top: 17px;
+    }
+  }
+  .form {
+    .radio-inline {
+      padding-left: 0;
+      & + .radio-inline {
+        margin-left: 45px;
+      }
+      label {
+        padding-left: 0;
+      }
+      .custom_radio .cr {
+        background-color: #ffffff;
+        border-color: #8a8a8a;
+        height: 20px;
+        width: 20px;
+        .cr-icon {
+          color: #ff8956;
+        }
+      }
+      .radio-text {
+        color: $brand-info;
+        display: inline-block;
+        float: left;
+        font-size: 21px;
+        margin-top: -4px;
+      }
+      .custom_radio label input[type="radio"]:checked + .cr + .radio-text {
+        color: $brand-primary;
+      }
+    }
+    .form-control {
+      border-color: #bababa;
+      @include box-shadow(none);
+      height: 40px;
+      margin-bottom: 20px;
+      &:focus {
+        border-color: $input-border-focus;
+      }
+    }
+    textarea.form-control {
+      height: 100px;
+    }
+    .has-error {
+      .form-control{
+        border-color: $brand-danger;
+        margin-bottom: 15px;
+      }
+    }
+    .custom_checkbox {
+      margin-bottom: 30px;
+      label {
+        font-size: 15px;
+        padding-left: 0;
+        width: 100%;
+      }
+      .cr {
+        background-color: #ffffff;
+        border-color: #878787;
+        @include border-radius(2px);
+        color: $brand-info;
+        font-size: 18px;
+        margin-right: 12px;
+        margin-top: 1px;
+        height: 20px;
+        width: 20px;
+        .cr-icon {
+          left: 12%;
+        }
+      }
+    }
+    .btn {
+      height: 45px;
+      font-size: 15px;
+      font-weight: bold;
+      padding-left: 40px;
+      padding-right: 40px;
+      text-transform: uppercase;
+      &.disabled {
+        cursor: pointer;
+        @include opacity(1);
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #ff8f2c;
+          border-color: #ff8f2c;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+  .feedback .form .radio-inline .radio-text {
+    font-size: 18px;
+    margin-top: -2px;
+  }
+  .feedback .form .radio-inline + .radio-inline {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .feedback {
+    padding-left: 10px;
+    padding-right: 10px;
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+      .col-sm-8,
+      .col-md-6,
+      .col-md-12 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    .form-title .form-title-sub {
+      font-size: 26px;
+    }
+    .form .radio-inline {
+      display: block;
+    }
+    .form .radio-inline + .radio-inline {
+      margin-left: 0;
+    }
+    .form .custom_checkbox .cr {
+      margin-bottom: 20px;
+    }
+  }
+}

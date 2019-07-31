@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="checkout chat">
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li>-->
+                        <!--<a href="#">-->
+                        <!--<span class="icon icon-like"></span>-->
+                        <!--Favourites-->
+                        <!--</a>-->
+                        <!--</li>-->
+                        <li class="text text-primary">
+                            <i class="fa fa-circle"></i>
+                            Status: waiting for you to upload measurements
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle user-img" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <img src="web/images/home-img/test_author.jpg" alt="...">
+                            </a>
+                            <span class="user-name">Christopher Raeburn</span>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Christopher Raeburn</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <span class="icon icon-menu"></span>
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu dropdown-mega">
+                                <li class="dropdown-header hidden-xs">
+                                    <a href="#" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                    </a>
+                                </li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Sign up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid container-checkout">
+    <div class="jumbotron">
+        <h1>Gala dress by Singh</h1>
+    </div>
+    <div class="row tab_group">
+        <div class="col-md-3 col-md-offset-1 tabs-black">
+            <ul class="nav nav-tabs tabs-left" id="myTab">
+                <li>
+                    <a href="#tab_1" data-toggle="tab">
+                        <span class="tab-icon-1"></span>
+                        Your briefing
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_2" data-toggle="tab">
+                        <span class="tab-icon-2"><i>1</i></span>
+                        Conversation
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_3" data-toggle="tab">
+                        <span class="tab-icon-3"></span>
+                        Measurements
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#tab_4" data-toggle="tab">
+                        <span class="tab-icon-4"></span>
+                        Invoices
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_5" data-toggle="tab">
+                        <span class="tab-icon-5"></span>
+                        Process overview
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_6" data-toggle="tab">
+                        <span class="tab-icon-6"></span>
+                        Designer info
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-7">
+            <div class="tab-content">
+                <div class="tab-pane" id="tab_1">
+                    <div class="row">
+                        <div class="col-md-5 col-md-push-7 aside">
+                            <div class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Your garment</h4>
+                                        <ul class="list-inline">
+                                            <li>
+                                                Gala
+                                            </li>
+                                            <li>
+                                                Gala dress
+                                            </li>
+                                            <li>
+                                                Strapless
+                                            </li>
+                                        </ul>
+                                        <p>Receive before: 1/1/2017</p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Your figure</h4>
+                                        <br>
+                                        <img src="web/images/img-figure.jpg" alt="..."
+                                             class="img-responsive center-block">
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Pictures uploaded</h4>
+                                        <br>
+                                        <div class="row img_select">
+                                            <div class="col-xs-4">
+                                                <img src="web/images/checkout/dress.jpg" alt="..."
+                                                     class="img-responsive center-block">
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <img src="web/images/checkout/dress.jpg" alt="..."
+                                                     class="img-responsive center-block">
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <img src="web/images/checkout/dress.jpg" alt="..."
+                                                     class="img-responsive center-block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-pull-5">
+                            <div class="chat-brief">
+                                <div class="title">
+                                    Your brief
+                                </div>
+                                <div class="date">
+                                    08/09/2016
+                                </div>
+                                <p>
+                                    I would like to have an elegant and simpel black dress. Long and strapless. I would
+                                    like to receive your recommendations about fabrics.
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin
+                                    sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                                    montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+                                    felis tellus mollis orci, sed rhoncus sapien nunc eget. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor
+                                    sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+                                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                    Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed
+                                    rhoncus sapien nunc eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab_2">
+                    <div class="media-chat">
+                        <a href="#" class="btn btn-link btn-video">
+                            <span class="icon-video"></span>
+                            Video cam
+                        </a>
+                        <div class="media media-chat--right first">
+                            <div class="media-body">
+                                <form class="form-chat">
+                                    <textarea class="form-control" placeholder="Type here your message..."></textarea>
+                                    <div class="footer-form">
+                                        <div class="input-file">
+                                            <span class="icon-clip"></span>
+                                            Add photo
+                                            <input type="file">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">
+                                            send
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="media-right">
+                                <a href="#" class="user-img">
+                                    <img src="web/images/home-img/test_author.jpg" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-2">
+                                <div class="jumbotron">
+                                    <p>Translate this conversation to Spanish<br>
+                                        powered by GOOGLE</p>
+                                </div>
+                                <div class="all-chat">
+                                    <div class="h4">SAFETY TIP</div>
+                                    <p>
+                                        For your protection, only communicate and pay directly through Itsju.</p>
+                                    <p>
+                                        Visit our Help Center to learn more about the benefits of design a garment
+                                        through Itsju
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-list">
+                            <div class="media media-chat--left">
+                                <div class="media-left">
+                                    <a href="#" class="user-img">
+                                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        Your sketch
+                                        <div class="pull-right">
+                                            <a href="#" class="chat-download"></a>
+                                            <a href="#" class="chat-add"></a>
+                                        </div>
+                                    </div>
+                                    <div class="media-text">
+                                        Dear Samantha. Please find the first sketches i've made for you. I hope one of
+                                        them comes close to what you are looking for. Please feel free to let me know
+                                        your thought about it.
+                                    </div>
+                                    <div class="media-footer">
+                                        Dec 6, 2016
+                                    </div>
+                                    <div class="files-group">
+                                        <img src="web/images/chat_1.jpg" alt="..." class="img-rounded">
+                                        <img src="web/images/chat_1.jpg" alt="..." class="img-rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media media-chat--right">
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        Hallo!
+                                    </div>
+                                    <div class="media-text">
+                                        Dear Simon, thank you for your message. It's very nice hearing from you. Good to
+                                        know that my brief is clear. If you need any extra information, pls directly let
+                                        me know! <3
+                                    </div>
+                                    <div class="media-footer">
+                                        Dec 3, 2016
+                                    </div>
+                                </div>
+                                <div class="media-right">
+                                    <a href="#" class="user-img">
+                                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media media-chat--left">
+                                <div class="media-left">
+                                    <a href="#" class="user-img">
+                                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        Nice to meet you
+                                    </div>
+                                    <div class="media-text">
+                                        Dear Samantha, nice to meet you. Thank you a lot for your request. Your wishes
+                                        are clear for me. I think black dress matches your hair color very well. I will
+                                        make a few skechtes and send them to you in a few days.
+                                    </div>
+                                    <div class="media-footer">
+                                        Dec 3, 2016
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab_3">
+                    <div class="measurements">
+                        <form class="form-login step">
+                            <div class="row unit">
+                                <div class="col-sm-6 col-lg-5 col-xl-4">
+                                    <h4 class="text-primary">Unit</h4>
+                                </div>
+                                <div class="col-sm-6 col-lg-5 col-xl-4">
+                                    <div class="btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                            cm
+                                        </label>
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" id="option2" autocomplete="off">
+                                            Inch
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-5 col-xl-4">
+                                    <img src="web/images/m-figure/boby-front-clear.jpg" alt="..." class="img-figure">
+                                </div>
+                                <div class="col-sm-6 col-lg-7 col-xl-8">
+                                    <div class="row inch">
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Body Height</label>
+                                                <input class="form-control" placeholder="Type your Body Height"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Hip width</label>
+                                                <input class="form-control" placeholder="Type your Hip width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Neck width</label>
+                                                <input class="form-control" placeholder="Type your Neck width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Arm length</label>
+                                                <input class="form-control" placeholder="Type your Arm length"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Shoulder width</label>
+                                                <input class="form-control" placeholder="Type your Shoulder width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your front waist width</label>
+                                                <input class="form-control" placeholder="Type your front waist width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Bust width</label>
+                                                <input class="form-control" placeholder="Type your Bust width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your back waist width</label>
+                                                <input class="form-control" placeholder="Type your back waist width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-12 col-lg-6">
+                                            <div class="form-group has-feedback has-feedback-right">
+                                                <label class="sr-only">Type your Waist width</label>
+                                                <input class="form-control" placeholder="Type your Waist width"
+                                                       type="text">
+                                                <span class="form-control-feedback">Inch</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane active" id="tab_4">
+                    <div class="row">
+                        <div class="col-md-5 col-md-push-7 aside">
+                            <div class="panel-group">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Your Designer</h4>
+                                        <h5><strong>Top fashion designer:</strong> € 750 - € 1.250</h5>
+                                        <a href="#" class="autor-img">
+                                            <img src="web/images/home-img/test_author.jpg" alt="...">
+                                        </a>
+                                        <div class="author-name">Christopher Raeburn</div>
+                                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>London
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Your vision</h4>
+                                        <ul class="list-inline">
+                                            <li>
+                                                Gala
+                                            </li>
+                                            <li>
+                                                Gala dress
+                                            </li>
+                                            <li>
+                                                Strapless
+                                            </li>
+                                        </ul>
+                                        <p>Receive before: 1/1/2017</p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Your brief</h4>
+
+                                        <p>I would like to have an elegant and simple black dress. Long and strapless. I
+                                            would like to
+                                            hear your recommendations for my body type.</p>
+                                        <div class="row img_select">
+                                            <div class="col-xs-4">
+                                                <img src="web/images/checkout/dress.jpg" alt="..."
+                                                     class="img-responsive">
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <img src="web/images/checkout/dress.jpg" alt="..."
+                                                     class="img-responsive">
+                                            </div>
+                                            <div class="col-xs-4">
+                                                <img src="web/images/checkout/dress.jpg" alt="..."
+                                                     class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h4>Your sketch</h4>
+                                        <br>
+                                        <img src="web/images/img-sketch.jpg" alt="..."
+                                             class="img-responsive center-block">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-pull-5">
+                            <div class="payment">
+                                <div class="form-sketch">
+                                    <div class="sketch">
+                                        <div class="h4">Great, you have completed your payment!</div>
+                                        <p class="title text-primary">Simon will now get started on your gala dress.</p>
+                                        <div class="h4 small">
+                                            What happens next?
+                                        </div>
+                                        <div class="media-group">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="web/images/icon/icon-e-mail.jpg" class="media-object" alt="...">
+                                                </div>
+                                                <div class="media-body">
+                                                    Within 5 minutes you will receive a confirmation email with invoice
+                                                    at samantha87@gmail.com. The invoice can also be found in <a
+                                                        href="#">your account</a>
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="web/images/icon/icon-refresh.jpg" class="media-object" alt="...">
+                                                </div>
+                                                <div class="media-body">
+                                                    You will receive updates on the Conversation page whilst Simon is
+                                                    working on your gala dress. We will send you an email whenever there
+                                                    is a new update. The Process overview page keeps a track of the
+                                                    process.
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="web/images/icon/icon-chat.jpg" class="media-object" alt="...">
+                                                </div>
+                                                <div class="media-body">
+                                                    Any important points to share? You can use the Conversation page or plan a chat or video call with him
+                                                </div>
+                                            </div>
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <img src="web/images/icon/icon-help.jpg" class="media-object" alt="...">
+                                                </div>
+                                                <div class="media-body">
+                                                    Do you have any questions? Our <a href="#">customer service</a> loves to help you.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="btn btn-primary btn-block">back to invoices</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab_5">Process overview</div>
+                <div class="tab-pane" id="tab_6">Designer info</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/bootstrap-tabcollapse.js"></script>
+<script src="web/javascripts/custom.js"></script>
+<script>
+    $('#myTab').tabCollapse({
+        tabsClass: 'hidden-sm hidden-xs',
+        accordionClass: 'visible-sm visible-xs'
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+.wizard {
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    .wizard .navbar-default .navbar-nav li a {
+      color: #000000;
+      font-weight: bold; }
+      .wizard .navbar-default .navbar-nav li a .icon-user {
+        background-image: url("../images/icon/icon-login_2.png"); }
+      .wizard .navbar-default .navbar-nav li a .icon-menu {
+        background-image: url("../images/icon/icon-menu_2.png"); } }
+  @media (max-width: 767px) {
+    .wizard .navbar-default .container-fluid {
+      padding-left: 15px;
+      padding-right: 15px; }
+    .wizard .navbar-default .navbar-brand {
+      margin-left: -15px; }
+    .wizard .navbar-default .navbar-toggle {
+      margin-right: 0; } }
+  .wizard .jumbotron {
+    background-color: #edd3ad;
+    margin-top: 38px;
+    padding: 15px 20px;
+    text-align: center; }
+    @media (min-width: 992px) {
+      .wizard .jumbotron {
+        margin-bottom: 65px; } }
+    @media (min-width: 1441px) {
+      .wizard .jumbotron {
+        margin-top: 70px; } }
+    .wizard .jumbotron h1, .wizard .jumbotron .h1 {
+      font-size: 36px; }
+      @media (min-width: 1441px) {
+        .wizard .jumbotron h1, .wizard .jumbotron .h1 {
+          font-size: 48px; } }
+  .wizard .h2, .wizard h2 {
+    font-size: 32px; }
+  .wizard .form-select .step {
+    padding-bottom: 40px;
+    padding-top: 40px; }
+    .wizard .form-select .step.step-1 {
+      padding-top: 0; }
+      @media (min-width: 768px) {
+        .wizard .form-select .step.step-1 .button-group {
+          margin-top: 60px; } }
+      @media (min-width: 1601px) {
+        .wizard .form-select .step.step-1 .button-group {
+          margin-top: 100px; } }
+    .wizard .form-select .step.step-3 .button-group {
+      margin: 0 auto;
+      max-width: 480px; }
+      .wizard .form-select .step.step-3 .button-group .btn {
+        background-color: rgba(240, 243, 247, 0.5);
+        height: 105px;
+        padding-top: 25px;
+        width: 150px; }
+        @media (max-width: 767px) {
+          .wizard .form-select .step.step-3 .button-group .btn {
+            width: 95%; } }
+        .wizard .form-select .step.step-3 .button-group .btn .header {
+          display: block;
+          font-size: 18px;
+          line-height: 1; }
+        .wizard .form-select .step.step-3 .button-group .btn .date {
+          display: block;
+          font-size: 32px;
+          line-height: 1; }
+    .wizard .form-select .step.step-3 p {
+      text-align: center; }
+    .wizard .form-select .step.step-3 .form-group {
+      margin: 0 auto;
+      max-width: 480px;
+      text-align: center; }
+      .wizard .form-select .step.step-3 .form-group label {
+        display: block;
+        font-size: 32px;
+        font-weight: bold; }
+      .wizard .form-select .step.step-3 .form-group .datepicker {
+        display: block;
+        float: left;
+        width: 87%;
+        height: 50px;
+        border: none;
+        border-bottom: 4px solid #f0f3f7;
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 50px; }
+      .wizard .form-select .step.step-3 .form-group .ui-datepicker-trigger {
+        background-color: #edd3ad;
+        border: none;
+        color: #ffffff;
+        float: right;
+        height: 50px;
+        width: 50px; }
+      .wizard .form-select .step.step-3 .form-group .form-control {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-bottom: 4px solid #f0f3f7;
+        margin-bottom: 25px;
+        text-align: center;
+        height: 50px;
+        font-size: 18px; }
+    @media (min-width: 768px) {
+      .wizard .form-select .step {
+        padding-bottom: 60px;
+        padding-top: 60px; } }
+    @media (min-width: 1601px) {
+      .wizard .form-select .step {
+        margin: 100px auto;
+        text-align: center; } }
+    .wizard .form-select .step:nth-child(2n) {
+      background-color: rgba(247, 249, 251, 0.5); }
+    @media (max-width: 767px) {
+      .wizard .form-select .step {
+        margin-left: -15px;
+        margin-right: -15px; } }
+  @media (min-width: 1601px) {
+    .wizard .form-select .button-group {
+      margin: 0 auto;
+      max-width: 70%; } }
+  .wizard .form-select .button-group .btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: #000000;
+    float: left;
+    padding: 0;
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    margin-bottom: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%; }
+    @media (min-width: 768px) {
+      .wizard .form-select .button-group .btn {
+        width: 15%;
+        margin-bottom: 40px;
+        margin-left: 0.7%;
+        margin-right: 0.7%; } }
+    @media (min-width: 1601px) {
+      .wizard .form-select .button-group .btn {
+        margin-bottom: 80px; } }
+    .wizard .form-select .button-group .btn.active {
+      border-color: #edd3ad;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: none; }
+      .wizard .form-select .button-group .btn.active .type {
+        background-color: #edd3ad;
+        font-weight: bold; }
+      .wizard .form-select .button-group .btn.active .fa-stack {
+        display: block; }
+    .wizard .form-select .button-group .btn:active, .wizard .form-select .button-group .btn:focus, .wizard .form-select .button-group .btn.focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      outline: none; }
+    .wizard .form-select .button-group .btn img {
+      max-height: 195px;
+      max-width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .wizard .form-select .button-group .btn .type {
+      background-color: transparent;
+      display: block;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      white-space: normal; }
+      @media (min-width: 992px) {
+        .wizard .form-select .button-group .btn .type {
+          font-size: 18px; } }
+    .wizard .form-select .button-group .btn .fa-stack {
+      display: none;
+      position: absolute;
+      top: 12px;
+      right: 12px; }
+      .wizard .form-select .button-group .btn .fa-stack .fa-stack-2x {
+        color: #edd3ad; }
+      .wizard .form-select .button-group .btn .fa-stack .fa-stack-1x {
+        color: #ffffff; }
+  .wizard .form-select .btn-finale {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    height: 80px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    min-width: 290px; }
+    @media (max-width: 767px) {
+      .wizard .form-select .btn-finale {
+        min-width: 100%; } }
+  .wizard .form-select .btn-link {
+    color: #000000;
+    display: block;
+    font-size: 18px;
+    margin: 0 auto; }
+  .wizard .form-select .input-block .form-control {
+    background-color: rgba(240, 243, 247, 0.9);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    color: #000000;
+    font-size: 32px;
+    height: 130px;
+    margin: 0 auto 40px;
+    max-width: 70%;
+    text-align: center; }
+    @media (min-width: 1601px) {
+      .wizard .form-select .input-block .form-control {
+        margin-bottom: 65px; } }
+    @media (max-width: 767px) {
+      .wizard .form-select .input-block .form-control {
+        font-size: 18px;
+        height: 80px;
+        max-width: 100%; } }
+
+/*# sourceMappingURL=wizard.css.map */

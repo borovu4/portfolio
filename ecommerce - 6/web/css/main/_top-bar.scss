@@ -1,0 +1,189 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+.top-bar {
+  background-color: #ababab;
+  @media (max-width: $screen-xs-max) {
+    background-color: #1b6ff6;
+    color: #ffffff;
+  }
+  .list-unstyled {
+    margin-bottom: 0;
+  }
+  .list-inline {
+    margin-bottom: 0;
+    li {
+      &.lang {
+        a {
+          padding: 4px 2px;
+          &:hover,
+          &:focus,
+          &:active,
+          &.active {
+            text-decoration: underline;
+          }
+        }
+      }
+      a {
+        color: $gray;
+        font-size: $font-size-h6;
+        display: inline-block;
+        padding: 4px 6px;
+        text-decoration: none;
+        @media (min-width: $screen-md-min) {
+          padding-left: 8px;
+          padding-right: 8px;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: transparent;
+          color: $gray-dark;
+          text-decoration: none;
+        }
+        @media (max-width: $screen-xs-max) {
+          color: #ffffff;
+          &:hover,
+          &:focus,
+          &:active {
+            color: #ffffff;
+          }
+        }
+        .fa {
+          color: $gray-darker;
+          font-size: $font-size-base;
+          &:hover,
+          &:focus,
+          &:active {
+            color: $gray;
+          }
+        }
+        span {
+          color: $gray;
+          font-size: $font-size-h6;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .left-menu {
+    .dropdown-toggle {
+      color: $gray;
+      font-size: $font-size-h6;
+      padding: 4px 8px;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        color: $gray-dark;
+        text-decoration: none;
+      }
+      @media (max-width: $screen-xs-max) {
+        color: #ffffff;
+        &:hover,
+        &:focus,
+        &:active {
+          color: #ffffff;
+        }
+      }
+      .fa {
+        font-size: $font-size-base;
+      }
+    }
+    .dropdown-menu {
+      li {
+        a {
+          font-size: $font-size-h6;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        background-color: transparent;
+        border: medium none;
+        @include box-shadow(none);
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: static;
+        li {
+          display: inline-block;
+          &:first-child {
+            a {
+              padding-left: 0;
+            }
+          }
+          a {
+            color: $gray;
+            display: inline-block;
+            padding: 4px 6px;
+            text-decoration: none;
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: transparent;
+              color: $gray-dark;
+              text-decoration: none;
+            }
+            .fa {
+              font-size: $font-size-base;
+            }
+          }
+          span {
+            color: $gray;
+            font-size: $font-size-h6;
+          }
+        }
+      }
+      @media (min-width: $screen-md-min) {
+        li {
+          a {
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+        }
+      }
+    }
+  }
+  .user {
+    &.open {
+      .dropdown-toggle {
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      @media (max-width: 860px) {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  .visible-xs {
+    .list-unstyled {
+      li {
+        a {
+          color: #ffffff;
+          display: block;
+          font-family: 'Arial-Black';
+          letter-spacing: 0.2px;
+          padding-top: 2px;
+          text-decoration: none;
+          &:hover,
+          &:focus,
+          &:active {
+            color: #ffffff;
+          }
+          small {
+            font-size: 65%;
+            margin-left: -4px;
+          }
+          span {
+            padding: 0 2px;
+          }
+        }
+      }
+    }
+  }
+}

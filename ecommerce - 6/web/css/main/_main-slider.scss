@@ -1,0 +1,105 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+.owl-theme {
+  .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    [class*='owl-'] {
+      color: #FFF;
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      top: 47%;
+      @include opacity(0.2);
+      @include translate(0, -50%);
+      @media (max-width: $screen-xs-max) {
+        top: 40%;
+      }
+      &:hover {
+        color: #FFF;
+        text-decoration: none;
+        @include opacity(1);
+      }
+    }
+    .disabled {
+      @include opacity(0.2);
+      cursor: default;
+    }
+    //&.disabled + .owl-dots {
+    //  margin-top: 10px;
+    //}
+    .owl-prev {
+      left: 2.5%;
+    }
+    .owl-next {
+      right: 2.5%;
+    }
+
+    .icon-left {
+      background-image: url("../images/icon/arrow-l.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 117px;
+      width: 40px;
+      @media (max-width: $screen-xs-max) {
+        height: 40px;
+        width: 20px;
+      }
+    }
+    .icon-right {
+      background-image: url("../images/icon/arrow-r.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 117px;
+      width: 40px;
+      @media (max-width: $screen-xs-max) {
+        height: 40px;
+        width: 20px;
+      }
+    }
+  }
+  .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      &.active,
+      &:hover {
+        span {
+          background: #ffffff;
+          @include opacity(1);
+          @media (max-width: $screen-xs-max) {
+            background: $brand-primary;
+          }
+        }
+      }
+      span {
+        width: 6px;
+        height: 6px;
+        margin: 0 4px;
+        background: #ffffff;
+        @include opacity(0.4);
+        display: block;
+        -webkit-backface-visibility: visible;
+        @include transition(opacity 200ms ease);
+        @include border-bottom-radius(30px);
+        @include border-top-radius(30px);
+        @media (max-width: $screen-xs-max) {
+          background: $brand-primary;
+        }
+      }
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    .owl-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      @include translate(-50%, 0);
+    }
+  }
+}

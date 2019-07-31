@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фабрика Емоцій Ogogo</title>
+
+    <link href="web/css/jquery-ui.css" rel="stylesheet">
+    <link href="web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="web/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="web/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="web/css/select2.min.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="web/js/html5shiv.min.js"></script>
+    <script src="web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container-fluid header-line">
+        <div class="row">
+            <div class="container">
+                <div class="pull-left time-work">
+                    <ul class="list-inline">
+                        <li>
+                            <a>
+                                <span class="icon icon-time"></span>
+                                з 9.00 до 21.00 без вихідних
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="list-inline">
+                        <li>
+                            <a>
+                                <span class="icon icon-number"></span>
+                                (068) 449 10 84
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                м. Тернопіль
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">м. Тернопіль</a></li>
+                                <li><a href="#">м. Тернопіль</a></li>
+                                <li><a href="#">м. Тернопіль</a></li>
+                                <li><a href="#">м. Тернопіль</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="web/img/logo.svg" alt="Фабрика емоцій Ogogo" title="Фабрика емоцій Ogogo">
+                </a>
+            </div>
+            <div class="nav-lead">У нас на сайті <span class="lead text-success">204</span> ідеї для подарунків</div>
+            <div class="navbar-right">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sert">
+                    <span class="icon icon-smile"></span>
+                    Активувати сертифікат
+                </button>
+            </div>
+            <form class="navbar-form form-search" role="search">
+                <div class="form-group has-success">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Пошук...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success hidden-sm hidden-xs" type="submit">
+                                    <span class="icon icon-search"></span>
+                                </button>
+                                <button class="btn btn-success hidden-md hidden-lg" id="to-search" type="button">
+                                    <span class="icon icon-search"></span>
+                                </button>
+                            </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <nav class="navbar navbar-theme">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="header-phone">
+                    <span class="icon icon-number"></span>
+                    (068) 449 10 84
+                </a>
+                <div class="basket">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#basketcollapse"
+                       aria-expanded="false" aria-controls="basketcollapse">
+                        <span class="icon icon-basket"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav nav-justified">
+                    <li class="visible-xs">
+                        <a>
+                            <span class="icon icon-footer-phone"></span>
+                            (068) 449 10 84
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Як це працює</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка і оплата</a>
+                    </li>
+                    <li>
+                        <a href="#">OGOGO новини</a>
+                    </li>
+                    <li class="hidden-xs hidden-sm">
+                        <div class="basket">
+                            <a href="#"><span class="icon icon-basket"></span></a>
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#basketcollapse"
+                               aria-expanded="false" aria-controls="basketcollapse">Кошик <span class="caret"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="collapse basketcollapse" id="basketcollapse">
+    <div class="well well-basket">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                            <div class="img-group">
+                                <a href="#" class="close"></a>
+                                <a href="#" class="image">
+                                    <img src="web/img/basket-img.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 to_order">
+                    <div class="h5">Ви замовили на:</div>
+                    <div class="lead">
+                        <small>500 грн</small>
+                    </div>
+                    <a href="#" class="btn btn-info btn-block">Придбати</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="table-basket row">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Фото</th>
+                <th>Колір коробочки</th>
+                <th>Кількість</th>
+                <th>Ціна</th>
+                <th>Сума</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-title="Фото">
+                    <div class="box ratio16_9">
+                        <div class="content">
+                            <a class="image" href="#">
+                                <img alt="..." src="web/img/basket-img.png">
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td data-title="Коробочка">
+                    <div class="box ratio16_9">
+                        <div class="content content-box">
+                            <div class="dropdown">
+                                <a data-target="#" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <img alt="..." src="web/img/sert-presents/blue-500x500.jpg" class="img_box">
+                                    <i class="fa fa-gift" aria-hidden="true"></i>
+                                    <span>Оберіть упаковку подарунку</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <a>
+                                                    <img class="img-responsive" alt="..." src="web/img/sert-presents/blue-500x500.jpg">
+                                                    <span class="caption">Синя</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a>
+                                                    <img class="img-responsive" alt="..." src="web/img/sert-presents/pink-500x500.jpg">
+                                                    <span class="caption">Рожева</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a>
+                                                    <img class="img-responsive" alt="..." src="web/img/sert-presents/yellow-500x500.jpg">
+                                                    <span class="caption">Жовта</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a>
+                                                    <img class="img-responsive" alt="..." src="web/img/sert-presents/brown-500x500.jpg">
+                                                    <span class="caption">Коричнева</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a>
+                                                    <img class="img-responsive" alt="..." src="web/img/sert-presents/purple-500x500.jpg">
+                                                    <span class="caption">Фіолетова</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <a>
+                                                    <img class="img-responsive" alt="..." src="web/img/sert-presents/red-500x500.jpg">
+                                                    <span class="caption">Червона</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td data-title="Кількість">
+                    <select class="select2 form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td data-title="Ціна">500 грн</td>
+                <td data-title="Сума"><span class="text-primary">500 грн</span></td>
+            </tr>
+            <tr>
+                <td data-title="Фото">
+                    <div class="box ratio16_9">
+                        <div class="content">
+                            <a class="image" href="#">
+                                <img alt="..." src="web/img/basket-img.png">
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td data-title="Коробочка">
+                    <div class="box ratio16_9">
+                        <div class="content">
+                            <a class="image" href="#">
+                                <img alt="..." src="web/img/sert-presents/blue-500x500.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td data-title="Кількість">
+                    <select class="select2 form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td data-title="Ціна">500 грн</td>
+                <td data-title="Сума"><span class="text-primary">500 грн</span></td>
+            </tr>
+            <tr>
+                <td data-title="Фото">
+                    <div class="box ratio16_9">
+                        <div class="content">
+                            <a class="image" href="#">
+                                <img alt="..." src="web/img/basket-img.png">
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td data-title="Коробочка">
+                    <div class="box ratio16_9">
+                        <div class="content">
+                            <a class="image" href="#">
+                                <img alt="..." src="web/img/sert-presents/blue-500x500.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </td>
+                <td data-title="Кількість">
+                    <select class="select2 form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </td>
+                <td data-title="Ціна">500 грн</td>
+                <td data-title="Сума"><span class="text-primary">500 грн</span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row order-basket">
+        <div class="col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8 col-lg-3 col-lg-offset-9">
+            Ви замовили на:
+            <div class="text-primary">500 грн</div>
+            <a href="#" class="btn btn-info btn-block" data-toggle="modal" data-target="#modal-order">Оформити
+                замовлення</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container footer">
+        <div class="row">
+            <div class="col-xs-5 col-sm-2">
+                <a href="#" class="navbar-brand">
+                    <img class="img-responsive" title="Фабрика емоцій Ogogo" alt="Фабрика емоцій Ogogo"
+                         src="web/img/logo.svg">
+                </a>
+            </div>
+            <div class="col-xs-7 col-sm-3">
+                <ul class="list-unstyled">
+                    <li class="title">
+                        Інформація
+                    </li>
+                    <li>
+                        <a href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Як це працює
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Доставка і оплата
+                        </a>
+                    <li>
+                        <a href="#">
+                            Карта сайту
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <ul class="list-unstyled">
+                    <li class="title">Контакти</li>
+                    <li>
+                        <span class="icon icon-footer-phone"></span>
+                        (068) 449 10 84
+                    </li>
+                    <li>
+                        <span class="icon icon-footer-mark"></span>
+                        м.Тернопіль
+                    </li>
+                    <li>
+                        <span class="icon icon-footer-mail"></span>
+                        ogogo.org.ua@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <ul class="list-unstyled">
+                    <li class="title">
+                        Графік роботи
+                    </li>
+                    <li>
+                        працюємо з Пн - Нд
+                        <span class="lead">з 9 00 до 21 00</span>
+                    </li>
+                    <li class="title">
+                        Шукайте нас у:
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/podoljani.png" alt="podoljani">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/ornava.png" alt="ornava">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix col-xs-12 text-muted">
+                Ogogo.org.ua © 2015 - 2016 Всі права захищено
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid social">
+        <ul class="list-inline">
+            <li class="title">
+                Ми в соціальних мережах
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-order" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Оформлення замовлення</h4>
+            </div>
+            <div class="modal-body">
+                <div class="wizard">
+                    <div class="wizard-inner">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab">
+                                    1. Покупець
+                                </a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab">
+                                    2. Деталі рахунку
+                                </a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab">
+                                    3. Спосіб оплати
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form>
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="step1">
+                                <div class="form-group has-error">
+                                    <input type="text" required="" disabled="disabled" placeholder=""
+                                           class="form-control">
+                                    <label>ПІП</label>
+                                    <div class="help-block with-errors">
+                                        <ul class="list-unstyled">
+                                            <li>Пожалуйста, заполните это поле.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" placeholder="" class="form-control">
+                                    <label>Ваш номер телефону</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" placeholder="" class="form-control">
+                                    <label>Ваш E-mail</label>
+                                </div>
+                                <ul class="list-inline text-right">
+                                    <li>
+                                        <button type="button" class="btn btn-primary next-step">
+                                            Далі
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step2">
+                                <div class="form-group">
+                                    <input type="text" required="" placeholder="" class="form-control">
+                                    <label>ПІП</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" placeholder="" class="form-control">
+                                    <label>Місто</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" placeholder="" class="form-control">
+                                    <label>Адреса</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" required="" placeholder="" class="form-control">
+                                    <label>Поштовий індекс</label>
+                                </div>
+                                <ul class="list-inline text-right">
+                                    <li>
+                                        <button type="button" class="btn btn-primary next-step">
+                                            Далі
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step3">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="o1" value="" checked>
+                                        <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                        УкрПошта
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="o1" value="">
+                                        <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                        Кур`єром
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="o1" value="">
+                                        <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                        Самовивіз
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="o1" value="">
+                                        <span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+                                        Нова Пошта
+                                    </label>
+                                </div>
+                                <ul class="list-inline text-right">
+                                    <li>
+                                        <button type="submit" class="btn btn-primary">
+                                            Оформити
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="complete">
+                                <h3>Complete</h3>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-sert" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Активувати сертифікат</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="" class="form-control">
+                        <label>ПІП</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="" class="form-control">
+                        <label>Ваш номер телефону</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="" class="form-control">
+                        <label>Штрих-код на картці</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required=""></textarea>
+                        <label>Ваш коментар</label>
+                    </div>
+                </form>
+                <ul class="list-inline text-center">
+                    <li>
+                        <button type="button" class="btn btn-primary next-step">
+                            Активувати
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/jquery-ui.min.js"></script>
+<script src="web/js/select2.full.min.js"></script>
+<script src="web/js/owl.carousel.min.js"></script>
+<script src="web/js/custom.js"></script>
+</body>
+</html>

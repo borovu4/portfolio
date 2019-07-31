@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="checkout">
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="icon icon-like"></span>
+                                Favourites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#login">
+                                <span class="icon icon-user"></span>
+                                Log in
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <span class="icon icon-menu"></span>
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu dropdown-mega">
+                                <li class="dropdown-header hidden-xs">
+                                    <a href="#" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                    </a>
+                                </li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Sign up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid container-checkout">
+    <div class="jumbotron">
+        <h1>Join ITSJU</h1>
+        <p>To chat with your designer and to track your project, you need an ITSJU account.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-2 col-md-4">
+            <div class="login-block">
+                <a href="#" class="btn btn-info btn-block">
+                    log in with facebook
+                </a>
+                <p class="text-center">or</p>
+                <a href="#" class="btn btn-primary btn-block">
+                    log in
+                </a>
+            </div>
+            <div class="card-block">
+                <form>
+                    <div class="form-group has-success has-feedback">
+                        <input type="text" class="form-control" placeholder="Samantha">
+                        <span class="glyphicon glyphicon-ok-sign form-control-feedback"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email adress">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 col-lg-9">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Street">
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-5 col-lg-3">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Zipcode">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Country">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-mail">Request your sketch</button>
+                    <p class="help-text">
+                        After you click the above button you will receive an confirmation e-mail, after you have
+                        confirmed, your wishes will be saved in your account.
+                    </p>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-md-offset-1 col-md-3 aside">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4>Your Designer</h4>
+                        <h5><strong>Top fashion designer:</strong> € 750 - € 1.250</h5>
+                        <a href="#" class="autor-img">
+                            <img src="web/images/home-img/test_author.jpg" alt="...">
+                        </a>
+                        <div class="author-name">Christopher Raeburn</div>
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>London
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4>Your vision</h4>
+                        <ul class="list-inline">
+                            <li>
+                                Gala
+                            </li>
+                            <li>
+                                Gala dress
+                            </li>
+                            <li>
+                                Strapless
+                            </li>
+                        </ul>
+                        <p>Receive before: 1/1/2017</p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4>Your brief</h4>
+                        <a class="btn btn-link btn-brief" href="#">
+                            Edit
+                            <i class="fa fa-pencil text-primary" aria-hidden="true"></i>
+                        </a>
+                        <p>I would like to have an elegant and simple black dress. Long and strapless. I would like to
+                            hear your recommendations for my body type.</p>
+                        <div class="row img_select">
+                            <div class="col-xs-4">
+                                <img src="web/images/checkout/dress.jpg" alt="..." class="img-responsive">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="web/images/checkout/dress.jpg" alt="..." class="img-responsive">
+                            </div>
+                            <div class="col-xs-4">
+                                <img src="web/images/checkout/dress.jpg" alt="..." class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/custom.js"></script>
+</body>
+</html>

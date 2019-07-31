@@ -1,0 +1,199 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+.section-2 {
+  background-color: #70a2c1;
+  margin-bottom: 20px;
+  .form {
+    @media (min-width: $screen-sm) {
+      margin-left: -5px;
+      margin-right: -5px;
+      .col-sm-3 {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+    @media (min-width: $screen-md) {
+      margin-left: -10px;
+      margin-right: -10px;
+      .col-sm-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 253px;
+        &:last-child {
+          width: 200px;
+        }
+      }
+    }
+    @media (min-width: $screen-lg) {
+      margin-left: -10px;
+      margin-right: -10px;
+      .col-sm-3 {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 320px;
+        &:last-child {
+          width: 230px;
+        }
+      }
+    }
+    .select2-container {
+      .select2-selection--single {
+        border: none;
+        @include border-radius(0);
+        height: 45px;
+        outline: none;
+        .select2-selection__rendered {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 45px;
+          padding-left: 15px;
+          text-transform: uppercase;
+        }
+        .select2-selection__arrow {
+          height: 45px;
+          right: 6px;
+          top: 0;
+          &:before {
+            content: "\f107";
+            color: #8493a8;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            font-size: 18px;
+            padding-right: 0.5em;
+            position: absolute;
+            top: 10px;
+            left: 0;
+          }
+          b {
+            border: none;
+          }
+        }
+        .select2-selection__placeholder {
+          color: #727272;
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+      &.select2-container--open {
+        .select2-selection--single {
+          .select2-selection__arrow {
+            &:before {
+              content: "\f106";
+              color: #8493a8;
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: normal;
+              text-decoration: inherit;
+              font-size: 18px;
+              padding-right: 0.5em;
+              position: absolute;
+              top: 10px;
+              left: 0;
+            }
+            b {
+              border: none;
+            }
+          }
+        }
+      }
+
+    }
+    .form-group {
+      margin-bottom: 35px;
+    }
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+      height: 45px;
+      text-transform: uppercase;
+    }
+  }
+  .see_all {
+    color: #ffffff;
+    font-family: $font-family-sub;
+    float: right;
+    letter-spacing: 0.25px;
+    margin-top: 32px;
+    text-decoration: underline;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  .title {
+    color: #ffffff;
+    float: left;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+}
+
+.select2-container--open .select2-dropdown--above,
+.select2-container--open .select2-dropdown--below {
+  &.select--drop {
+    color: #242731;
+    border:1px solid #bababa;
+    @include border-radius(0);
+    .select2-results__option {
+      font-size: 16px;
+      font-weight: 300;
+      height: 45px;
+      line-height: 45px;
+      padding: 0 15px;
+    }
+  }
+}
+.select2-container--default .select--drop {
+  .select2-results__option[aria-selected="true"] {
+    background-color: #383e52;
+    color: #ffffff;
+  }
+  .select2-results__option--highlighted[aria-selected] {
+    background-color: #383e52;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .section-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .title {
+      float: none;
+      font-size: 22px;
+      margin-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .see_all {
+      display: block;
+      float: none;
+      margin-bottom: 10px;
+      margin-top: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .form {
+      .form-group {
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .btn {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

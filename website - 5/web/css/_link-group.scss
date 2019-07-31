@@ -1,0 +1,60 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.link-group {
+  margin-bottom: 55px;
+  margin-top: 10px;
+  &.category {
+    margin-bottom: 0;
+  }
+  .btn {
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 1;
+    padding: 15px 0;
+    text-transform: uppercase;
+    width: 330px;
+    &.btn-info {
+      border-color: $brand-info;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: transparent;
+        border-color: $brand-info;
+        color: $brand-info;
+      }
+    }
+    &.btn-link {
+      float: right;
+      position: relative;
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: $brand-primary;
+        color: $brand-primary;
+        text-decoration: none;
+      }
+      span {
+        margin-right: 10px;
+        margin-top: -7px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .link-group {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
+    .btn {
+      margin-bottom: 10px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+}

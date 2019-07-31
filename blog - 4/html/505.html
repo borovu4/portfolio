@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="../web/css/select2.css" rel="stylesheet">
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <link href="../web/css/responsive.css" rel="stylesheet">
+    <link href="../web/css/error.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="inner cover">
+                <div class="row">
+                    <div class="col-md-3 error_number server">
+                        505
+                    </div>
+                    <div class="col-md-9 error_text">
+                        <div class="h1">Ошибка сервера</div>
+                        На сервере произошла непредвиденная ошибка. Она будет вскоре
+                        <br>исправлена. А пока переходите на <a href="#">главную страницу</a> – там Вы сможете
+                        <br>найти много полезной информации
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../web/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/select2.full.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".js-example-basic-single").select2({
+            minimumResultsForSearch: 90000000
+        });
+    });
+</script>
+<script>
+    $("#search").click(function (e) {
+        e.preventDefault();
+        $('#search').toggleClass('active');
+        $('.head_search').toggleClass('active');
+    });
+</script>
+</body>
+</html>

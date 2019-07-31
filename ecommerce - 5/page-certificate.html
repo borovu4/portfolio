@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фабрика Емоцій Ogogo</title>
+
+    <link href="web/css/jquery-ui.css" rel="stylesheet">
+    <link href="web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="web/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="web/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="web/css/select2.min.css" rel="stylesheet">
+    <link href="web/css/lightgallery.min.css" rel="stylesheet">
+    <link href="web/css/lg-transitions.min.css" rel="stylesheet">
+    <link href="web/css/lg-fb-comment-box.min.css" rel="stylesheet">
+    <link href="web/css/star-rating.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="web/js/html5shiv.min.js"></script>
+    <script src="web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+    <div class="container-fluid header-line">
+        <div class="row">
+            <div class="container">
+                <div class="pull-left time-work">
+                    <ul class="list-inline">
+                        <li>
+                            <a>
+                                <span class="icon icon-time"></span>
+                                з 9.00 до 21.00 без вихідних
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="list-inline">
+                        <li>
+                            <a>
+                                <span class="icon icon-number"></span>
+                                (068) 449 10 84
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                м. Тернопіль
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="#">м. Тернопіль</a></li>
+                                <li><a href="#">м. Тернопіль</a></li>
+                                <li><a href="#">м. Тернопіль</a></li>
+                                <li><a href="#">м. Тернопіль</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="web/img/logo.svg" alt="Фабрика емоцій Ogogo" title="Фабрика емоцій Ogogo">
+                </a>
+            </div>
+            <div class="nav-lead">У нас на сайті <span class="lead text-success">204</span> ідеї для подарунків</div>
+            <div class="navbar-right">
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-sert">
+                    <span class="icon icon-smile"></span>
+                    Активувати сертифікат
+                </button>
+            </div>
+            <form class="navbar-form form-search" role="search">
+                <div class="form-group has-success">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Пошук...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success hidden-sm hidden-xs" type="submit">
+                                    <span class="icon icon-search"></span>
+                                </button>
+                                <button class="btn btn-success hidden-md hidden-lg" id="to-search" type="button">
+                                    <span class="icon icon-search"></span>
+                                </button>
+                            </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <nav class="navbar navbar-theme">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbar-menu" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="header-phone">
+                    <span class="icon icon-number"></span>
+                    (068) 449 10 84
+                </a>
+                <div class="basket">
+                    <a class="collapsed" role="button" data-toggle="collapse" href="#basketcollapse"
+                       aria-expanded="false" aria-controls="basketcollapse">
+                        <span class="icon icon-basket"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav nav-justified">
+                    <li class="visible-xs">
+                        <a>
+                            <span class="icon icon-footer-phone"></span>
+                            (068) 449 10 84
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Головна</a>
+                    </li>
+                    <li>
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Як це працює</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка і оплата</a>
+                    </li>
+                    <li>
+                        <a href="#">OGOGO новини</a>
+                    </li>
+                    <li class="hidden-xs hidden-sm">
+                        <div class="basket">
+                            <a href="#"><span class="icon icon-basket"></span></a>
+                            <a class="collapsed" role="button" data-toggle="collapse" href="#basketcollapse"
+                               aria-expanded="false" aria-controls="basketcollapse">Кошик <span class="caret"></span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="collapse basketcollapse" id="basketcollapse">
+    <div class="well well-basket">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                            <div class="img-group">
+                                <a href="#" class="close"></a>
+                                <a href="#" class="image">
+                                    <img src="web/img/basket-img.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2">
+                    <div class="box">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-2 to_order">
+                    <div class="h5">Ви замовили на:</div>
+                    <div class="lead">
+                        <small>500 грн</small>
+                    </div>
+                    <a href="#" class="btn btn-info btn-block">Придбати</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="well well-buttons">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-success">
+                    <span class="icon icon-new"></span>
+                    Новинки
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-info">
+                    <span class="icon icon-hits"></span>
+                    Хіт продаж
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="btn btn-primary">
+                    <span class="icon icon-action"></span>
+                    Акційні подарунки
+                </a>
+            </div>
+            <ol class="breadcrumb col-sm-12">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Хіт продаж</a></li>
+                <li class="active">Розпис хною</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<div class="owl-carousel owl-theme cert-owl">
+    <div class="item">
+        <img src="web/img/certificate.jpg" alt="...">
+    </div>
+</div>
+
+<div class="container">
+    <h1 class="main">
+        Сертифікат на педикюр
+    </h1>
+    <div class="row">
+        <div class="col-md-3 col-md-push-9">
+            <div class="panel">
+                <a href="#" class="btn btn-primary btn-block btn-buy">
+                    Купити подарунок
+                </a>
+            </div>
+            <div class="row">
+                <div class="panel option col-sm-6 col-md-12">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="box ratio2_2">
+                                <div class="content well">
+                                    <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                                    <div class="text-center">
+                                        2 особи
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="box ratio2_2">
+                                <div class="content well">
+                                    <i class="fa fa-calendar fa-2x" aria-hidden="true"></i>
+                                    <div class="text-center">
+                                        Термін дії до:
+                                        <p>6 місяців</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="box ratio2_2">
+                                <div class="content well">
+                                    <i class="fa fa-clock-o fa-2x" aria-hidden="true"></i>
+                                    <div class="text-center">
+                                        Тривалість
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="box ratio2_2">
+                                <div class="content well">
+                                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                    <div class="text-center">
+                                        Місто
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-theme col-sm-6 col-md-12">
+                    <div class="panel-heading">
+                        Як виглядає подарунок
+                    </div>
+                    <div class="owl-carousel owl-presents">
+                        <div class="article-image"
+                             data-dot="<img src='web/img/sert-presents/blue-500x500.jpg' alt='...' class='img-responsive'>">
+                            <img src="web/img/sert-presents/blue-500x500.jpg" alt="">
+                        </div>
+                        <div class="article-image"
+                             data-dot="<img src='web/img/sert-presents/pink-500x500.jpg' alt='...' class='img-responsive'>">
+                            <img src="web/img/sert-presents/pink-500x500.jpg" alt="">
+                        </div>
+                        <div class="article-image"
+                             data-dot="<img src='web/img/sert-presents/yellow-500x500.jpg' alt='...' class='img-responsive'>">
+                            <img src="web/img/sert-presents/yellow-500x500.jpg" alt="">
+                        </div>
+                        <div class="article-image"
+                             data-dot="<img src='web/img/sert-presents/brown-500x500.jpg' alt='...' class='img-responsive'>">
+                            <img src="web/img/sert-presents/brown-500x500.jpg" alt="">
+                        </div>
+                        <div class="article-image"
+                             data-dot="<img src='web/img/sert-presents/purple-500x500.jpg' alt='...' class='img-responsive'>">
+                            <img src="web/img/sert-presents/purple-500x500.jpg" alt="">
+                        </div>
+                        <div class="article-image"
+                             data-dot="<img src='web/img/sert-presents/red-500x500.jpg' alt='...' class='img-responsive'> ">
+                            <img src="web/img/sert-presents/red-500x500.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-9 col-md-pull-3">
+            <div class="nav-theme">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#tab-1" role="tab" data-toggle="tab">Опис</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-2" role="tab" data-toggle="tab">Фотогалерея</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-3" role="tab" data-toggle="tab">Відео</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="cert-price">
+                        <span class="pull-right text-success">500грн</span>
+                        <span class="text-uppercase">Сертифікат на педикюр</span>
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="tab-1">
+                        <p>
+                            У Вашої подруги, мами чи сестри скоро свято? Фабрика Емоцій OGOGO пропонує Вам замовити
+                            подарунковий сертифікат на педикюр та дозволити Вашій близькій людині отримати прекрасну
+                            можливість оцінити переваги професійного догляду за стопами!
+                        </p>
+                        <p>
+                            Як це відбувається?
+                        </p>
+                        <p>
+                            Сертифікат на педикюр
+                        </p>
+                        <p>
+                            У Вашої подруги, мами чи сестри скоро свято? Фабрика Емоцій OGOGO пропонує Вам замовити
+                            подарунковий сертифікат на педикюр та дозволити Вашій близькій людині отримати прекрасну
+                            можливість оцінити переваги професійного догляду за стопами!
+                        </p>
+                        <p>
+                            Як це відбувається?
+                        </p>
+                        <p>
+                            Пропонується апаратний або класичний педикюр на вибір, а також обрізний педикюр. Обидва
+                            сеанси
+                            увінчаються фінальним покриттям кольоровим лаком. А ніжний пілінг і приємний масаж з
+                            живильним
+                            кремом зробить шкіру стоп неймовірно м'якою і допоможе позбутися найменших слідів втоми.
+                        </p>
+                        <p>
+                            Традиційний обрізний педикюр
+                        </p>
+                        <p>
+                            Нігті на ногах будуть виглядати бездоганно! А допоможе в цьому сеанс класичного педикюру - з
+                            використанням традиційних ножиць і щипчиків. Після розпарювання в спеціальній ванні з
+                            мильним
+                            розчином, профі акуратно видалить кутикулу і задирки.
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-2">
+                        <ul class="list-unstyled row lightgallery">
+                            <li class="col-xs-6 col-sm-4 col-md-3" data-src="web/img/lg/1-1600.jpg"
+                                data-sub-html="
+                                <h4>Fading Light</h4>
+                                <p>
+                                    Classic view from Rigwood Jetty on Coniston Water an old
+                                    archive shot similar to an old post but a little later on.
+                                </p>">
+                                <a href="" class="thumbnail">
+                                    <img class="img-responsive" src="web/img/lg/thumb-1.jpg" alt="...">
+                                    <span class="caption">
+                                        Fading Light
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3" data-src="web/img/lg/2-1600.jpg"
+                                data-sub-html="
+                                <h4>Fading Light</h4>
+                                <p>
+                                    Classic view from Rigwood Jetty on Coniston Water an old
+                                    archive shot similar to an old post but a little later on.
+                                </p>">
+                                <a href="" class="thumbnail">
+                                    <img class="img-responsive" src="web/img/lg/thumb-2.jpg" alt="...">
+                                    <span class="caption">
+                                        Fading Light
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3"
+                                data-src="web/img/lg/13-1600.jpg"
+                                data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                                <a href="" class="thumbnail">
+                                    <img class="img-responsive" src="web/img/lg/thumb-13.jpg" alt="...">
+                                    <span class="caption">
+                                        Bowness Bay
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3"
+                                data-src="web/img/lg/4-1600.jpg"
+                                data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                                <a href="" class="thumbnail">
+                                    <img class="img-responsive" src="web/img/lg/thumb-4.jpg" alt="...">
+                                    <span class="caption">
+                                        Bowness Bay
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/crcq9vV-UwM"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments-block">
+                <div class="title">
+                    <div class="row">
+                        <div class="col-md-12 h4">
+                            Відгуки про сертифікат на педикюр:
+                        </div>
+                        <form class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Ваш відгук" rows="4"></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="rating pull-left">
+                                        <label class="control-label">Рейтинг:</label>
+                                        <input id="input-1" name="input-1" class="rating rating-loading" data-size="xs" data-min="0" data-max="5" data-step="1">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-sm-offset-4">
+                                    <button class="btn btn-success btn-block" type="button" data-toggle="modal" data-target="#modal_login">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>Додати відгук
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="comment-group">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/img/icons/user-icon.png" alt="...">
+                                <span>
+                                    Оксана Лаврова
+                                </span>
+                            </a>
+                        </div>
+                        <div class="media-body well">
+                            Спа-шоколад для двох -це море задоволення та океан емоцій! Дякую майстру Марині за її ніжні
+                            та водночас сильні руки! Даруйте враження, любіте себе- бо ви того варті!!! І всім бажаю
+                            відвідати цей заклад)))
+                            <div class="media-heading h5">
+                                <div class="rating pull-left">
+                                    <label class="control-label">Рейтинг:</label>
+                                    <input name="input-3" value="4" class="rating-loading rating-result" data-size="xs">
+                                </div>
+                                <div class="date pull-right">
+                                    26.05.2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/img/icons/user-icon.png" alt="...">
+                                <span>
+                                    Оксана Лаврова
+                                </span>
+                            </a>
+                        </div>
+                        <div class="media-body well">
+                            Спа-шоколад для двох -це море задоволення та океан емоцій! Дякую майстру Марині за її ніжні
+                            та водночас сильні руки! Даруйте враження, любіте себе- бо ви того варті!!! І всім бажаю
+                            відвідати цей заклад)))
+                            <div class="media-heading h5">
+                                <div class="rating pull-left">
+                                    <label class="control-label">Рейтинг:</label>
+                                    <input name="input-3" value="4" class="rating-loading rating-result" data-size="xs">
+                                </div>
+                                <div class="date pull-right">
+                                    26.05.2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/img/icons/user-icon.png" alt="...">
+                                <span>
+                                    Оксана Лаврова
+                                </span>
+                            </a>
+                        </div>
+                        <div class="media-body well">
+                            Спа-шоколад для двох -це море задоволення та океан емоцій! Дякую майстру Марині за її ніжні
+                            та водночас сильні руки! Даруйте враження, любіте себе- бо ви того варті!!! І всім бажаю
+                            відвідати цей заклад)))
+                            <div class="media-heading h5">
+                                <div class="rating pull-left">
+                                    <label class="control-label">Рейтинг:</label>
+                                    <input name="input-3" value="4" class="rating-loading rating-result" data-size="xs">
+                                </div>
+                                <div class="date pull-right">
+                                    26.05.2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/img/icons/user-icon.png" alt="...">
+                                <span>
+                                    Оксана Лаврова
+                                </span>
+                            </a>
+                        </div>
+                        <div class="media-body well">
+                            Спа-шоколад для двох -це море задоволення та океан емоцій! Дякую майстру Марині за її ніжні
+                            та водночас сильні руки! Даруйте враження, любіте себе- бо ви того варті!!! І всім бажаю
+                            відвідати цей заклад)))
+                            <div class="media-heading h5">
+                                <div class="rating pull-left">
+                                    <label class="control-label">Рейтинг:</label>
+                                    <input name="input-3" value="4" class="rating-loading rating-result" data-size="xs">
+                                </div>
+                                <div class="date pull-right">
+                                    26.05.2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel text-center">
+                        <a href="#" class="see-more">
+                            Читати ще <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-list">
+            <div class="h4">
+                Також, Вас може зацікавити
+            </div>
+            <div class="owl-carousel owl-theme owl-recommended">
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="btn btn-info hits">Хіт</span>
+                        <span class="ribbon">
+                            <span class="btn btn-primary action">Акція</span>
+                            <span class="btn btn-success news">Новинка</span>
+                        </span>
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="ribbon">
+                            <span class="btn btn-primary action">Акція</span>
+                        </span>
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="ribbon">
+                            <span class="btn btn-success news">Новинка</span>
+                        </span>
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" class="thumbnail">
+                        <img src="web/img/basket-img.png" alt="...">
+                        <span class="caption">
+                            <span class="name">
+                                SPA дівішнік
+                            </span>
+                            <span class="price">
+                                600 грн
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container footer">
+        <div class="row">
+            <div class="col-xs-5 col-sm-2">
+                <a href="#" class="navbar-brand">
+                    <img class="img-responsive" title="Фабрика емоцій Ogogo" alt="Фабрика емоцій Ogogo"
+                         src="web/img/logo.svg">
+                </a>
+            </div>
+            <div class="col-xs-7 col-sm-3">
+                <ul class="list-unstyled">
+                    <li class="title">
+                        Інформація
+                    </li>
+                    <li>
+                        <a href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Як це працює
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Доставка і оплата
+                        </a>
+                    <li>
+                        <a href="#">
+                            Карта сайту
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <ul class="list-unstyled">
+                    <li class="title">Контакти</li>
+                    <li>
+                        <span class="icon icon-footer-phone"></span>
+                        (068) 449 10 84
+                    </li>
+                    <li>
+                        <span class="icon icon-footer-mark"></span>
+                        м.Тернопіль
+                    </li>
+                    <li>
+                        <span class="icon icon-footer-mail"></span>
+                        ogogo.org.ua@gmail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <ul class="list-unstyled">
+                    <li class="title">
+                        Графік роботи
+                    </li>
+                    <li>
+                        працюємо з Пн - Нд
+                        <span class="lead">з 9 00 до 21 00</span>
+                    </li>
+                    <li class="title">
+                        Шукайте нас у:
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/podoljani.png" alt="podoljani">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/ornava.png" alt="ornava">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix col-xs-12 text-muted">
+                Ogogo.org.ua © 2015 - 2016 Всі права захищено
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid social">
+        <ul class="list-inline">
+            <li class="title">
+                Ми в соціальних мережах
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="modal-sert" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Активувати сертифікат</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="" class="form-control">
+                        <label>ПІП</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="" class="form-control">
+                        <label>Ваш номер телефону</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" required="" placeholder="" class="form-control">
+                        <label>Штрих-код на картці</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" required=""></textarea>
+                        <label>Ваш коментар</label>
+                    </div>
+                </form>
+                <ul class="list-inline text-center">
+                    <li>
+                        <button type="button" class="btn btn-primary next-step">
+                            Активувати
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Авторизація</h4>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <ul class="social-network social-circle list-inline">
+                        <li>
+                            <a href="#" class="icoVk" title="Vk">
+                                <i class="fa fa-vk"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icoFacebook" title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icoTwitter" title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icoGoogle" title="Google +">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icoOd" title="Odnoklassniki">
+                                <i class="fa fa-odnoklassniki"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end modals-->
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/jquery-ui.min.js"></script>
+<script src="web/js/select2.full.min.js"></script>
+<script src="web/js/owl.carousel.min.js"></script>
+
+<script src="web/js/lg/lightgallery.min.js"></script>
+<script src="web/js/lg/lg-fullscreen.min.js"></script>
+<script src="web/js/lg/lg-thumbnail.min.js"></script>
+<script src="web/js/lg/lg-video.min.js"></script>
+<script src="web/js/lg/lg-autoplay.min.js"></script>
+<script src="web/js/lg/lg-zoom.min.js"></script>
+<script src="web/js/lg/lg-hash.min.js"></script>
+<script src="web/js/lg/lg-pager.min.js"></script>
+<script src="web/js/lg/jquery.mousewheel.min.js"></script>
+<script src="web/js/star-rating.min.js"></script>
+<script src="web/js/ua.js"></script>
+<script src="web/js/custom.js"></script>
+</body>
+</html>

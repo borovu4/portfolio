@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="checkout chat">
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand normal" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="text text-link">
+                            Good morning, Jane Doe!
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle user-img" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <img src="web/images/home-img/test_author.jpg" alt="...">
+                            </a>
+                            <span class="user-name">Christopher Raeburn</span>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Getting started</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><a href="#">Projects</a></li>
+                        <li class="active"><a href="#">Earnings</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid container-checkout">
+    <div class="jumbotron">
+        <h1>Earnings</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-pills nav-pills--custom">
+                <li role="presentation"><a href="#">Overview</a></li>
+                <li role="presentation" class="active"><a href="#">Deposit funds</a></li>
+                <li role="presentation"><a href="#">Withdraw Funds</a></li>
+            </ul>
+            <form class="form-deposit">
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <div class="form-group">
+                            <label>Select payment method</label>
+                            <div class="radio-group">
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <span class="cr"><i class="cr-icon"></i></span>
+                                        Credit Card
+                                    </label>
+                                </div>
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <span class="cr"><i class="cr-icon"></i></span>
+                                        PayPal
+                                    </label>
+                                </div>
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <span class="cr"><i class="cr-icon"></i></span>
+                                        iDEAL
+                                    </label>
+                                </div>
+                                <div class="radio radio-inline">
+                                    <label>
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <span class="cr"><i class="cr-icon"></i></span>
+                                        other
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                What card would you like to pay with?
+                                <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                                        title="Select lorem ipsum
+                                        dolor sit amet, consectetur
+                                        adipiscing elit, sed do
+                                        eiusmod tempor
+                                        incididunt">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                </button>
+                            </label>
+                            <div class="row radio-list">
+                                <div class="col-sm-6 col-md-6">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o1" value="">
+                                            <span class="cr"><i class="cr-icon"></i></span>
+                                            <span class="img">
+                                                <img src="web/images/icon/list-icon-master.png" alt="...">
+                                                </span>
+                                            **** **** **** 7346
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o1" value="">
+                                            <span class="cr"><i class="cr-icon"></i></span>
+                                            <span class="img">
+                                                    <img src="web/images/icon/list-icon-visa.png" alt="...">
+                                                </span>
+                                            **** **** **** 8462
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="o1" value="">
+                                            <span class="cr"><i class="cr-icon"></i></span>
+                                            Add new card
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-5 col-md-offset-1">
+                                    <label>Accepted Cards</label>
+                                    <div class="cards-label row">
+                                        <div class="col-xs-4">
+                                            <div class="cards-label--img">
+                                                <img src="web/images/icon/list-icon-visa.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="cards-label--img">
+                                                <img src="web/images/icon/list-icon-master.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="cards-label--img">
+                                                <img src="web/images/icon/list-icon-maestro.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="cards-label--img">
+                                                <img src="web/images/icon/list-icon-switch.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="cards-label--img">
+                                                <img src="web/images/icon/list-icon-delta.png" alt="...">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="cards-label--img">
+                                                <img src="web/images/icon/list-icon-american.png" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group has-error has-danger">
+                            <input class="form-control" placeholder="Cardholder name" type="text">
+                            <div class="help-block with-errors">This field is required.</div>
+                        </div>
+                        <div class="form-group has-error has-danger">
+                            <input class="form-control" placeholder="Card number (16-digits)" type="text">
+                            <div class="help-block with-errors">This field is required.</div>
+                        </div>
+
+                        <div class="row card_info">
+                            <div class="col-xs-6 col-sm-5 col-lg-3">
+                                <div class="form-group has-error has-danger">
+                                    <label>Expire date</label>
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <select class="form-control">
+                                                <option>MM</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <select class="form-control">
+                                                <option>YY</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="help-block with-errors">This field is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-4 col-lg-2">
+                                <div class="form-group has-error has-danger">
+                                    <label>
+                                        CCV/CVV
+                                        <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                                                title="CCV/CVV lorem ipsum
+                                                dolor sit amet, consectetur
+                                                adipiscing elit, sed do
+                                                eiusmod tempor
+                                                incididunt ">
+                                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                        </button>
+                                    </label>
+                                    <input class="form-control" placeholder="3-digits" type="tel">
+                                </div>
+                            </div>
+                            <div class=" hidden-xs col-sm-1 col-lg-1">
+                                <img src="web/images/icon/card_sample.png" alt="...">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-md-12">
+                                <p class="info">You agree to authorize the use of your credit card for this deposit and further
+                                    payments. </p>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>
+                                    Deposit amount
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">EUR</span>
+                                    <input type="text" class="form-control" placeholder="50">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn btn-primary btn-block">
+                                            CONFIRM
+                                        </button>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>This amount includes the 1.95% deposit fee. Your funds are save with ITSJU.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1 col-xl-3">
+                        <ul class="list-unstyled list-count">
+                            <li>Payment Breakdown <span class="pull-right">EUR</span></li>
+                            <li>Deposit amount <span class="pull-right">€50</span></li>
+                            <li>Deposit Fee
+                                <button type="button" class="btn" data-toggle="tooltip" data-placement="top"
+                                        title="Credit card processing fees. Fee is calculated as €1.20 + 0% of amount.">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                </button>
+                                <span class="pull-right">€1.20</span></li>
+                            <li>Total <span class="pull-right">€51.20</span></li>
+                        </ul>
+                        <div class="media media-info">
+                            <div class="media-left">
+                                <img src="web/images/icon/locked.png" alt="locked">
+                            </div>
+                            <div class="media-body media-middle">
+                                <p>This is a secure 128-bit SSL</p>
+                                <p>encrypted payment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/bootstrap-tabcollapse.js"></script>
+<script src="web/javascripts/custom.js"></script>
+<script>
+    $('#myTab').tabCollapse({
+        tabsClass: 'hidden-sm hidden-xs',
+        accordionClass: 'visible-sm visible-xs'
+    });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>
+</body>
+</html>

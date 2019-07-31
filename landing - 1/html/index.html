@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acibadem_Landing</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/select2.min.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.min.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="navbar-wrapper">
+    <div class="container">
+
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" class="img-responsive"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">наши преимущества</a></li>
+                        <li><a href="#about">Направления</a></li>
+                        <li><a href="#contact">политика качества</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="../img/bg-carusel-1.png" alt="">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <div class="h1">Трансплантация костного мозга</div>
+
+                    <p><a class="btn btn-lg btn-theme" href="#" role="button">подробнее</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../img/bg-carusel-2.png" alt="">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <div class="h1">РАК</div>
+                    <div class="h1">не приговор</div>
+
+                    <p><a class="btn btn-lg btn-theme" href="#" role="button">подробнее</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../img/bg-carusel-3.png" alt="">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <div class="h1">Детская и взрослая нейрохирургия</div>
+                    <div class="h2">Аутологическая / Аллогенная / Гаплоидентичная</div>
+
+                    <p><a class="btn btn-lg btn-theme" href="#" role="button">подробнее</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="../img/bg-carusel-4.png" alt="">
+
+            <div class="container">
+                <div class="carousel-caption">
+                    <div class="h1">Аджибадем Бодрум</div>
+                    <div class="h2">Еще одна причина полюбить Бодрум</div>
+
+                    <p><a class="btn btn-lg btn-theme" href="#" role="button">подробнее</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.carousel -->
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container-fluid mac-bg">
+    <img src="../img/mac-bg.png" alt="img" class="mac-bg-img hidden-xs hidden-sm">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="media">
+                    <div class="h2 media-heading">Позаботьтесь о здоровье прямо сейчас!</div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../img/icon-1.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p>Укажите свои данные, и мы подберем</p>
+
+                        <p>Вам наиболее подходящее решение</p>
+
+                        <p>проблемы.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="h2 media-heading">Представительство в Украине:</div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../img/icon-2.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <p>ул. Саксаганского 147, офис 18,</p>
+
+                        <p>01032, г. Киев, Украина</p>
+
+                        <p>+380442367820 | +380939554840</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+                <form>
+                    <div class="h4">заявка онлайн</div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <input type="text" class="form-control" placeholder="ваше фио *">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <input type="email" class="form-control" placeholder="ваш электронный адрес *">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <select class="form-control select">
+                            <option>направления *</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <textarea class="form-control" rows="5" placeholder="сообщение *"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-forn-mac btn-block btn-lg">отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid first-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-xs-6 col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="../img/first-block-icon-1.png" alt="Медицинские консультации">
+                            <span class="center-block text-center">Медицинские консультации</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="../img/first-block-icon-2.png" alt="Услуги переводчиков">
+                            <span class="center-block text-center">Услуги переводчиков</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="../img/first-block-icon-3.png" alt="Комфортное проживание">
+                            <span class="center-block text-center">Комфортное проживание</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="../img/first-block-icon-4.png" alt="Трансфер из аэропорта">
+                            <span class="center-block text-center">Трансфер из аэропорта</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="../img/first-block-icon-5.png" alt="Финансовое обслуживание">
+                            <span class="center-block text-center">УФинансовое обслуживание</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-4">
+                        <a href="#" class="thumbnail">
+                            <img src="../img/first-block-icon-6.png" alt="Удобные формы расчетов">
+                            <span class="center-block text-center">Удобные формы расчетов</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <div class="h2">Наши преимущества</div>
+                <div class="h4">
+                    Одна из крупнейших мировых сетей многопрофильных и высококлассных медицинский центров
+                    Acibadem, имеющая в своем составе 17 клиник и 13 поликлиник является лидером в Турции, ежегодно
+                    принимает тысячи пациентов со всего мира. Благодаря высокому уровню квалификации докторов,
+                    современному оборудованию и передовым методикам лечения,
+                    Acibadem – это один из лидеров среди медицинских учреждений в Турции, уверенно конкурирующий с
+                    американскими и европейскими клиниками.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid second-block">
+    <div class="container">
+        <div class="row">
+            <div class="h1 text-center">Направления</div>
+            <div class="col-md-6 hidden-lg hidden-md">
+                <div class="h2 text-center">Онкология</div>
+            </div>
+            <div class="col-md-6 bg-text">
+                <p>В мировой практике лечения онкологии наиболее эффективные решения в лечении рака получены при
+                    мультидисциплинарном подходе, поскольку онкология является областью, которая требует
+                    сотрудничества
+                    многих отраслей науки. Консультация докторов различных областей медицины является чрезвычайно
+                    важной
+                    в диагностике и лечении рака. При таком подходе специалисты различных областей медицины вместе
+                    принимают совместное решение о путях лечения и несут совместную ответственность.
+                </p>
+
+                <p>В онкологических центрах Acıbadem группы различных медицинских специалистов вместе изучают каждый
+                    отдельный случай и совместными усилиями, используя
+                    все свои знания, выбирают адекватные способы борьбы
+                    с раком.
+                </p>
+
+                <p>Стоит заметить, что в сети клиник Acıbadem многопрофильный подход представлен не только для
+                    диагностики и лечения всех видов рака, но и в программах сканирования ранней диагностики рака,
+                    программах выявление группы риска среди людей, которые являются здоровыми, в программах
+                    освещения
+                    тем о профилактике рака.
+                </p>
+            </div>
+            <div class="col-md-6 first-img visible-lg visible-md">
+                <div class="h1">Онкология</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 second-img visible-lg visible-md">
+                <div class="h1">Детская и взрослая нейрохирургия</div>
+            </div>
+            <div class="col-md-6 hidden-lg hidden-md">
+                <div class="h2 text-center">Детская и взрослая нейрохирургия</div>
+            </div>
+            <div class="col-md-6 bg-text">
+                <p>
+                    В клиниках Acıbadem регулярно выполняется сотни операций, связанных с всеми черепно-мозговыми
+                    патологиями, в том числе такими опухолями, как менингиомы, хордомы, шванномы, сосудистые
+                    мальформации
+                    (аневризмы), артериовенозные и кавернозные мальформации. Инновационные технологии, такие как
+                    интраоперационная МРТ 3 Тесла и Gamma Knife Perfection (Гамма-нож), мультидисциплинарный подход
+                    послужили признанию нейрохирургических отделений Acıbadem одними из ведущих центров мира, с членами
+                    и
+                    руководством в международных организациях.</p>
+
+                <p>
+                    Современные методики, передовые технологии и междисциплинарный подход, имеют первостепенное значение
+                    для
+                    проведения радиологического исследования, которая является неотъемлемой частью принятия решения о
+                    дальнейшем плане лечения нейрохирургических пациентов.</p>
+
+                <p>
+                    Лечение больных проводится в специализированных клинических отделениях: педиатрической (детской)
+                    нейрохирургии, сосудистой нейрохирургии, нейроонкологического отделения.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 hidden-lg hidden-md">
+                <div class="h2 text-center">Трансплантация костного мозга</div>
+            </div>
+            <div class="col-md-6 bg-text">
+                <p>
+                    Трансплантология является одним из ведущих направлений медицинской группы Acibadem. Центр пересадки
+                    органов Acibadem расположен в Стамбуле, имеет международную аккредитацию JCI и входит в десятку
+                    ведущих
+                    трансплантационных центров мира. Операции по пересадке печени и почек в клинике Acibadem проводят
+                    всемирно известные профессора, которые приобрели свой опыт и известность за многие годы успешной
+                    работы
+                    в специализированных медицинских центрах США.</p>
+
+                <p>
+                    Техника операций по пересадке почек и печени, которые проводятся в Центре трансплантации органов
+                    клиники
+                    Acibadem, тщательно отработана. Наши ведущие специалисты-трансплантологи постоянно совершенствуют
+                    свое
+                    мастерство и уже сегодня добились потрясающих результатов по успешности проведенных операций.
+                    Процент
+                    успешных пересадок и количество осложнений после них соответствуют аналогичным показателям ведущих
+                    трансплантационных центров США.</p>
+
+            </div>
+            <div class="col-md-6 third-img visible-lg visible-md">
+                <div class="h1">Трансплантация костного мозга</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container third-block">
+    <div class="row">
+        <div class="h1 text-center">Политика качества</div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="../img/third-block-img-1.png" alt="Аккредитация JCI">
+                <span class="center-block text-center">Аккредитация JCI</span>
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="../img/third-block-img-2.png" alt="Медицинские лаборатории TS EN ISO 15189">
+                <span class="center-block text-center">Медицинские  лаборатории TS EN ISO 15189</span>
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="../img/third-block-img-3.png" alt="Европейская аккредитация по ядерной медицине">
+                <span class="center-block text-center">Европейская аккредитация по ядерной медицине</span>
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="../img/third-block-img-4.png" alt="Стандарты качества в сфере медицинских услуг">
+                <span class="center-block text-center">Стандарты качества в сфере медицинских услуг</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid last-block">
+    <div class="container">
+        <div class="row">
+            <div class="h1 text-center">Заявка онлайн</div>
+            <form>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <input type="text" class="form-control" placeholder="ваше фио *">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <input type="tel" class="form-control" placeholder="ваше телефон *">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <input type="email" class="form-control" placeholder="ваш электронный адрес *">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <select class="form-control select">
+                            <option>направления *</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="sr-only"></label>
+                        <textarea class="form-control" rows="5" placeholder="сообщение *"></textarea>
+                    </div>
+                </div>
+                <div class="text-center col-md-12">
+                    <button role="button" href="#" class="btn btn-lg btn-theme">подробнее</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row text-center center-block advantage">
+            <div class="col-sm-4"><a href="#">наши преимущества</a></div>
+            <div class="col-sm-4"><a href="#">Направления</a></div>
+            <div class="col-sm-4"><a href="#">политика качества</a></div>
+        </div>
+        <div class="row">
+            <div class="h1 "><img src="../img/footer-logo.png" alt="logo" class="img-responsive center-block"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 text-center visible-sm visible-xs">
+                <div class="h1">Представительство в Украине:</div>
+            </div>
+            <div class="col-md-5 col-xs-12 text-right hidden-xs hidden-sm">
+                <div class="h1">Представительство в Украине:</div>
+                <div class="">© 2015 The Acibadem Hospitals Group</div>
+            </div>
+            <div class="col-md-2 hidden-sm hidden-xs ">
+                <img src="../img/footer-icon-loc.png" alt="lock" class="center-block">
+            </div>
+            <div class="col-md-5 hidden-sm hidden-xs">
+                <div class="h4">
+                    <p>ул. Саксаганского 147, офис 18,</p>
+
+                    <p>01032, г. Киев, Украина</p>
+
+                    <p>+380442367820 | +380939554840</p>
+
+                    <p><a href="#">acibadem.com.ru</a></p>
+                </div>
+            </div>
+            <div class="col-xs-12 text-center visible-xs visible-sm">
+                <div class="h4">
+                    <p>ул. Саксаганского 147, офис 18,</p>
+
+                    <p>01032, г. Киев, Украина</p>
+
+                    <p>+380442367820 | +380939554840</p>
+
+                    <p><a href="#">acibadem.com.ru</a></p>
+
+                    <p>© 2015 The Acibadem Hospitals Group</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../js/ie10-viewport-bug-workaround.js"></script>
+<script src="../js/select2.min.js"></script>
+
+<script type="text/javascript">
+    $('select').select2({
+        minimumResultsForSearch: -1
+    });
+</script>
+
+</body>
+</html>

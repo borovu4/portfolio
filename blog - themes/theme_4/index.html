@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- End SEO-->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700" rel="stylesheet">
+    <link href="web/css/bootstrap.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <title></title>
+
+    <!--[if lt IE 9]>
+    <script src="web/js/html5shiv.min.js"></script>
+    <script src="web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="site">
+<div class="body">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-inner clearfix">
+                <a class="brand pull-left" href="#">
+                    <span class="site-title">Compojoom Joomla Extensions Demo</span>
+                </a>
+            </div>
+        </header>
+        <nav class="navigation" role="navigation">
+            <ul class="nav menu nav-pills">
+                <li class="default"><a href="#">Home</a></li>
+                <li class="deeper parent"><a href="#">HotSpots</a>
+                    <ul class="nav-child unstyled small">
+                        <li>
+                            <a href="#">Demo styled map</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo user location centering</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo user location centering</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo user location centering</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo user location centering</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo user location centering</a>
+                        </li>
+                        <li>
+                            <a href="#">Demo user location centering</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-success" target="_blank">Get Hotspots Now!</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deeper parent">
+                    <a href="#">CComments</a>
+                    <ul class="nav-child unstyled small">
+                        <li>
+                            <a href="#">Learn More about CComments</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-success" target="_blank">Get CComments Now!</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="current active deeper parent">
+                    <a href="#">Matukio</a>
+                    <ul class="nav-child unstyled small">
+                        <li class="current active">
+                            <a href="#">Eventlist (Bootstrap 3)</a>
+                        </li>
+                        <li>
+                            <a href="#">Events-Calendar</a>
+                        </li>
+                        <li>
+                            <a href="#">Organizer page</a>
+                        </li>
+                        <li>
+                            <a href="#">Learn more about Matukio</a>
+                        </li>
+                        <li>
+                            <a href="#">Eventlist (Modern)</a>
+                        </li>
+                        <li>
+                            <a href="#">Single Event (Bootstrap 3 Template)</a>
+                        </li>
+                        <li>
+                            <a href="#">Single Event (Modern Template)</a>
+                        </li>
+                        <li>
+                            <a href="#">Upcoming Events</a>
+                        </li>
+                        <li>
+                            <a href="#">Submit an event</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-success">Get Matukio Now!</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="deeper parent">
+                    <a href="#">Tiles</a>
+                    <ul class="nav-child unstyled small">
+                        <li>
+                            <a href="#">Default Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Compojoom Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Modern Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Learn more about Tiles</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-success">Get Tiles Now!</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">CFlappy</a>
+                </li>
+                <li class="deeper parent">
+                    <a href="#">CAdvancedSlideshow</a>
+                    <ul class="nav-child unstyled small">
+                        <li>
+                            <a href="#">Default Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Simple Template</a></li>
+                        <li>
+                            <a href="#">Cycle2 Template</a>
+                        </li>
+                        <li>
+                            <a href="#">Subtitle Template</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Download Now!</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row-fluid">
+            <main class="span12">
+                <div class="compojoom-bootstrap">
+                    <div class="componentheading">
+                        <h2>Event Overview (Boostrap3)</h2>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row mat_active_filters">
+                            <button class="btn btn-default">Current events</button>
+                            <div class="pull-right mat_orderby">
+                                <select id="filter_ordering" name="filter_ordering"
+                                        class="chzn-single form-control">
+                                    <option value="0">Default</option>
+                                    <option value="1" selected="selected">Date ascending</option>
+                                    <option value="2">Date descending</option>
+                                    <option value="3">Title ascending</option>
+                                    <option value="4">Title descending</option>
+                                </select>
+                            </div>
+                            <div class="pull-right mat_limit">
+                                <select id="limit" name="limit" class="chzn-single form-control">
+                                    <option value="3">3</option>
+                                    <option value="5">5</option>
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="mat_container" class="row">
+                            <div id="mat_menu_left" class="col-md-3 col-sm-12">
+                                <div id="mat_toogle-menu">
+                                    <i class="glyphicon glyphicon-chevron-left"></i>
+                                </div>
+                                <a href="#submenu_categories" class="list-group-item" data-toggle="collapse">
+                                    Categories <span class="menu-ico-collapse pull-right"><i
+                                        class="glyphicon glyphicon-plus-sign"></i></span>
+                                    <span class="badge">3</span>
+                                </a>
+                                <div class="collapse in list-group-submenu" id="submenu_categories">
+                                    <div class="list-group-item">
+                                        <div class="mat_submenu_item">
+                                            <a href="#"><strong>All categories</strong></a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Demo Events</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Webinars</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Compojoom events</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#submenu_date" class="list-group-item" data-toggle="collapse"
+                                   aria-expanded="false">Dates
+                                    <span class="menu-ico-collapse pull-right">
+                                    <i class="glyphicon glyphicon-plus-sign"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse list-group-submenu" id="submenu_date" role="tabpanel">
+                                    <div class="list-group-item">
+                                        <div class="mat_submenu_item">
+                                            <a href="#"><strong>Current events</strong></a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Old events</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">All events</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Events today</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Events this week</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Events this month</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Events this year</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#submenu_search" class="list-group-item" data-toggle="collapse">
+                                    Search
+                                    <span class="menu-ico-collapse pull-right">
+                                        <i class="glyphicon glyphicon-plus-sign"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse list-group-submenu" id="submenu_search">
+                                    <div class="list-group-item clearfix">
+                                        <div class="form-group">
+                                            <label class="col-sm-12 control-label">Search for events</label>
+                                            <div class="col-sm-12">
+                                                <input type="text" name="search" id="search" class="form-control"
+                                                       placeholder="Search word">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <button class="btn btn-primary" id="btn_search">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#submenu_fee" class="list-group-item" data-toggle="collapse">
+                                    Fees
+                                    <span class="menu-ico-collapse pull-right">
+                                        <i class="glyphicon glyphicon-plus-sign"></i>
+                                    </span>
+                                </a>
+                                <div class="collapse list-group-submenu" id="submenu_fee">
+                                    <div class="list-group-item">
+                                        <div class="mat_submenu_item">
+                                            <a href="#"><strong>All events</strong></a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Free events</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Paid events</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#submenu_locations" class="list-group-item" data-toggle="collapse">
+                                    Locations
+                                    <span class="menu-ico-collapse pull-right">
+                                        <i class="glyphicon glyphicon-plus-sign"></i>
+                                    </span>
+                                    <span class="badge">1</span>
+                                </a>
+                                <div class="collapse list-group-submenu" id="submenu_locations">
+                                    <div class="list-group-item">
+                                        <div class="mat_submenu_item">
+                                            <a href="#"><strong>All locations</strong></a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Nymphenburg Palace</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#submenu_organizers" class="list-group-item" data-toggle="collapse">
+                                    Organizers
+                                    <span class="menu-ico-collapse pull-right">
+                                        <i class="glyphicon glyphicon-plus-sign"></i>
+                                    </span>
+                                    <span class="badge">3</span>
+                                </a>
+                                <div class="collapse list-group-submenu" id="submenu_organizers">
+                                    <div class="list-group-item">
+                                        <div class="mat_submenu_item">
+                                            <a href="#"><strong>All organizers</strong></a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Daniel</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Jon Doe</a>
+                                        </div>
+                                        <div class="mat_submenu_item">
+                                            <a href="#">Yves Hoppe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mat_events" class="col-md-9 col-sm-12">
+                                <div class="row">
+                                    <div class="mat_event_single_holder col-sm-12">
+                                        <div class="mat_event_single_holder_inner">
+                                            <div class="row">
+                                                <div class="mat_event_image_holder col-sm-2">
+                                                    <a href="#">
+                                                        <img src="web/uploads/placeholder2.jpg" alt="..."
+                                                             class="mat_event_img img-thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="mat_event_content col-sm-10 clearfix">
+                                                    <h3>
+                                                        <a href="#">
+                                                            Event with different fees</a>
+                                                        <i class="glyphicon glyphicon-fire"></i>
+                                                    </h3>
+                                                    <div class="mat_event_top_informations">
+                                                        <span class="mat_event_category">
+                                                            <i class="glyphicon glyphicon-inbox"></i>
+                                                            <a href="#">
+                                                                Compojoom events
+                                                            </a>
+                                                        </span>
+                                                        <span class="mat_event_organizer">
+                                                            <i class="glyphicon glyphicon-user"></i>
+                                                            <a href="#">Yves Hoppe</a>
+                                                        </span>
+                                                        <span class="mat_event_fees">
+                                                            <i class="glyphicon glyphicon-asterisk"></i>
+                                                            $ 84.03 *
+                                                        </span>
+                                                    </div>
+                                                    <div class="mat_event_short_description">
+                                                        An event demonstrating different event fees
+                                                    </div>
+                                                    <div class="mat_event_date">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                        Thursday, November, 22 2018 - 18:00 till 22:00
+                                                    </div>
+                                                    <div class="mat_event_location">
+                                                        <a class="mat_marker_icon" href="#">
+                                                            <i class="glyphicon glyphicon-map-marker"></i>
+                                                            <strong>Heidelberg, Germany</strong>
+                                                        </a>
+                                                    </div>
+                                                    <div class="mat_event_buttons">
+                                                        <a class="btn btn-primary" href="#">Event details</a>
+                                                        <a class="btn btn-primary" href="#" data-toggle="modal"
+                                                           data-target="#myModal">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mat_event_single_holder col-sm-12">
+                                        <div class="mat_event_single_holder_inner">
+                                            <div class="row">
+                                                <div class="mat_event_image_holder col-sm-2">
+                                                    <a href="#">
+                                                        <img src="web/uploads/botangarten-0523.jpg" alt="..."
+                                                             class="mat_event_img img-thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="mat_event_content col-sm-10 clearfix">
+                                                    <h3>
+                                                        <a href="#">Event with a location page</a>
+                                                        <i class="glyphicon glyphicon-fire"></i>
+                                                    </h3>
+                                                    <div class="mat_event_top_informations">
+                                                        <span class="mat_event_category">
+                                                            <i class="glyphicon glyphicon-inbox"></i>
+                                                            <a href="#">Compojoom events</a>
+                                                        </span>
+                                                        <span class="mat_event_organizer">
+                                                            <i class="glyphicon glyphicon-user"></i>
+                                                            <a href="#">Yves Hoppe</a>
+                                                        </span>
+                                                        <span class="mat_event_fees">
+                                                            <i class="glyphicon glyphicon-asterisk"></i>
+                                                            $ 8.40 *
+                                                        </span>
+                                                    </div>
+                                                    <div class="mat_event_short_description">
+                                                        An event with a location page and custom image :)
+                                                    </div>
+                                                    <div class="mat_event_date">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                        Thursday, November, 22 2018 - 18:00 till 22:00
+                                                    </div>
+                                                    <div class="mat_event_location">
+                                                        <a class="mat_marker_icon" href="#">
+                                                            <i class="glyphicon glyphicon-map-marker"></i>
+                                                            <strong>Nymphenburg Palace</strong>
+                                                        </a>
+                                                    </div>
+                                                    <div class="mat_event_buttons">
+                                                        <a class="btn btn-primary" href="#">Event details</a>
+                                                        <a class="btn btn-primary" href="#" data-toggle="modal"
+                                                           data-target="#myModal">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mat_event_single_holder col-sm-12">
+                                        <div class="mat_event_single_holder_inner">
+                                            <div class="row">
+                                                <div class="mat_event_image_holder col-sm-2">
+                                                    <a href="#">
+                                                        <img src="web/uploads/ny.jpg" alt="..."
+                                                             class="mat_event_img img-thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="mat_event_content col-sm-10 clearfix">
+                                                    <h3>
+                                                        <a href="#">A great event</a>
+                                                        <i class="glyphicon glyphicon-star-empty"></i>
+                                                    </h3>
+                                                    <div class="mat_event_top_informations">
+                                                        <span class="mat_event_category">
+                                                            <i class="glyphicon glyphicon-inbox"></i>
+                                                            <a href="#">Demo Events</a>
+                                                        </span>
+                                                        <span class="mat_event_organizer">
+                                                            <i class="glyphicon glyphicon-user"></i>
+                                                            <a href="#">Jon Doe</a>
+                                                        </span>
+                                                        <span class="mat_event_fees">
+                                                            <i class="glyphicon glyphicon-asterisk"></i>
+                                                            $ 1.00 *
+                                                        </span>
+                                                        <span class="mat_info_waitlist">
+														    <i class="glyphicon glyphicon-warning-sign"></i>
+														    Your booking will be on the waitlist
+                                                        </span>
+                                                    </div>
+                                                    <div class="mat_event_short_description">
+                                                        <p>This event is the event of a life time</p></div>
+                                                    <div class="mat_event_date">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                        Tuesday, April, 07 2020 - 14:00 till 17:00
+                                                    </div>
+                                                    <div class="mat_event_location">
+                                                        <a class="mat_marker_icon" href="#">
+                                                            <i class="glyphicon glyphicon-map-marker"></i>
+                                                            <strong>New York, US</strong>
+                                                        </a>
+                                                    </div>
+                                                    <div class="mat_event_buttons">
+                                                        <a class="btn btn-primary" href="#">Event details</a>
+                                                        <a class="btn btn-primary" href="#" data-toggle="modal"
+                                                           data-target="#myModal">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mat_event_single_holder col-sm-12">
+                                        <div class="mat_event_single_holder_inner">
+                                            <div class="row">
+                                                <div class="mat_event_image_holder col-sm-2">
+                                                    <a href="#">
+                                                        <img src="web/uploads/placeholder1.jpg" alt="..."
+                                                             class="mat_event_img img-thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="mat_event_content col-sm-10 clearfix">
+                                                    <h3>
+                                                        <a href="#">An awesome event in year 2020</a>
+                                                    </h3>
+                                                    <div class="mat_event_top_informations">
+                                                        <span class="mat_event_category">
+                                                            <i class="glyphicon glyphicon-inbox"></i>
+                                                            <a href="#">Demo Events </a>
+                                                        </span>
+                                                        <span class="mat_event_organizer">
+                                                            <i class="glyphicon glyphicon-user"></i>
+                                                            <a href="#">Daniel</a>
+                                                        </span>
+                                                        <span class="mat_event_fees">
+                                                            <i class="glyphicon glyphicon-asterisk"></i>
+                                                            Free event
+                                                        </span>
+                                                    </div>
+                                                    <div class="mat_event_short_description">
+                                                        Year 2012 didn't bring the end of the world as most people
+                                                        thought! The Earth transformed to a place of peace and love
+                                                        instead!
+                                                    </div>
+                                                    <div class="mat_event_date">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                        Friday, April, 10 2020 - 14:00 till 17:00
+                                                    </div>
+                                                    <div class="mat_event_location">
+                                                        <a class="mat_marker_icon" href="#">
+                                                            <i class="glyphicon glyphicon-map-marker"></i>
+                                                            <strong>Sophienstr. 46, 76133 Karlsruhe</strong>
+                                                        </a>
+                                                    </div>
+                                                    <div class="mat_event_buttons">
+                                                        <a class="btn btn-primary" href="#">Event details</a>
+                                                        <a class="btn btn-primary" href="#" data-toggle="modal"
+                                                           data-target="#myModal">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mat_event_single_holder col-sm-12">
+                                        <div class="mat_event_single_holder_inner">
+                                            <div class="row">
+                                                <div class="mat_event_image_holder col-sm-2">
+                                                    <a href="#">
+                                                        <img src="web/uploads/placeholder3.jpg" alt="..."
+                                                             class="mat_event_img img-thumbnail">
+                                                    </a>
+                                                </div>
+                                                <div class="mat_event_content col-sm-10 clearfix">
+                                                    <h3>
+                                                        <a href="#">Another one in 2022</a>
+                                                    </h3>
+                                                    <div class="mat_event_top_informations">
+                                                        <span class="mat_event_category">
+                                                            <i class="glyphicon glyphicon-inbox"></i>
+                                                            <a href="#">Compojoom events </a>
+                                                        </span>
+                                                        <span class="mat_event_organizer">
+														    <i class="glyphicon glyphicon-user"></i>
+														    <a href="#">Daniel</a>
+                                                        </span>
+                                                        <span class="mat_event_fees">
+                                                            <i class="glyphicon glyphicon-asterisk"></i>
+                                                            $ 84.03 *
+                                                        </span>
+                                                    </div>
+                                                    <div class="mat_event_short_description">
+                                                        <p>Some nice short description for that event - any ideas?
+                                                            :-)</p></div>
+                                                    <div class="mat_event_date">
+                                                        <i class="glyphicon glyphicon-calendar"></i>
+                                                        Tuesday, November, 22 2022 - 14:00 till 17:00
+                                                    </div>
+                                                    <div class="mat_event_location">
+                                                        <a class="mat_marker_icon" href="#">
+                                                            <i class="glyphicon glyphicon-map-marker"></i>
+                                                            <strong>Sint-Lenaartsesteenweg 7, 2310 Rijkevorsel</strong>
+                                                        </a>
+                                                    </div>
+                                                    <div class="mat_event_buttons">
+                                                        <a class="btn btn-primary" href="#">Event details</a>
+                                                        <a class="btn btn-primary" href="#" data-toggle="modal"
+                                                           data-target="#myModal">Book now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="text-center">
+                                            <nav aria-label="Page navigation">
+                                                <ul class="pagination">
+                                                    <li>
+                                                        <a href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                    </li>
+                                                    <li><a href="#">1</a></li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#">5</a></li>
+                                                    <li>
+                                                        <a href="#" aria-label="Next">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="breadcrumb">
+                    <li>
+                        You are here: &nbsp;
+                    </li>
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                        <span class="divider">
+                            <img src="web/img/arrow.png" alt="">
+                        </span>
+                    </li>
+                    <li class="active">
+                        Matukio
+                    </li>
+                </ul>
+            </main>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <hr>
+        <p class="pull-right"><a href="#top" id="back-top">Back to Top</a></p>
+        <p>© Compojoom Joomla Extensions Demo 2016</p>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">x</span></button>
+                <h4 class="modal-title">Booth Booking</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only">Name</label>
+                        <input type="text" class="form-control" placeholder="Full name">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Company</label>
+                        <input type="text" class="form-control" placeholder="Company">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Number</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">+86</div>
+                            <input type="text" class="form-control" placeholder="Number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Country</label>
+                        <select class="form-control">
+                            <option>Bhutan</option>
+                            <option>East Timor</option>
+                            <option>China</option>
+                            <option>Central African Republic</option>
+                            <option>Denmark</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Exhibition area min/max</label>
+                        <input type="text" class="form-control" placeholder="Exhibition area min/max">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only">Additional information</label>
+                        <input type="text" class="form-control" placeholder="Additional information">
+                    </div>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                        </button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/custom.js"></script>
+</body>
+</html>

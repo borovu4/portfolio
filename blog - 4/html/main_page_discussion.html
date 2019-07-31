@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="../web/css/select2.css" rel="stylesheet">
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <link href="../web/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="header container">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6">
+    <a href="#">
+        <img src="../web/img/logo.png" class="img-responsive head" alt="logo">
+    </a>
+</div>
+<div class="col-xs-12 head_btn visible-xs">
+    <!--not login-->
+    <button class="btn btn-fiolet pull-right col-xs-12" type="button" data-toggle="modal" data-target="#myModalmob">
+        Регистрация
+    </button>
+    <button class="btn btn-main pull-right col-xs-12" type="button" data-toggle="modal" data-target="#myModalmob">Вход
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalmob" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog login">
+            <div class="modal-content login">
+                <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                   -->
+                <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+                <!--</div>-->
+                <div class="modal-body">
+                    <ul role="tablist" class="nav nav-tabs" id="myTab">
+                        <li class="active" role="presentation">
+                            <a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab"
+                               id="home-tab" href="#login">Войти</a>
+                        </li>
+                        <li role="presentation">
+                            <a aria-controls="profile" data-toggle="tab" role="tab"
+                               id="profile-tab" href="#registration">Зарегистрироваться</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div aria-labelledby="home-tab" id="login" class="tab-pane fade in active"
+                             role="tabpanel">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-7">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control"
+                                                   id="exampleInputPassword1"
+                                                   placeholder="Пароль">
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="checkboxG4" class="css-checkbox" type="checkbox"
+                                                   name="checkboxG4">
+                                            <label class="css-label radGroup1 clr" for="checkboxG4">Запомнить
+                                                меня</label>
+                                            <a href="#" class="pull-right">Забыли пароль?</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-fiolet">Войти</button>
+                                    </form>
+                                </div>
+                                <div class="col-xs-12 text-center soc">
+                                    <label>Войти при помощи:</label>
+                                    <a href="#" class="log_od"></a>
+                                    <a href="#" class="log_fb"></a>
+                                    <a href="#" class="log_vk"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-labelledby="profile-tab" id="registration" class="tab-pane fade"
+                             role="tabpanel">
+                            <div class="row">
+                                <form>
+                                    <div class="col-xs-12 col-sm-6 col-md-7">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="Name">Имя</label>
+                                                    <input type="text" class="form-control" id="Name"
+                                                           placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="surname">Фамилия</label>
+                                                    <input type="password" class="form-control" id="surname"
+                                                           placeholder="Фамилия">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control"
+                                                   id="exampleInputPassword1" placeholder="Пароль">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Страна</label>
+                                            <select class="form-control js-example-basic-single">
+                                                <option>Россия</option>
+                                                <option>Украина</option>
+                                                <option>Россия2</option>
+                                                <option>Украина2</option>
+                                                <option>Россия3</option>
+                                                <option>Украина3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Город</label>
+                                            <select class="form-control js-example-basic-single">
+                                                <option>Киев</option>
+                                                <option>Москва</option>
+                                                <option>Киев2</option>
+                                                <option>Москва2</option>
+                                                <option>Киев3</option>
+                                                <option>Москва3</option>
+                                            </select>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="checkboxG5" class="css-checkbox" type="checkbox"
+                                                   name="checkboxG5">
+                                            <label class="css-label radGroup1 clr" for="checkboxG5">
+                                                Запомнить меня
+                                            </label>
+                                            <a href="#" class="pull-right">Забыли пароль?</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-fiolet">Зарегистрироваться</button>
+                                    </div>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <!--end-->
+    <!--end-->
+    <!--only login-->
+    <!--<button class="btn btn-fiolet pull-right col-xs-12" type="button"><span class="btn_plus"></span>Обсуждение</button>-->
+    <!--end-->
+</div>
+<div class="col-sm-6 col-md-4 col-md-offset-2 head_btn hidden-xs">
+    <!--not login-->
+    <button class="btn btn-fiolet pull-right" type="button" data-toggle="modal" data-target="#myModal">
+        Регистрация
+    </button>
+    <button class="btn btn-main pull-right" type="button" data-toggle="modal" data-target="#myModal">Вход
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog login">
+            <div class="modal-content login">
+                <!--<div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        -->
+                <!--<h4 class="modal-title" id="myModalLabel">Modal title</h4>-->
+                <!--</div>-->
+                <div class="modal-body">
+                    <ul role="tablist" class="nav nav-tabs" id="myTab">
+                        <li class="active" role="presentation">
+                            <a aria-expanded="true" aria-controls="home" data-toggle="tab" role="tab"
+                               id="home-tab" href="#login2">Войти</a>
+                        </li>
+                        <li role="presentation">
+                            <a aria-controls="profile" data-toggle="tab" role="tab"
+                               id="profile-tab" href="#registration2">Зарегистрироваться</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div aria-labelledby="home-tab" id="login2" class="tab-pane fade in active"
+                             role="tabpanel">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-7">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control"
+                                                   id="exampleInputPassword1"
+                                                   placeholder="Пароль">
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="checkboxG4" class="css-checkbox" type="checkbox"
+                                                   name="checkboxG4">
+                                            <label class="css-label radGroup1 clr" for="checkboxG4">Запомнить
+                                                меня</label>
+                                            <a href="#" class="pull-right">Забыли пароль?</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-fiolet">Войти</button>
+                                    </form>
+                                </div>
+                                <div class="col-xs-4 col-xs-offset-1 col-md-4 col-md-offset-1">
+                                    <label>Войти при помощи:</label>
+                                    <a href="#" class="log_od"></a>
+                                    <a href="#" class="log_fb"></a>
+                                    <a href="#" class="log_vk"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div aria-labelledby="profile-tab" id="registration2" class="tab-pane fade"
+                             role="tabpanel">
+                            <div class="row">
+                                <form>
+                                    <div class="col-xs-12 col-sm-6 col-md-7">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="Name">Имя</label>
+                                                    <input type="text" class="form-control" id="Name"
+                                                           placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6">
+                                                <div class="form-group">
+                                                    <label for="surname">Фамилия</label>
+                                                    <input type="password" class="form-control" id="surname"
+                                                           placeholder="Фамилия">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">E-mail</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                   placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Пароль</label>
+                                            <input type="password" class="form-control"
+                                                   id="exampleInputPassword1" placeholder="Пароль">
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="checkboxG5" class="css-checkbox" type="checkbox"
+                                                   name="checkboxG5">
+                                            <label class="css-label radGroup1 clr" for="checkboxG5">
+                                                Запомнить меня
+                                            </label>
+                                            <a href="#" class="pull-right">Забыли пароль?</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-fiolet">Зарегистрироваться</button>
+                                    </div>
+                                    <div class="col-xs-4 col-xs-offset-1 col-md-4 col-md-offset-1">
+                                        <div class="form-group">
+                                            <label>Страна</label>
+                                            <select class="form-control js-example-basic-single">
+                                                <option>Россия</option>
+                                                <option>Украина</option>
+                                                <option>Россия2</option>
+                                                <option>Украина2</option>
+                                                <option>Россия3</option>
+                                                <option>Украина3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Город</label>
+                                            <select class="form-control js-example-basic-single">
+                                                <option>Киев</option>
+                                                <option>Москва</option>
+                                                <option>Киев2</option>
+                                                <option>Москва2</option>
+                                                <option>Киев3</option>
+                                                <option>Москва3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    <!--end-->
+    <!--only login-->
+    <!--<button class="btn btn-fiolet pull-right" type="button"><span class="btn_plus"></span>Обсуждение</button>-->
+    <!--end-->
+</div>
+</div>
+</div>
+
+
+<nav class="navbar emerald navbar-static-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">Мои
+                                категории
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Зачатие</a></li>
+                                <li><a href="#">От рождения до года</a></li>
+                                <li><a href="#">Дошкольники</a></li>
+                                <li><a href="#">Здоровье</a></li>
+                                <li><a href="#">Развлечение и отдых</a></li>
+                                <li><a href="#">Куплю/Продам</a></li>
+                                <li><a href="#">Редактировать<span></span></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#about">Советы</a></li>
+                        <li><a href="#contact">Обсуждение</a></li>
+                    </ul>
+
+
+                    <form role="search" class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input type="text" name="q" placeholder="Поиск по сайту" class="form-control head_search">
+
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-head" id="search">
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="nav navbar-nav navbar-right">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 pull-right">
+                <!--<a class="user pull-right">-->
+                <!--Яна Беляева <img class="img-circle" src="../web/img/default_user.png">-->
+                <!--</a>-->
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-9">
+<div class="row">
+
+<div class="col-sm-12">
+<div class="block_list col-xs-12">
+<div class="row">
+    <div class="block_list__title pull-left small">
+        Обсуждения
+    </div>
+    <div class="filter_rubric pull-right">
+        <a href="#" class="btn btn-filter">Дошкольники<span></span></a>
+    </div>
+</div>
+<div class="row block_list__item">
+<div class="clearfix">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>Новорожденные</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Игры для развития будут наиболее полезны для Вашего малыша</h4>
+
+                <p class="description">Эта статья однозначно шуточная, а поэтому большая просьба ко всем
+                    будущим мамочкам не воспринимать ... </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Вчера, 15.00</div>
+                    <div class="block_list__comments pull-right">10</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>От 1 до 3 лет</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Уход за кожей.
+                    Средства и методы</h4>
+
+                <p class="description">Позади – страхи и ожидание, на руках – нарядный конверт, в
+                    котором тихонько посапывает ваш наследник. Вы впервые Позади – страхи и ожидание, на
+                    руках – нарядный конверт, в котором тихонько посапывает </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Сегодня, 19.00</div>
+                    <div class="block_list__comments pull-right">8</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>Дошкольники</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Правила саппорта для разработчиков: как организовать быструю поддержку клиентов</h4>
+
+                <p class="description">Небольшая шпаргалка для тех, кто всерьез готов заняться
+                    воспитанием детей. Для того чтобы воспоминания вашего </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">10 Марта, 2014</div>
+                    <div class="block_list__comments pull-right">33</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>Новорожденные</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Игры для развития будут наиболее полезны для Вашего малыша</h4>
+
+                <p class="description">Эта статья однозначно шуточная, а поэтому большая просьба ко всем
+                    будущим мамочкам не воспринимать ... </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Вчера, 15.00</div>
+                    <div class="block_list__comments pull-right">10</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>От 1 до 3 лет</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Уход за кожей.
+                    Средства и методы</h4>
+
+                <p class="description">Позади – страхи и ожидание, на руках – нарядный конверт, в
+                    котором тихонько посапывает ваш наследник. Вы впервые Позади – страхи и ожидание, на
+                    руках – нарядный конверт, в котором тихонько посапывает </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Сегодня, 19.00</div>
+                    <div class="block_list__comments pull-right">8</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>Дошкольники</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Правила саппорта для разработчиков: как организовать быструю поддержку клиентов</h4>
+
+                <p class="description">Небольшая шпаргалка для тех, кто всерьез готов заняться
+                    воспитанием детей. Для того чтобы воспоминания вашего </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">10 Марта, 2014</div>
+                    <div class="block_list__comments pull-right">33</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>Новорожденные</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Игры для развития будут наиболее полезны для Вашего малыша</h4>
+
+                <p class="description">Эта статья однозначно шуточная, а поэтому большая просьба ко всем
+                    будущим мамочкам не воспринимать ... </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Вчера, 15.00</div>
+                    <div class="block_list__comments pull-right">10</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>От 1 до 3 лет</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Уход за кожей.
+                    Средства и методы</h4>
+
+                <p class="description">Позади – страхи и ожидание, на руках – нарядный конверт, в
+                    котором тихонько посапывает ваш наследник. Вы впервые Позади – страхи и ожидание, на
+                    руках – нарядный конверт, в котором тихонько посапывает </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Сегодня, 19.00</div>
+                    <div class="block_list__comments pull-right">8</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <div class="top_block__title">
+                <a>Дошкольники</a>
+            </div>
+            <img class="img-responsive" src="../web/img/test_foto__one_theme.png" alt="">
+
+            <div class="caption">
+                <h4>Правила саппорта для разработчиков: как организовать быструю поддержку клиентов</h4>
+
+                <p class="description">Небольшая шпаргалка для тех, кто всерьез готов заняться
+                    воспитанием детей. Для того чтобы воспоминания вашего </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">10 Марта, 2014</div>
+                    <div class="block_list__comments pull-right">33</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<a class="add_see row" href="#">
+    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-3 ">
+    <div class="reclam visible-lg">
+        <img src="../web/img/test_reclam.png" class="img-responsive">
+    </div>
+    <div class="popular_theme">
+        <div class="popular_theme__title"><span></span>Популярные обсуждения</div>
+
+        <div class="thumbnail">
+            <img alt="" src="../web/img/test_foto__one_theme.png" class="img-responsive">
+
+            <div class="caption">
+                <h4>Игры для развития будут наиболее полезны для Вашего малыша</h4>
+
+                <p class="description">Эта статья однозначно шуточная, а поэтому большая просьба ко всем
+                    будущим мамочкам не воспринимать ... </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Вчера, 15.00</div>
+                    <div class="block_list__comments pull-right">10</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img alt="" src="../web/img/test_foto__one_theme.png" class="img-responsive">
+
+            <div class="caption">
+                <h4>Игры для развития будут наиболее полезны для Вашего малыша</h4>
+
+                <p class="description">Эта статья однозначно шуточная, а поэтому большая просьба ко всем
+                    будущим мамочкам не воспринимать ... </p>
+
+                <div class="block_list__bot">
+                    <div class="block_list__date pull-left">Вчера, 15.00</div>
+                    <div class="block_list__comments pull-right">10</div>
+                </div>
+            </div>
+            <div class="block_list__link">
+                <a href="#"></a>
+            </div>
+        </div>
+        <div class="block_list__nav text-center">
+            <a href="#">
+                <i class="glyphicon glyphicon-chevron-left"></i>
+            </a>
+            <a href="#">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="social_block">
+        <div class="social_title"><span></span>Ищите нас в</div>
+        <ul class="list-unstyled">
+            <li><a href="#" class="icon_vk"></a></li>
+            <li><a href="#" class="icon_fb"></a></li>
+            <li><a href="#" class="icon_od"></a></li>
+            <li><a href="#" class="icon_app"></a></li>
+            <li><a href="#" class="icon_gapp"></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted"><b>Клуб молодых мам</b> - эксклюзивный социальный клуб для будущих и уже мам.
+            При использовании материалов сайта обязательным условием является наличие гиперссылки в пределах первого
+            абзаца на страницу расположения исходной статьи с указанием бренда Клуб молодых мам.
+            По поводу рекламы и сотрудничества: <a href="mailto:wemadeappgroup@gmail.com">wemadeappgroup@gmail.com</a>
+        </p>
+
+        <p class="text-center">© 2014-2015</p>
+
+        <p class="text-center">Сделано в <a href="#">lampa</a></p>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../web/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/select2.full.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".js-example-basic-single").select2({
+            minimumResultsForSearch: 90000000
+        });
+    });
+</script>
+<script>
+    $("#search").click(function (e) {
+        e.preventDefault();
+        $('#search').toggleClass('active');
+        $('.head_search').toggleClass('active');
+    });
+</script>
+</body>
+</html>

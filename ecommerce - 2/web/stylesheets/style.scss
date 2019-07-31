@@ -1,0 +1,71 @@
+@import "bootstrap";
+@import "font-awesome/font-awesome";
+@import "fonts";
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 260px;
+  }
+  @media (min-width: 1441px) {
+    margin-bottom: 330px;
+  }
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@import "main";
+@import "detailpage";
+@import "modals";
+@import "wizard";
+@import "checkout";
+@import "matching-designers";
+@import "designer-page";
+@import "chat";
+@import "pages";
+@import "inbox";
+@import "measurements";

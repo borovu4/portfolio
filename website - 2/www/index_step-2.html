@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Exchanger 2.0</title>
+
+    <link rel="stylesheet" href="web/css/material.min.css">
+    <link rel="stylesheet" href="web/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="web/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="web/css/select2.min.css">
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall theme-header">
+        <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">
+                    <a href="#">
+                        <img src="web/img/logo.png" alt="Changer">
+                    </a>
+                </span>
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <span class="mdl-layout-title--text">Резервы</span>
+                <a class="mdl-navigation__link" href="#">
+                    <span class="mdl-navigation__link-wmz">5420</span>WMZ
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    <span class="mdl-navigation__link-wme">1820</span>WME
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    <span class="mdl-navigation__link-wmu">98120</span>WMU
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    <span class="mdl-navigation__link-wmr">98200</span>WMR
+                </a>
+            </nav>
+        </div>
+        <div class="mdl-layout__header-row login-row">
+            <div class="mdl-layout-spacer"></div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                Авторизация
+            </button>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout__drawer-theme mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <span class="mdl-layout-title">Резервы</span>
+            <a class="mdl-navigation__link is-active" href="#">
+                <span class="mdl-navigation__link-wmz">5420</span>WMZ
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                <span class="mdl-navigation__link-wme">1820</span>WME
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                <span class="mdl-navigation__link-wmu">98120</span>WMU
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                <span class="mdl-navigation__link-wmr">98200</span>WMR
+            </a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="mdl-grid grid__theme">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Breadcrumbs</li>
+                    </ol>
+                </div>
+                <div class="mdl-main mdl-cell mdl-cell--8-col">
+                    <h3 class="title-block">
+                        Обмен Webmoney
+                    </h3>
+                    <h4 class="title-sub">
+                        Меняю
+                    </h4>
+
+                    <form action="#" class="form-swap">
+                        <div class="mdl-grid mdl-grid--no-spacing form-swap--head">
+                            <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-cell--5-col mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+                                        <div class="mdl-selectfield">
+                                            <select class="select2">
+                                                <option value="WMZ">WMZ</option>
+                                                <option value="WME">WME</option>
+                                                <option value="WMR">WMR</option>
+                                                <option value="WMU">WMU</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mdl-cell--7-col mdl-cell--6-col-tablet mdl-cell--2-col-phone">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   pattern="-?[0-9]*(\.[0-9]+)?"
+                                                   id="swap_1">
+                                            <label class="mdl-textfield__label" for="swap_1">Отдаете</label>
+                                            <span class="mdl-textfield__error">Ввод не является числом!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-sup">
+                                    С комиссией WM: 100.1 WMZ
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--1-col mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-typography--text-center">
+                                <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                                    <i class="material-icons">swap_horiz</i>
+                                </button>
+                            </div>
+                            <div class="mdl-cell mdl-cell--5-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                <div class="mdl-grid mdl-grid--no-spacing">
+                                    <div class="mdl-cell--5-col mdl-cell--2-col-tablet mdl-cell--2-col-phone">
+                                        <div class="mdl-selectfield">
+                                            <select class="select2">
+                                                <option value="WMZ">WMZ</option>
+                                                <option value="WME">WME</option>
+                                                <option value="WMR">WMR</option>
+                                                <option value="WMU">WMU</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mdl-cell--7-col mdl-cell--6-col-tablet mdl-cell--2-col-phone">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text"
+                                                   pattern="-?[0-9]*(\.[0-9]+)?"
+                                                   id="swap_2">
+                                            <label class="mdl-textfield__label" for="swap_1">Получаете</label>
+                                            <span class="mdl-textfield__error">Ввод не является числом!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-sup text-sup--green">
+                                    Мой бонус: + 0.001 WMZ
+                                    <a href="#">Авторизироваться</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-text">Шаг 2 из 3 - «Проверка данных»</div>
+                        <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp section">
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <div class="mdl-grid section-head">
+                                    <h4 class="mdl-cell mdl-cell--12-col">Данные</h4>
+                                </div>
+                                <div class="mdl-grid section-body">
+                                    <div class="mdl-cell mdl-cell--12-col">
+                                        <div class="mdl-grid mdl-grid--no-spacing">
+                                            <div class="mdl-cell mdl-cell--4-col">
+                                                <label class="label-text">Кошелек/ Счет</label>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--8-col">
+                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                    <input class="mdl-textfield__input" type="text"
+                                                           pattern="-?[0-9]*(\.[0-9]+)?" id="user_card">
+                                                    <label class="mdl-textfield__label" for="user_card">Введите номер
+                                                        своего счета</label>
+                                                    <span class="mdl-textfield__error">Ввод не является числом!</span>
+                                                </div>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--4-col">
+                                                <label class="label-text">Как Вас называть?</label>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--8-col">
+                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                    <input class="mdl-textfield__input" type="text" id="user_name">
+                                                    <label class="mdl-textfield__label" for="user_name">ФИО</label>
+                                                </div>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--4-col">
+                                                <label class="label-text">Ваш E-mail</label>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--8-col">
+                                                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                    <input class="mdl-textfield__input" type="email" id="user_mail">
+                                                    <label class="mdl-textfield__label" for="user_mail">Введите свой
+                                                        E-mail</label>
+                                                </div>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--6-col">
+                                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                                    <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                                                    <span class="mdl-checkbox__label">С <a href="#">правилами работы WMSell.biz</a>  согласен</span>
+                                                </label>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--6-col">
+                                                <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                                    <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                                    <span class="mdl-checkbox__label">Хочу получать рассылки WMSell.biz</span>
+                                                </label>
+                                            </div>
+
+                                            <div class="mdl-cell mdl-cell--6-col ">
+                                                <button class="mdl-button mdl-js-button clear mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                                                        type="submit">
+                                                    Назад
+                                                </button>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--6-col mdl-textfield--align-right">
+                                                <button class="mdl-button mdl-js-button clear_2 mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+                                                        type="submit">
+                                                    Оплатить
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+                <div class="mdl-sidebar mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
+                    <div class="currency">
+                        <h4>Курсы обмена</h4>
+                        <div class="mdl-list mdl-shadow--2dp">
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmz">WMZ</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wme">WME</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                    28.041
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wme">WME</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmu">WMU</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                    27.2248
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmu">WMU</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmr">WMR</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                   26.501
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmr">WMR</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wme">WME</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content best">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                    27.2248
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmu">WMU</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmz">WMZ</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                   28.6453
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmu">WMU</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmz">WMZ</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                   28.6453
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmr">WMR</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wme">WME</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                   27.2248
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wmr">WMR</span>
+                            </span>
+                                <i class="material-icons">trending_flat</i>
+                                <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-wme">WME</span>
+                            </span>
+                                <span class="mdl-list__item-secondary-content">
+                                <span class="mdl-list__item-secondary-info">Лучший!</span>
+                                <span class="mdl-list__item-secondary-action">
+                                   27.2248
+                                </span>
+                            </span>
+                            </div>
+                            <div class="mdl-list__item">
+                                <a href="#">Смотреть больше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-grid grid__theme">
+            <div class="mdl-cell mdl-cell--12-col">
+                <h4>Выгодный обмен Webmoney</h4>
+                <p>
+                    WMSell.biz – это быстрый и выгодный обмен Webmoney. Также выгодно и быстро можно купить или продать
+                    Webmoney (WMZ, WMR, WMU) через Приват24.
+                </p>
+                <p>
+                    Для того, чтобы обменять webmoney (купить иили продать через Приват24) необходимо обязательно
+                    прочитать и принять Публичную оферту сервиса. После этого, выбрать в форме обмена нужное направление
+                    обмена Webmoney, указать собственные платежные данные и завершить операцию. Как правило, обмен
+                    вебмани (также как и вывод на карту Приватбанка) происходит в считанные минуты.
+                </p>
+                <p>
+                    WMSell.biz старается осуществлять обмен вебмани по всем направлениям по наиболее выгодному курсу на
+                    рынке (для этого работает специальная система мониторинга курсов).
+                </p>
+                <p>
+                    Также Вы можете принять участие в нашей партнерской программе и заработать дополнительные деньги на
+                    выгодных webmoney обменах. WMSell.biz - это лучший и наиболее выгодный способ обменять webmoney, а
+                    также продать или купить webmoney через Приват24!
+                </p>
+            </div>
+        </div>
+        <div class="mdl-grid grid_carousel">
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="h4">Отзывы (2548)</div>
+                <div class="owl-carousel owl-theme owl-recall">
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-avatar">
+                                  <img src="web/img/avatar.png" alt="...">
+                              </span>
+
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-recall-group">
+                        <ul class="demo-list-two mdl-list">
+                            <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <i class="material-icons mdl-list__item-avatar">person</i>
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                            </li>
+                            <li class="mdl-list__item ">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mdl-mini-footer theme-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">
+                    <a href="#">
+                        <img src="web/img/logo_footer.png" alt="Changer">
+                    </a>
+                </div>
+            </div>
+            <ul class="mdl-mini-footer__link-list mdl-typography--text-uppercase theme-footer__link">
+                <li><a href="#">О сервисе</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Партнерка</a></li>
+                <li><a href="#">Бонусы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mdl-mini-footer__right-section">
+                <ul class="mdl-mini-footer__link-list mdl-typography--text-uppercase theme-footer__elements">
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_1.png" alt="...">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_2.png" alt="...">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_3.png" alt="...">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_4.png" alt="...">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</div>
+
+
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/owl.carousel.min.js"></script>
+<script src="web/js/material.min.js"></script>
+<script src="web/js/select2.full.min.js"></script>
+<script src="web/js/custom.js"></script>
+</body>
+</html>

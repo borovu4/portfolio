@@ -1,0 +1,220 @@
+/*core rhino*/
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino25thin-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino25thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino25thin-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino25thin-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino25thin-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino25thin-webfont.svg#core_rhino_25_thinregular') format('svg');
+    font-style: normal;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino25thin-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino25thin-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino25thin-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino25thin-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino25thin-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino25thin-italic-webfont.svg#core_rhino_25_thinitalic') format('svg');
+    font-style: italic;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino35light-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino35light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino35light-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino35light-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino35light-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino35light-webfont.svg#core_rhino_35_lightregular') format('svg');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino35light-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino35light-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino35light-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino35light-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino35light-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino35light-italic-webfont.svg#core_rhino_35_lightitalic') format('svg');
+    font-style: italic;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'core_rhino_45_regularregular';
+        src: url('../fonts/core_rhino/corerhino45regular-webfont.eot');
+        src: url('../fonts/core_rhino/corerhino45regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/core_rhino/corerhino45regular-webfont.woff2') format('woff2'),
+             url('../fonts/core_rhino/corerhino45regular-webfont.woff') format('woff'),
+             url('../fonts/core_rhino/corerhino45regular-webfont.ttf') format('truetype'),
+             url('../fonts/core_rhino/corerhino45regular-webfont.svg#core_rhino_45_regularregular') format('svg');
+        font-style: normal;
+        font-weight: normal;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino45regular-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino45regular-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino45regular-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino45regular-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino45regular-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino45regular-italic-webfont.svg#core_rhino_45_regularitalic') format('svg');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino55medium-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino55medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino55medium-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino55medium-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino55medium-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino55medium-webfont.svg#core_rhino_55_mediumregular') format('svg');
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino55medium-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino55medium-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino55medium-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino55medium-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino55medium-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino55medium-italic-webfont.svg#core_rhino_55_mediumitalic') format('svg');
+    font-style: italic;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino65bold-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino65bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino65bold-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino65bold-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino65bold-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino65bold-webfont.svg#core_rhino_65_boldregular') format('svg');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino65bold-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino65bold-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino65bold-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino65bold-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino65bold-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino65bold-italic-webfont.svg#core_rhino_65_bolditalic') format('svg');
+    font-style: italic;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino75heavy-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino75heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino75heavy-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino75heavy-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino75heavy-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino75heavy-webfont.svg#core_rhino_75_heavyregular') format('svg');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino75heavy-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino75heavy-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino75heavy-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino75heavy-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino75heavy-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino75heavy-italic-webfont.svg#core_rhino_75_heavyitalic') format('svg');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino85black-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino85black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino85black-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino85black-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino85black-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino85black-webfont.svg#core_rhino_85_blackregular') format('svg');
+    font-style: normal;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'core rhino';
+    src: url('../fonts/core_rhino/corerhino85black-italic-webfont.eot');
+    src: url('../fonts/core_rhino/corerhino85black-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/core_rhino/corerhino85black-italic-webfont.woff2') format('woff2'),
+         url('../fonts/core_rhino/corerhino85black-italic-webfont.woff') format('woff'),
+         url('../fonts/core_rhino/corerhino85black-italic-webfont.ttf') format('truetype'),
+         url('../fonts/core_rhino/corerhino85black-italic-webfont.svg#core_rhino_85_blackitalic') format('svg');
+    font-style: italic;
+    font-weight: 800;
+}
+
+/*Open Sans*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTSUUniRZcd_wq8DYmIfsw2A.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01m1tXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSiUUniRZcd_wq8DYmIfsw2A.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzCUUniRZcd_wq8DYmIfsw2A.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxnJcj75aoY2FkN1K7fN5pSM.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(https://fonts.gstatic.com/s/opensans/v13/xjAJXh38I15wypJXxuGMBrWJ8El2VFcUWHOh_Oq6BA8.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxtjCGQoND4mjlm2rs2WpxZA.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v13/PRmiXeptR36kaC0GEAetxrLZkzWHE0Rai0z0KZwCYHE.woff2) format('woff2');
+}

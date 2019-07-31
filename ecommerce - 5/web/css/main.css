@@ -1,0 +1,30 @@
+.header-line {
+  background-color: #C85998;
+  color: #ffffff;
+  font-size: 19px; }
+  .header-line .list-inline {
+    margin-bottom: 0; }
+  .header-line .btn {
+    border: none;
+    font-size: 19px;
+    padding-bottom: 10px;
+    padding-top: 8px; }
+    .header-line .btn:focus {
+      outline: none; }
+  .header-line .dropdown .dropdown-menu {
+    margin-top: 0; }
+    .header-line .dropdown .dropdown-menu li.active a {
+      background-color: transparent;
+      color: #c85998; }
+      .header-line .dropdown .dropdown-menu li.active a:hover, .header-line .dropdown .dropdown-menu li.active a:focus, .header-line .dropdown .dropdown-menu li.active a:active {
+        background-color: transparent;
+        color: #c85998; }
+    .header-line .dropdown .dropdown-menu li a {
+      color: #555555;
+      font-size: 19px;
+      padding: 10px; }
+      .header-line .dropdown .dropdown-menu li a:hover, .header-line .dropdown .dropdown-menu li a:focus, .header-line .dropdown .dropdown-menu li a:active {
+        background-color: transparent;
+        color: #c85998; }
+
+/*# sourceMappingURL=main.css.map */

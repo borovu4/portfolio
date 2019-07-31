@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Авторизация на площадке</title>
+
+
+    <!--THIS FILES WEBSITE-->
+    <link href="test_files/bootstrap.css"
+          rel="stylesheet">
+    <link href="test_files/font-awesome.css"
+          rel="stylesheet">
+    <link href="test_files/site.css"
+          rel="stylesheet">
+    <link href="test_files/language_flags.css"
+          rel="stylesheet">
+    <link href="test_files/fix.css"
+          rel="stylesheet">
+    <link href="test_files/language-picker.css"
+          rel="stylesheet">
+    <link href="test_files/flags-small.css"
+          rel="stylesheet">
+    <link href="web/css/font-awesome.min.css" rel="stylesheet">
+    <!--THIS FILES WEBSITE-->
+
+
+    <!--new style-->
+
+    <link href="web/css/material-icons.min.css" rel="stylesheet">
+    <link href="web/css/select2.min.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <!--end new style-->
+</head>
+<body>
+<nav class="navbar navbar-head">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="phone">
+                    (123) - 456 - 7890
+                </a>
+            </li>
+            <li>
+                <a class="mail">
+                    info@name.org
+                </a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Авторизація</a></li>
+            <li><a href="#">Реєстрація</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="navbar-main" class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="web/img/logo-fix.png" alt="..." class="logo-fix">
+                <img src="web/img/logo.png" alt="..." class="logo">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right navbar-icons">
+                <li><a href="#"><i class="mdi mdi-lg mdi-search"></i></a></li>
+                <li><a href="#"><i class="mdi mdi-lg mdi-shopping-cart"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">ЗАКУПІВЛІ</a></li>
+                <li><a href="#">PRO</a></li>
+                <li><a href="#">ZORRO</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">pages</a></li>
+            </ul>
+            <button class="btn btn-primary btn-fab btn-menu" type="button" data-toggle="offcanvas">
+                <i class="material-icons mdi-2x">menu</i>
+                <i class="material-icons mdi-2x">close</i>
+            </button>
+            <div class="control-sidebar">
+                <div class="container-fluid">
+                    <div class="row control-sidebar-head">
+                        <a href="#" class="navbar-brand">
+                            <img alt="..." src="web/img/logo-fix.png">
+                        </a>
+                        <div class="sub-text">
+                            ВЕБ ПОРТАЛ ДЕРЖАВНИХ ЗАКУПІВЕЛЬ
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">home</i>
+                                Головна
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">book</i>
+                                Корисне
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">event</i>
+                                Події
+                            </a>
+                            <div class="dropdown">
+                                <button class="list-group-item dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="true">
+                                    <i class="material-icons mdi-lg">layers</i>
+                                    Лоти
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Автотранспорт</a></li>
+                                    <li><a href="#">Нерухомість</a></li>
+                                    <li><a href="#">Виробниче обладнання</a></li>
+                                    <li><a href="#">Меблі</a></li>
+                                    <li><a href="#">Будівництво</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">description</i>
+                                Договір
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">drafts</i>
+                                Контакти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="main-head ">
+            <div class="container">
+                <h1>Регістрація на майданчику</h1>
+            </div>
+        </div>
+        <div class="container page-reg">
+            <div class="row">
+                <div class="text-description">
+                    Реєстрація на Сайті в якості Замовника передбачає можливість оголошувати закупівлі <br>
+                    та отримувати пропозиції від Учасників
+                </div>
+                <div class="col-sm-9">
+                    <form class="form-horizontal block-cloud">
+                        <div class="title">Інформація про нового користувача</div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Електронна пошта</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-1" class="form-control" required>
+                                <label for="input-1">Ваша e-mail адреса</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Бажаний пароль</div>
+                            <div class="col-sm-8">
+                                <input type="password" id="input-2" class="form-control" required>
+                                <label for="input-2">Пароль</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Підтвердження паролю</div>
+                            <div class="col-sm-8">
+                                <input type="password" id="input-3" class="form-control" required>
+                                <label for="input-3">Повторіть вище ведений пароль</label>
+                            </div>
+                        </div>
+                        <div class="title">Інформація про організацію</div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Код ЄДРПОУ</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-4" class="form-control" required>
+                                <label for="input-4">Значення має бути унікальним</label>
+                                <div class="help-info">
+                                    <button type="button" class="btn btn-primary pull-right">Приєднатись</button>
+                                    Організація з таким кодом ЄДРПОУ вже зареєстрована в системі.
+                                    Бажаєте долучитися до переліку представників цієї організації?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Форма державної власності</div>
+                            <div class="col-sm-8">
+                                <select class="form-control select2">
+                                    <option>Оберіть форму державної власності</option>
+                                    <option>Оберіть форму державної власності</option>
+                                    <option>Оберіть форму державної власності</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Назва юридичної особи</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-5" class="form-control" required>
+                                <label for="input-5">Введіть назву юридичної особи</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Країна реєстрації</div>
+                            <div class="col-sm-8">
+                                <select class="form-control select2">
+                                    <option>Оберіть країну реєстрації</option>
+                                    <option>Оберіть країну реєстрації</option>
+                                    <option>Оберіть країну реєстрації</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Розпорядник коштів</div>
+                            <div class="col-sm-8">
+                                <select class="form-control select2">
+                                    <option>Оберіть розпорядника коштів</option>
+                                    <option>Оберіть розпорядника коштів</option>
+                                    <option>Оберіть розпорядника коштів</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="title">Юридична адреса</div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Країна</div>
+                            <div class="col-sm-8">
+                                <select class="form-control select2">
+                                    <option>Оберіть країну</option>
+                                    <option>Оберіть країну</option>
+                                    <option>Оберіть країну</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Регіон / область</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-6" class="form-control" required>
+                                <label for="input-6">Назва регіону/області</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Населений пункт</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-7" class="form-control" required>
+                                <label for="input-7">Введіть назву населеного пункту</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Адреса</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-8" class="form-control" required>
+                                <label for="input-8">Назва вулиці, номер будинку</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Поштовий індекс</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-9" class="form-control" required>
+                                <label for="input-9">Введіть ваш поштовий індекс</label>
+                            </div>
+                        </div>
+                        <div class="title">Інформація про представника організації</div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Прізвище</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-10" class="form-control" required>
+                                <label for="input-10">Ваше прізвище</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Ім'я</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-11" class="form-control" required>
+                                <label for="input-11">Ваше ім’я</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">По-батькові</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-12" class="form-control" required>
+                                <label for="input-12">По-батькові</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Електронна пошта</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-13" class="form-control" required>
+                                <label for="input-13">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Контактний телефон</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-14" class="form-control" required>
+                                <label for="input-14">Ваш контактний телефон</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-4 control-label">Офіційний сайт</div>
+                            <div class="col-sm-8">
+                                <input type="text" id="input-15" class="form-control" required>
+                                <label for="input-15">Посилання на ваш сайт</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-8">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span class="checkbox-material"><span
+                                            class="check"></span></span> Я погоджуюсь із усіма правилами та вимогами
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-offset-4 col-sm-8">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"><span class="checkbox-material"><span
+                                            class="check"></span></span> Я надаю згоду на збереження та обробку
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-3">
+                                    <button type="submit" class="btn btn-primary btn-block">Зареєструватись</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <div class="sidebar-scroll">
+                        <img src="web/img/banner.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container footer-first">
+                <div class="col-sm-4">
+                    <h4>ТБ «OPEN TENDER»</h4>
+                    <p>
+                        01011, м. Київ, вул. Панаса, буд. 1, оф. 1
+                    </p>
+                    <p>
+                        Якщо у вас є які-небудь питання, звертайтесь до нас. Ми відповімо на всі ваші запитання якомога
+                        швидше.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +1 (2) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +1 (2) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            contact@opentender.com
+                        </li>
+                    </ul>
+                    <ul class="list-inline social">
+                        <li>
+                            <a href="#" class="twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="google-plus">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-8">
+                    <h4 class="text-uppercase">Отримувати щотижневе оновлення лотів на Вашу поштову скриньку</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">підписатися</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-last">
+        <div class="row">
+            <div class="container">
+                <div class="pull-left">© Copyright 2016. open tender</div>
+                <ul class="list-inline pull-right">
+                    <li>
+                        <a href="#">
+                            РЕГЛАМЕНТ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ДОГОВІР
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ПАРТНЕРСЬКА ПРОГРАМА
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--THIS FILES WEBSITE-->
+<script src="test_files/jquery_002.js"></script>
+<script src="test_files/yii_002.js"></script>
+<script src="test_files/yii.js"></script>
+<script src="test_files/yii_003.js"></script>
+<script src="test_files/moment.js"></script>
+<script src="test_files/bootstrap-datetimepicker.js"></script>
+<script src="test_files/jquery.js"></script>
+<script src="test_files/index.js"></script>
+<script src="test_files/sign.js"></script>
+<script src="test_files/nav_block.js"></script>
+<script src="test_files/language-picker.js"></script>
+<script src="test_files/bootstrap.js"></script>
+<!--THIS FILES WEBSITE-->
+
+
+<!--new js-->
+<script src="web/js/select2.full.min.js"></script>
+<script src="web/js/custom.js"></script>
+<!--end js-->
+</body>
+</html>

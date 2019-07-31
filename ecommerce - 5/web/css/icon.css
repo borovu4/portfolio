@@ -1,0 +1,34 @@
+.icon {
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle; }
+
+.icon-time {
+  background-image: url("../img/icons/icon-time.png");
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: -6px;
+  width: 25px; }
+
+.icon-number {
+  background-image: url("../img/icons/icon-number.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 14px; }
+
+.icon-smile {
+  background-image: url("../img/icons/icon-smile.png");
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: -8px;
+  width: 30px; }
+
+.icon-search {
+  background-image: url("../img/icons/icon-search.png");
+  background-position: center center;
+  height: 25px;
+  vertical-align: top;
+  width: 50px; }
+
+/*# sourceMappingURL=icon.css.map */

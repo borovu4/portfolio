@@ -1,0 +1,141 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.modal-theme {
+  .modal-header {
+    border-bottom: medium none;
+    line-height: 1;
+    padding: 20px;
+    text-align: center;
+    .close {
+      line-height: 1;
+      padding: 0;
+      height: 14px;
+      width: 14px;
+      position: relative;
+      border: none;
+      float: none;
+      @include opacity(1);
+      text-shadow: none;
+      &:before {
+        background-color: #000000;
+        content: "";
+        display: block;
+        height: 15px;
+        left: 6px;
+        position: absolute;
+        top: 0;
+        @include rotate(45deg);
+        width: 2px;
+      }
+      &:after {
+        background-color: #000000;
+        content: "";
+        display: block;
+        height: 15px;
+        left: 6px;
+        top: 0;
+        position: absolute;
+        @include rotate(-45deg);
+        width: 2px;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        @include opacity(1);
+        &:before,
+        &:after {
+          background-color: $brand-primary;
+        }
+      }
+    }
+  }
+  .modal-body {
+    padding: 20px;
+  }
+  .login {
+    font-size: 18px;
+    text-align: center;
+    a {
+      color: #000000;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $brand-primary;
+      }
+      &.registration {
+        color: $gray;
+        text-decoration: underline;
+        &:hover,
+        &:focus,
+        &:active {
+          color: #000000;
+        }
+      }
+    }
+    .btn {
+      font-size: 20px;
+      font-weight: bold;
+      height: 80px;
+      margin: 40px auto;
+      padding: 24px;
+      text-transform: uppercase;
+      &.btn-info {
+        color: #ffffff;
+        margin-top: 0;
+      }
+      &.btn-primary {
+        color: #000000;
+      }
+    }
+    h4, .h4 {
+      font-weight: bold;
+      margin: 30px auto;
+      text-transform: uppercase;
+    }
+    .form-control {
+      @include box-shadow(none);
+      color: #000000;
+      font-size: 18px;
+      height: 50px;
+      padding: 10px 0;
+      border: none;
+      border-bottom: 3px solid $brand-primary;
+    }
+  }
+  .mystart {
+    text-align:  center;
+    h1, .h1 {
+      margin: 0;
+      @media (min-width: 1600px) {
+        font-size: 48px;
+      }
+    }
+    img {
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      @media (min-width: 1600px) {
+        margin-bottom: 50px;
+        margin-top: 100px;
+      }
+    }
+    .btn {
+      color: #000000;
+      font-size: 18px;
+      font-weight: bold;
+      height: 80px;
+      margin: 40px auto;
+      min-width: 290px;
+      padding: 25px;
+      text-transform: uppercase;
+      @media (min-width: 1600px) {
+        margin-bottom: 90px;
+        margin-top: 50px;
+      }
+      @media (max-width: $screen-xs-max) {
+        min-width: 100%;
+      }
+    }
+  }
+}

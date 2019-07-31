@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2</title>
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../web/css/rate.css" rel="stylesheet">
+    <link href="../web/css/select2.min.css" rel="stylesheet">
+    <link href="../web/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-top navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="dropdown hamburger">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                </button>
+            </div>
+            <a class="navbar-brand" href="#">
+                VYBORY.UA
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <form class="navbar-form nav navbar-nav" role="search">
+                <div class="input-group stylish-input-group">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" id="search" placeholder="Поиск">
+                </div>
+            </form>
+
+            <!--if logout-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">О Нас</a></li>
+                <li><a href="#">Теги</a></li>
+                <li><a href="#">RSS</a></li>
+                <li>
+                    <a href="#myModal" data-toggle="modal" data-target="#myModal">
+            <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-user fa-stack-1x"></i>
+            </span>
+                    </a>
+                </li>
+            </ul>
+            <!--end if-->
+            <!--if login-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+            <!--<li>-->
+            <!--<a href="#">-->
+            <!--<i class="fa fa-bell" aria-hidden="true"></i>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--<li><a href="#">О Нас</a></li>-->
+            <!--<li><a href="#">Теги</a></li>-->
+            <!--<li class="dropdown">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"-->
+            <!--role="button" aria-haspopup="true" aria-expanded="false">-->
+            <!--<i class="fa fa-user"></i>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu">-->
+            <!--<li><a href="#">Просмотреть профиль</a></li>-->
+            <!--<li><a href="#">Выйти</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--end if-->
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-menu navbar-static-top">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        Город <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Винница</a></li>
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Одесса</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Аналитика</a></li>
+                <li><a href="#">Пратии</a></li>
+                <li><a href="#">Политики</a></li>
+                <li><a href="#">Мажоритарные округа</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right nav-social-link">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container main video-block video-profile">
+    <div class="title-block">
+        <h3>
+            Фото дня:
+        </h3>
+    </div>
+    <div data-ride="carousel" data-interval="false" class="carousel slide carousel-photo" id="carousel-example-generic">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row video-block-row hidden-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-picture-o text-red"></i>
+                                    БПП ждет отставку
+                                    Яценюка, уже есть кандидат на
+                                    пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row video-block-row visible-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                    Яценюка, уже есть кандидат на
+                                    пост премьера</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row video-block-row hidden-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row video-block-row visible-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                    Яценюка, уже есть кандидат на
+                                    пост премьера</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row video-block-row hidden-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-picture-o text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row video-block-row visible-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                            </a>
+                            <div class="caption">
+                                <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                    Яценюка, уже есть кандидат на
+                                    пост премьера</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+
+    <div class="title-block">
+        <h3>
+            Видео дня:
+        </h3>
+    </div>
+    <div data-ride="carousel" data-interval="false" class="carousel slide" id="carousel-example-generic2">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row video-block-row hidden-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                    Яценюка, уже есть кандидат на
+                                    пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row video-block-row visible-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row video-block-row hidden-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row video-block-row visible-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row video-block-row hidden-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row video-block-row visible-xs">
+                    <div class="col-sm-6 col-sm-6-fix">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>
+                                        БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a data-slide="prev" href="#carousel-example-generic2" class="left carousel-control">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a data-slide="next" href="#carousel-example-generic2" class="right carousel-control">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+</div>
+<div class="container main video-block video-top">
+    <div class="title-block">
+        <h3>
+            Выбор редакции:
+        </h3>
+    </div>
+    <div data-ride="carousel" data-interval="false" class="carousel slide" id="carousel-example-generic3">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row video-block-row">
+                    <div class="col-sm-18 video-top-big">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/test-big-video.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 video-top-small">
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3>
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#modal-video"
+                                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                                <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                                Яценюка, уже есть кандидат на
+                                                пост премьера
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-25">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3>
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#modal-video"
+                                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                                <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                                Яценюка, уже есть кандидат на
+                                                пост премьера
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row video-block-row">
+                    <div class="col-sm-18 video-top-big">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/test-big-video.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 video-top-small">
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3>
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#modal-video"
+                                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                                <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                                Яценюка, уже есть кандидат на
+                                                пост премьера
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-25">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3>
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#modal-video"
+                                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                                <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                                Яценюка, уже есть кандидат на
+                                                пост премьера
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row video-block-row">
+                    <div class="col-sm-18 video-top-big">
+                        <div class="thumbnail main-news video-block-video">
+                            <a href="#" data-toggle="modal"
+                               data-target="#modal-video"
+                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                <img src="../web/img/test-big-video.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                            </a>
+                            <div class="caption">
+                                <h3>
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                        Яценюка, уже есть кандидат на
+                                        пост премьера
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7 video-top-small">
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3>
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#modal-video"
+                                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                                <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                                Яценюка, уже есть кандидат на
+                                                пост премьера
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-25">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#" data-toggle="modal"
+                                       data-target="#modal-video"
+                                       data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                        <img src="../web/img/news_big.jpg" alt="...">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3>
+                                            <a href="#" data-toggle="modal"
+                                               data-target="#modal-video"
+                                               data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                                <i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                                Яценюка, уже есть кандидат на
+                                                пост премьера
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a data-slide="prev" href="#carousel-example-generic3" class="left carousel-control">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a data-slide="next" href="#carousel-example-generic3" class="right carousel-control">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
+</div>
+<div class="container main video-block">
+    <div class="title-block">
+        <h3>
+            Live:
+        </h3>
+    </div>
+    <div class="carousel slide">
+        <div class="item">
+            <div class="row video-block-row">
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                уже есть кандидат на
+                                пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="row video-block-row">
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-6-fix">
+                    <div class="thumbnail main-news">
+                        <a class="main-news-tags">Stream</a>
+                        <a href="#" data-toggle="modal"
+                           data-target="#modal-video"
+                           data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                            <img src="../web/img/news_big.jpg" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h3>
+                                <a href="#" data-toggle="modal"
+                                   data-target="#modal-video"
+                                   data-whatever="Владимир Гройсман: мальчик-мажор в спикерском кресле">
+                                    <i class="fa fa-circle text-red"></i>БПП ждет отставку Яценюка,
+                                    уже есть кандидат на
+                                    пост премьера
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg_last">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 bg_last-left">
+                    <a href="#" class="btn btn-link">
+                        <i class="fa icon-pluse"></i>
+                        Стань частью проекта
+                    </a>
+                </div>
+                <div class="col-sm-9 col-sm-offset-7 bg_last-right">
+                    <a href="#" class="btn btn-link">
+                        Отправить новость
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-16">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>О проекте</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Партии</a></li>
+                            <li><a href="#">Мажоритарные округа</a></li>
+                            <li><a href="#">Политики</a></li>
+                            <li><a href="#">Нормативная база</a></li>
+                            <li><a href="#">Что нужно занть?</a></li>
+                            <li><a href="#"><strong>Для партий и кандидатов</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>материалы</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Аналитика</a></li>
+                            <li><a href="#">Фото</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>Голосование</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Пропорциональная система</a></li>
+                            <li><a href="#">Мажоритарная система</a></li>
+                            <li><a href="#">ТОП-25 политиков</a></li>
+                            <li><a href="#">Опросы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h4>Контактные данные</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>+38 097 553 55 88</p>
+                        <p>+38 063 882 34 04</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-md-offset-1">
+                        <p>info@vybory.ua</p>
+                        <p>office@vybory.ua</p>
+                    </div>
+                </div>
+                <h4>О выборах</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><strong>Стань частью проекта</strong></a></li>
+                    <li><a href="#">Размещение рекламы</a></li>
+                    <li><a href="#">Праaвовая информация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            &copy; 2016 Vybory.ua Все права защищены. При использовании материалов ссылка на «Vybory.ua» &mdash;
+            обязательна.
+        </div>
+    </div>
+</footer>
+
+
+<!--modals-->
+<div class="modal fade modal-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-2 form-login">
+                        <div class="form-login-head">
+                            <div class="h2">ВХОД</div>
+                            <p>Вы можете войти, используя вашу</p>
+                            <p>учетную запись следующих соцсетей:</p>
+                        </div>
+                        <div class="form-login-social">
+                            <a class="btn btn-block btn-fb" href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                Войти через Facebook
+                            </a>
+                            <a class="btn btn-block btn-tw" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                Войти через Twitter
+                            </a>
+                        </div>
+                        <div class="form-login-or">
+                            <span>или</span>
+                        </div>
+                        <form class="form-login-form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Введите ваш email</label>
+                                <input type="email" class="form-control input_fa" id="exampleInputEmail1"
+                                       placeholder="popel@bk.ru">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Введите пароль</label>
+                                <input type="password" class="form-control input_fa" id="exampleInputPassword1"
+                                       placeholder="Password">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group last-block row">
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkboxG2" checked="checked"
+                                               class="css-checkbox"
+                                               id="checkboxG2">
+                                        <label for="checkboxG2" class="css-label">Запомнить меня</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-sm-offset-1 text-right">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Войти</button>
+                        </form>
+                        <div class="form-login-footer">
+                            У вас нет аккаунта на Vybory.ua?
+                            <a href="#" data-dismiss="modal">Зарегистрируйтесь</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal-media" id="modal-video" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">
+                    <!--if video-->
+                    <i class="fa fa-youtube-play text-red"></i>
+                    <!--end if-->
+                    <!--if photo-->
+                        <!--<i class="fa fa-picture-o text-red"></i>-->
+                    <!--end if-->
+                    <!--if stream-->
+                        <!--<i class="fa fa-circle text-red"></i>-->
+                    <!--end if-->
+                    <span>New message</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-media-nav video-block">
+                    <a class="left carousel-control">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a class="right carousel-control">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JtTdchBnnLg"></iframe>
+                </div>
+                <div class="container-fluid modal-media-footer">
+                    <div class="source-block pull-left">
+                        Источник: <a href="#">qwerty.com</a>
+                    </div>
+                    <div class="pull-right">
+                        <ul class="list-inline nav-social-link">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-vk"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/jquery.rate.min.js"></script>
+<script src="../web/js/select2.full.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.ru.min.js"></script>
+<script src="../web/js/custom.js"></script>
+</body>
+</html>

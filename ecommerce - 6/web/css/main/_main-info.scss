@@ -1,0 +1,23 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+.main-info {
+  .thumbnail {
+    @include border-bottom-radius(0);
+    @include border-top-radius(0);
+    border: none;
+    padding: 0;
+    .caption {
+      padding: 0 15px;
+    }
+    p {
+      color: #ababab;
+      font-size: 10px;
+      text-indent: 30px;
+    }
+    h5, .h5 {
+      color: #222222;
+      font-weight: bold;
+    }
+  }
+}

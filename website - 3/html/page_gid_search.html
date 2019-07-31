@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+     <link href="../web/css/bootstrap.css" rel="stylesheet">
+     <link href="../web/css/select2-bootstrap.css" rel="stylesheet">
+     <link href="../web/css/select2.css" rel="stylesheet">
+     <link href="../web/css/bootstrap-slider.css" rel="stylesheet">
+     <link href="../web/css/rateit.css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="../web/css/datepicker3.css" rel="stylesheet">
+     <link href="../web/css/style.css" rel="stylesheet">
+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+     <!--[if lt IE 9]>
+     <script src="../web/js/html5shiv.min.js"></script>
+     <script src="../web/js/respond.min.js"></script>
+     <![endif]-->
+
+</head>
+<body>
+<nav class="navbar head navbar-static-top" role="navigation">
+    <div class="container">
+        <a class="profile user navbar-brand navbar-right" href="#">
+            <img src="../web/images/user_img.png" alt="user_foto" class="img-circle">
+            Костянтин
+        </a>
+
+        <a class="profile navbar-brand navbar-right" href="#">
+            Мій графік
+            <span>(+1)</span>
+        </a>
+
+    </div>
+</nav>
+<div class="container-fild nav-main-static">
+    <div class="container">
+        <a href="#" class="col-md-3 col-xs-12 col-sm-4">
+            <img src="../web/images/logo_page.png" alt="">
+        </a>
+
+        <div class="col-md-6 col-xs-12 col-sm-4 text-center">
+            <div class="list-group list-group-horizontal">
+                <a href="#" class="list-group-item">ГАРЯЧІ ПОЇЗДКИ</a>
+                <a href="#" class="list-group-item">ВИБІР РЕДАКЦІЇ</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-4 text-right">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Пошук по сайту">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="#"><span class="icon-breadcrumb"></span></a></li>
+        <li><a href="#">Тут</a></li>
+        <li><a href="#">Будут</a></li>
+        <li><a href="#">Хлебные</a></li>
+        <li class="active">Крошки</li>
+    </ol>
+
+
+    <div class="row form-group full-page event">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="row">
+                <div class="content author">
+                    <div class="h4">
+                        Оберіть діапазон цін
+                    </div>
+                </div>
+                <div class="user-info full-page">
+                    <div class="content select_orange">
+                        <div class="col-md-4 line-scroll text-left">0</div>
+                        <div class="col-md-4 line-scroll center text-center">450грн</div>
+                        <div class="col-md-4 line-scroll text-right">5000</div>
+                        <input id="ex2" type="text" class="span2"
+                               value="" data-slider-min="10" data-slider-max="1000"
+                               data-slider-step="5"
+                               data-slider-value="[250,450]"/>
+
+                    </div>
+                    <div class="content">
+                        <div id="calendar"></div>
+                    </div>
+                    <div class="content select_orange">
+                        <div class="form-group">
+                            <label>Оберіть напрямок</label>
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Регіон</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Область</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Місто</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="content quiz">
+                        <label>Оберіть тип подорожі</label>
+
+                        <div class="radio">
+                            <input type="radio" name="sorting" class="css-radio" id="1">
+                            <label for="1" class="css-label-radio">Село</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="sorting" class="css-radio" id="2">
+                            <label for="2" class="css-label-radio">Замки</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="sorting" class="css-radio" id="3">
+                            <label for="3" class="css-label-radio">Активний відпочинок</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="sorting" class="css-radio" id="4">
+                            <label for="4" class="css-label-radio">Похід</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-9">
+            <div class="row">
+                <div class="sort form-inline">
+                    <div class="text-center">
+                        <label class="pull-left h4">Сортувати по:</label>
+
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Ціні</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Даті</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Вільним місцям</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="sort-list">
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <span class="thumbnail_time">300грн</span>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Nature Portfolio" href="#">Nature</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="col-xs-12 col-sm-6 col-md-8">
+                                <div class="h4">Осінній Львів. 24.11 — 26.11</div>
+                                <div class="discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+                                    Duis vulputate commodo lectus, ac blandit elit tincidunt id.
+                                    Sed Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    Duis vulputate commodo lectus, ac blandit elit ...
+                                </div>
+                                <div class="content">
+                                    <div class="row">
+                                        <span class="col-md-9 user-sort">10/15
+                                            <span class="rateit" data-rateit-value="2.5" data-rateit-ispreset="true" data-rateit-readonly="true"></span>
+                                        </span>
+
+                                        <a href="#" class="btn btn-primary btn-xs col-md-3">Більше</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <a href="#" class="col-md-3 col-xs-12 col-sm-4">
+                <img src="../web/images/logo_bot.png" alt="">
+            </a>
+
+            <div class="col-md-6 col-xs-12 col-sm-4">
+                <a href="#" class="btn-footer col-md-6 col-xs-12 col-sm-6  text-center">Гарячі поїздки</a>
+                <a href="#" class="btn-footer col-md-6 col-xs-12 col-sm-6 text-center">Вибір редакції</a>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-4 text-right">
+                <div class="h3">8 800 232 20 43</div>
+                <small>По Україні безкоштовно</small>
+
+                <div class="h3 border">(0432) 55-55-55</div>
+                <small>Для жителів Вінниці</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--js_block-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../web/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.js"></script>
+<script src="../web/js/bootstrap-datepicker.uk.js"></script>
+<script src="../web/js/bootstrap-slider.js"></script>
+<script src="../web/js/jquery.tinyscrollbar.min.js"></script>
+<script src="../web/js/jquery.rateit.js"></script>
+<script src="../web/js/select2.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#scrollbarY').tinyscrollbar();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#e-date,#e-date2,#e-mounce,#e-mounce2,#e-year,#e-year2").select2({
+            minimumResultsForSearch: -1,
+            adaptDropdownCssClass: function (c) {
+                if ('form-control' != c) {
+                    return c
+                }
+            }
+        });
+
+        $('#calendar').datepicker({
+            language: "uk",
+            todayHighlight: true
+        });
+
+        $("#ex2").slider({});
+    });
+</script>
+<!--end_block-->
+</body>
+</html>

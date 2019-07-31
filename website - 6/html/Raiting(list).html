@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2</title>
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../web/css/rate.css" rel="stylesheet">
+    <link href="../web/css/select2.min.css" rel="stylesheet">
+    <link href="../web/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-top navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<div class="dropdown hamburger">-->
+            <!--<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"-->
+            <!--aria-expanded="true">-->
+            <!--</button>-->
+            <!--</div>-->
+            <a class="navbar-brand" href="#">
+                VYBORY.UA
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <!--if logout-->
+            <ul class="nav navbar-nav navbar-right not_login">
+                <li><a href="#">О Нас</a></li>
+                <li><a href="#">Теги</a></li>
+                <li>
+                    <a class="btn btn-danger" href="#myModal" data-toggle="modal" data-target="#myModal">
+                        Войти
+                    </a>
+                </li>
+            </ul>
+            <!--end if-->
+            <!--if login-->
+            <!--<ul class="nav navbar-nav navbar-right in_login">-->
+            <!--<li class="dropdown notification">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"-->
+            <!--role="button" aria-haspopup="true" aria-expanded="false">-->
+            <!--<i class="fa fa-bell" aria-hidden="true"></i>-->
+            <!--&lt;!&ndash;if have message &ndash;&gt;-->
+            <!--&lt;!&ndash;<span>2</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;end if&ndash;&gt;-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu">-->
+            <!--&lt;!&ndash;if have&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="menu-header text-center">&ndash;&gt;-->
+            <!--&lt;!&ndash;Уведомлений(2)&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-comments"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span>Игорь Попель</span> ответил на ваш коментарий&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-comments"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span>Андрей Губанов</span> ответил на ваш коментарий&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;else&ndash;&gt;-->
+            <!--<li class="menu-header text-center">-->
+            <!--Уведомлений(0)-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a class="text-center">Нет уведомлений</a>-->
+            <!--</li>-->
+            <!--&lt;!&ndash;end if&ndash;&gt;-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="navbar_link"><a href="#">О Нас</a></li>-->
+            <!--<li class="navbar_link"><a href="#">Теги</a></li>-->
+            <!--<li class="dropdown">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"-->
+            <!--role="button" aria-haspopup="true" aria-expanded="false">-->
+            <!--&lt;!&ndash;no-img&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="fa-stack fa-lg">&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-circle fa-stack-2x"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-user fa-stack-1x"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;or&ndash;&gt;-->
+            <!--<img src="../web/img/top-5.jpg" alt="..." class="img-circle user-logo">-->
+            <!--Игорь-->
+            <!--<i class="fa fa-angle-down" aria-hidden="true"></i>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu">-->
+            <!--<li><a href="#">Просмотреть профиль</a></li>-->
+            <!--<li><a href="#">Выйти</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--end if-->
+            <form class="navbar-form" role="search">
+                <div class="input-group stylish-input-group">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" id="search" placeholder="Поиск">
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-menu navbar-static-top">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown menu-town">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        Город <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">АР Крым</a></li>
+                        <li><a href="#">Винница</a></li>
+                        <li><a href="#">Волынь</a></li>
+                        <li><a href="#">Днепропетровск</a></li>
+                        <li><a href="#">Донецк</a></li>
+                        <li><a href="#">Житомир</a></li>
+                        <li><a href="#">Ужгород</a></li>
+                        <li><a href="#">Запорожье</a></li>
+                        <li><a href="#">Ивано-Франковск</a></li>
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Кировоград</a></li>
+                        <li><a href="#">Луганск</a></li>
+                        <li><a href="#">Львов</a></li>
+                        <li><a href="#">Николаев</a></li>
+                        <li><a href="#">Одесса</a></li>
+                        <li><a href="#">Полтава</a></li>
+                        <li><a href="#">Ровно</a></li>
+                        <li><a href="#">Суммы</a></li>
+                        <li><a href="#">Тернополь</a></li>
+                        <li><a href="#">Харьков</a></li>
+                        <li><a href="#">Херсон</a></li>
+                        <li><a href="#">Хмельницк</a></li>
+                        <li><a href="#">Черкассы</a></li>
+                        <li><a href="#">Чернигов</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Рейтинги</a></li>
+                <li><a href="#">Аналитика</a></li>
+                <li><a href="#">Пратии</a></li>
+                <li><a href="#">Политики</a></li>
+                <li><a href="#">Мажоритарные округа</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right nav-social-link">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="active">
+                Рейтинги
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container main">
+    <div class="row video-block-row">
+        <div class="news-text col-sm-25">
+            <h1>TOP-Рейтинги:</h1>
+        </div>
+        <div class="col-sm-18 col-sm-18-fix">
+            <div class="thumbnail">
+                <div class='content'>
+                    <a href="#" class="img-block img-block-big">
+                        <img src="../web/img/region_photo-news-b.jpg" alt="...">
+                    </a>
+                    <div class="caption">
+                        <a href="#">
+                            <span class="brand-icon"></span>20 агрокомпаний украины
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7 col-sm-7-fix">
+            <div class="thumbnail">
+                <div class='content'>
+                    <a href="#" class="img-block">
+                        <img src="../web/img/region_photo-news.jpg" alt="...">
+                    </a>
+                    <div class="caption">
+                        <a href="#">
+                            <span class="brand-icon"></span>20 агрокомпаний украины
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbnail">
+                <div class='content'>
+                    <a href="#" class="img-block">
+                        <img src="../web/img/region_photo-news.jpg" alt="...">
+                    </a>
+                    <div class="caption">
+                        <a href="#">
+                            <span class="brand-icon"></span>20 агрокомпаний украины
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main">
+    <div class="row">
+        <div class="col-md-25">
+            <div class="news-list">
+                <div class="news-list-title">
+                    Сегодня
+                </div>
+                <div class="news-list-content raiting-list-media">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                        <div class="media-right">
+                            <div class="list-group politic-position">
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        1
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        2
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <span class="top-block-position">
+                                        3
+                                    </span>
+                                    <img class="img-circle" src="../web/img/top-1.jpg" alt="...">
+                                    <span class="politic-position-name"><strong>Кучер</strong> Николай Иванович</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="news-list-filter raiting-list-filter col-md-18">
+                        <ul class="pagination">
+                            <li>
+                                <a aria-label="Previous" href="#">
+                                    <span aria-hidden="true">«</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a aria-label="Next" href="#">
+                                    <span aria-hidden="true">»</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dropdown">
+                            <button aria-expanded="false" aria-haspopup="true" data-toggle="dropdown" type="button"
+                                    class="btn dropdown-toggle">
+                                Просмотреть все
+                                <span class="caret"></span>
+                            </button>
+                            <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+                                <li><a href="#">Просмотреть все</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg_last">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-9 bg_last-left">
+                    <i class="fa icon-pluse"></i>
+                    Стань частью проекта
+                </div>
+                <div class="col-sm-11 col-sm-offset-5 col-md-9 col-md-offset-7 bg_last-right">
+                    Отправить нам:
+                    <a href="#" data-toggle="modal" data-target="#send_profile_1" class="btn btn-link">Профиль</a>
+                    /
+                    <a href="#" data-toggle="modal" data-target="#send_profile_2" class="btn btn-link">Новость</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-16">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>О проекте</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Партии</a></li>
+                            <li><a href="#">Мажоритарные округа</a></li>
+                            <li><a href="#">Политики</a></li>
+                            <li><a href="#">Нормативная база</a></li>
+                            <li><a href="#">Что нужно занть?</a></li>
+                            <li><a href="#"><strong>Для партий и кандидатов</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>материалы</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Аналитика</a></li>
+                            <li><a href="#">Фото</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>Голосование</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Пропорциональная система</a></li>
+                            <li><a href="#">Мажоритарная система</a></li>
+                            <li><a href="#">ТОП-25 политиков</a></li>
+                            <li><a href="#">Опросы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h4>Контактные данные</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>+38 097 553 55 88</p>
+                        <p>+38 063 882 34 04</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-md-offset-1">
+                        <p>info@vybory.ua</p>
+                        <p>office@vybory.ua</p>
+                    </div>
+                </div>
+                <h4>О выборах</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><strong>Стань частью проекта</strong></a></li>
+                    <li><a href="#">Размещение рекламы</a></li>
+                    <li><a href="#">Праaвовая информация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            &copy; 2016 Vybory.ua Все права защищены. При использовании материалов ссылка на «Vybory.ua» &mdash;
+            обязательна.
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<div class="modal fade modal-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-2 form-login">
+                        <div class="form-login-head">
+                            <div class="h2">ВХОД</div>
+                            <p>Вы можете войти, используя вашу</p>
+                            <p>учетную запись следующих соцсетей:</p>
+                        </div>
+                        <div class="form-login-social">
+                            <a class="btn btn-block btn-fb" href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                Войти через Facebook
+                            </a>
+                            <a class="btn btn-block btn-tw" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                Войти через Twitter
+                            </a>
+                        </div>
+                        <div class="form-login-or">
+                            <span>или</span>
+                        </div>
+                        <form class="form-login-form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Введите ваш email</label>
+                                <input type="email" class="form-control input_fa" id="exampleInputEmail1"
+                                       placeholder="popel@bk.ru">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Введите пароль</label>
+                                <input type="password" class="form-control input_fa" id="exampleInputPassword1"
+                                       placeholder="Password">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group last-block row">
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkboxG2" checked="checked" class="css-checkbox"
+                                               id="checkboxG2">
+                                        <label for="checkboxG2" class="css-label">Запомнить меня</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-sm-offset-1 text-right">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Войти</button>
+                        </form>
+                        <div class="form-login-footer">
+                            У вас нет аккаунта на Vybory.ua?
+                            <a href="#" data-dismiss="modal">Зарегистрируйтесь</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/jquery.rate.min.js"></script>
+<script src="../web/js/select2.full.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.ru.min.js"></script>
+<script src="../web/js/custom.js"></script>
+</body>
+</html>

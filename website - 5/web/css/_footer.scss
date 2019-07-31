@@ -1,0 +1,199 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.footer {
+  background-color: #222a44;
+  color: #a7aab4;
+  padding-bottom: 75px;
+  padding-top: 40px;
+  .footer-col {
+    margin-bottom: 45px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .center-col {
+    border-left: 1px dashed $brand-info;
+    border-right: 1px dashed $brand-info;
+  }
+  .phone {
+    color: $brand-primary;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .sub-text{
+    padding-top: 5px;
+    a {
+      color: #a7aab4;
+      text-decoration: underline;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+  .form-subs {
+    margin-left: 35px;
+    max-width: 300px;
+    .form-control {
+      background-color: #394057;
+      border-color: #394057;
+      @include box-shadow(none);
+      height: 40px;
+      line-height: 40px;
+      &::-webkit-input-placeholder {
+        color: #a7aab4;
+      }
+      &::-moz-placeholder {
+        color: #a7aab4;
+      }
+      &:-ms-input-placeholder {
+        color: #a7aab4;
+      }
+      &:-moz-placeholder {
+        color: #a7aab4;
+      }
+      &:focus,
+      &:active {
+        background-color: #ffffff;
+        border-color: #ffffff;
+        color: #45474e;
+      }
+    }
+    .btn {
+      height: 40px;
+      text-transform: uppercase;
+      width: 68px;
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+        width: 34px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
+  .help-block_text {
+    font-family: $font-family-sub;
+    font-size: 14px;
+    margin-left: 35px;
+    margin-top: 15px;
+  }
+  .last-footer {
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35px;
+    position: relative;
+    .list-inline {
+      li {
+        padding-left: 25px;
+        padding-right: 25px;
+        a {
+          color: #a7aab4;
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+    .counter {
+      text-align: center;
+      margin: 35px auto 20px;
+    }
+    .copyright {
+      color: $brand-info;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .social-link {
+    li {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    .fa {
+      @include border-radius(50%);
+      @include transition(all 0.3s);
+      color: #ffffff;
+      display: table-cell;
+      font-size: 18px;
+      text-align: center;
+      height: 38px;
+      vertical-align: middle;
+      width: 38px;
+      &.fa-facebook {
+        background-color: #3b5998;
+      }
+      &.fa-twitter {
+        background-color: #1da1f2;
+      }
+      &.fa-google-plus {
+        background-color: #dd4b39;
+      }
+      &.fa-pinterest-p {
+        background-color: #bd081c;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    .last-footer .list-inline li {
+      margin-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .phone {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    .last-footer .list-inline li {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+
+@media (max-width: $screen-xs-max) {
+  .footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .center-col {
+      border-left: none;
+      border-right: none;
+    }
+    .form-subs {
+      margin-left: auto;
+      max-width: 100%;
+    }
+    .help-block_text {
+      margin-left: auto;
+      text-align: center;
+    }
+    .last-footer {
+      margin: 0 10px;
+      .list-inline li {
+        display: block;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/owl.carousel.min.css" rel="stylesheet">
+    <link href="web/stylesheets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="web/stylesheets/ion.rangeSlider.css">
+    <link rel="stylesheet" href="web/stylesheets/ion.rangeSlider.skinFlat.css">
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="matching-designers">
+<nav class="navbar navbar-default navbar-fixed-top navbar-matching" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="icon icon-like"></span>
+                                Favourites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#login">
+                                <span class="icon icon-user"></span>
+                                Log in
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <span class="icon icon-menu"></span>
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu dropdown-mega">
+                                <li class="dropdown-header hidden-xs">
+                                    <a href="#" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                    </a>
+                                </li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Sign up</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-default navbar-search navbar-fixed-top" data-spy="affix" data-offset-top="81">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="collapse navbar-collapse in">
+                    <ul class="nav navbar-nav navbar-center">
+                        <li>
+                            <a href="#" class="btn btn-primary btn-lg btn-block">
+                                Refine results
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid container-checkout">
+    <div class="jumbotron">
+        <h1>Pick your designer</h1>
+        <p>to request a sketch</p>
+    </div>
+    <div class="jumbotron jumbotron-filter">
+        <div class="h2">
+            Refine results
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option1" autocomplete="off">
+                Fashion icons
+                <small>(start at € 2000)</small>
+            </label>
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option2" autocomplete="off" checked>
+                Well-known
+                <small>(start at € 1000)</small>
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off">
+                Emerging talent
+                <small>(start at € 500)</small>
+            </label>
+        </div>
+        <div class="clearfix"></div>
+        <a class="btn btn-link collapsed" role="button" data-toggle="collapse" href="#collapseFilter"
+           aria-expanded="false">
+            > Advanced search
+        </a>
+    </div>
+</div>
+<div class="collapse collapse-filter" id="collapseFilter">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <form>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="form-group text-center">
+                                <label>Budget</label>
+                                <input class="form-control" type="text" id="range" value="" name="range"/>
+                                <div class="range_field">Average price: € 1.575</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>Location</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Type country">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Type city">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <hr>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Language designer</label>
+                            <div class="col-md-9">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="options" id="option12" autocomplete="off" checked>
+                                        English
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option13" autocomplete="off">
+                                        Espanol
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option14" autocomplete="off">
+                                        Italian
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option15" autocomplete="off">
+                                        Arabic
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option16" autocomplete="off">
+                                        Chinese
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Type other language">
+                                    <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12">Specialties</label>
+                            <div class="col-md-12">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="options" id="option11" autocomplete="off" checked>
+                                        Extravagant
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option22" autocomplete="off">
+                                        Special size
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option33" autocomplete="off">
+                                        Eco-conscious
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <hr>
+                                <a class="btn btn-link collapsed" role="button" data-toggle="collapse"
+                                   href="#collapseFilter"
+                                   aria-expanded="false">
+                                    Minimize
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid designers-group">
+    <h2 class="text-center">
+        3 Designers found
+    </h2>
+    <ul class="list-inline text-center">
+        <li>
+            <a href="#">
+                Most popular
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Price
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Rating
+            </a>
+        </li>
+    </ul>
+
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="row">
+                <div class="designers-item col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Simone
+                                        <div class="reting-group">
+                                            <div class="star-group">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            9 Review
+                                        </div>
+                                    </div>
+                                    <div class="media-text">Emerging talent from London
+                                        <a href="#">> more about Singh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-footer">
+                                <div class="counter pull-right"></div>
+                                <div class="text-header">
+                                    Custom design from € 750
+                                </div>
+                                <ul class="list-inline">
+                                    <li>9 pieces delivered</li>
+                                    <li>12 years experience</li>
+                                    <li>speaks English & French</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                    <span class="label label-default">
+                        best price
+                        <i class="fa fa-eur"></i>
+                    </span>
+                            <a href="#" class="btn btn-primary">Choose Simon</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="designers-item col-sm-6 ">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Simone
+                                        <div class="reting-group">
+                                            <div class="star-group">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            9 Review
+                                        </div>
+                                    </div>
+                                    <div class="media-text">Emerging talent from London
+                                        <a href="#">> more about Singh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-footer">
+                                <div class="counter pull-right"></div>
+                                <div class="text-header">
+                                    Custom design from € 750
+                                </div>
+                                <ul class="list-inline">
+                                    <li>9 pieces delivered</li>
+                                    <li>12 years experience</li>
+                                    <li>speaks English & French</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                    <span class="label label-default">
+                        best price
+                        <i class="fa fa-star"></i>
+                    </span>
+                            <a href="#" class="btn btn-primary">Choose lorenzo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="designers-item col-sm-6 ">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Simone
+                                        <div class="reting-group">
+                                            <div class="star-group">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            9 Review
+                                        </div>
+                                    </div>
+                                    <div class="media-text">Emerging talent from London
+                                        <a href="#">> more about Singh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-footer">
+                                <div class="counter pull-right"></div>
+                                <div class="text-header">
+                                    Custom design from € 750
+                                </div>
+                                <ul class="list-inline">
+                                    <li>9 pieces delivered</li>
+                                    <li>12 years experience</li>
+                                    <li>speaks English & French</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#" class="btn btn-primary">Choose SIngh</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="designers-item col-sm-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="web/images/home-img/test_author.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Simone
+                                        <div class="reting-group">
+                                            <div class="star-group">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                            9 Review
+                                        </div>
+                                    </div>
+                                    <div class="media-text">Emerging talent from London
+                                        <a href="#">> more about Singh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="item main-img">
+                                    <img src="web/images/slide-matching.jpg" alt="...">
+                                    <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false"
+                                            autocomplete="off">
+                                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i class="fa fa-heart " aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slider-footer">
+                                <div class="counter pull-right"></div>
+                                <div class="text-header">
+                                    Custom design from € 750
+                                </div>
+                                <ul class="list-inline">
+                                    <li>9 pieces delivered</li>
+                                    <li>12 years experience</li>
+                                    <li>speaks English & French</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#" class="btn btn-primary">Choose SIngh</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/custom.js"></script>
+<script src="web/javascripts/ion.rangeSlider.js"></script>
+<script>
+    $(function () {
+        $("#range").ionRangeSlider({
+            min: 500,
+            max: 3000,
+            from: 1000,
+            to: 2500,
+            step: 1,
+            prefix: "€",
+            type: "double"
+        });
+    });
+</script>
+<script src="web/javascripts/owl.carousel.min.js"></script>
+<script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        loop: true,
+        items: 2.3,
+        responsive:{
+            0:{
+                items: 1.3
+            },
+            600:{
+                items: 2.3
+            },
+            1000:{
+                items: 2.3
+            }
+        },
+        margin: 10,
+        nav: true,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        dots: false,
+        onInitialized: function (event) {
+            $(event.target).next().find(".counter").text("1/" + event.item.count);
+        }
+    });
+    owl.on("changed.owl.carousel", function (event) {
+        var b = --event.item.index,
+                a = event.item.count;
+        $(event.target).next().find(".counter").text((1 > b ? b + a : b > a ? b - a : b) + "/" + a);
+    });
+</script>
+
+</body>
+</html>

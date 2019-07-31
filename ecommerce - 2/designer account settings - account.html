@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="checkout chat">
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand normal" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="text text-link">
+                            Good morning, Jane Doe!
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle user-img" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <img src="web/images/home-img/test_author.jpg" alt="...">
+                            </a>
+                            <span class="user-name">Christopher Raeburn</span>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Getting started</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><a href="#">Your Projects</a></li>
+                        <li><a href="#">Browse Projects</a></li>
+                        <li class="active"><a>Your Portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid container-checkout">
+    <div class="jumbotron jumbotron-img">
+        <p>+ Add background image</p>
+        <input type="file">
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="user-info">
+                <div class="img-block">
+                    <img src="web/images/user-photo.jpg" alt="...">
+                </div>
+                <div class="name">Ava Dunningham</div>
+                <div class="town">London</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-pills nav-pills--custom">
+                <li role="presentation"><a href="#">About</a></li>
+                <li role="presentation"><a href="#">General</a></li>
+                <li role="presentation"><a href="#">Portfolio</a></li>
+                <li role="presentation" class="active"><a>Account</a></li>
+            </ul>
+            <form class="form-login">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="sr-only">First name*</label>
+                            <input type="password" class="form-control" placeholder="First name*">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="sr-only">Last name*</label>
+                            <input type="password" class="form-control" placeholder="Last name*">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="sr-only">Email*</label>
+                    <input type="email" class="form-control" placeholder="Email*">
+                    <span class="glyphicon icon-mail form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="sr-only">Password*</label>
+                    <input type="password" class="form-control" placeholder="Password*">
+                    <span class="glyphicon icon-look form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="sr-only">Confirm password*</label>
+                    <input type="password" class="form-control" placeholder="Confirm password*">
+                    <span class="glyphicon icon-look form-control-feedback" aria-hidden="true"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <label class="sr-only">Mobile number*</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Mobile number*">
+                        <span class="glyphicon icon-phone form-control-feedback" aria-hidden="true"></span>
+                        <div class="input-group-btn dropdown-flag">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="web/images/flags/ak.png" alt="...">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a><img src="web/images/flags/ak.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/al.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ar.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/az.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ca.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/co.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ct.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/de.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/fl.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ga.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/hi.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ia.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/id.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/il.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/in.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ks.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ky.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/la.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ma.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/md.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/me.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/mi.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/mn.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/mo.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ms.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/mt.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/nc.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/nd.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/ne.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/nh.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/nj.png" alt="..."></a></li>
+                                <li><a><img src="web/images/flags/nm.png" alt="..."></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <label class="label-group">Location</label>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="sr-only">Country*</label>
+                            <input type="password" class="form-control" placeholder="Country*">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="sr-only">City*</label>
+                            <input type="password" class="form-control" placeholder="City*">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="sr-only">Zip code*</label>
+                    <input type="password" class="form-control" placeholder="Zip code*">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="sr-only">Street</label>
+                            <input type="password" class="form-control" placeholder="Street">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="sr-only">Number</label>
+                            <input type="password" class="form-control" placeholder="Number">
+                        </div>
+                    </div>
+                </div>
+                <label class="label-group">Billing</label>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="sr-only">Company name*</label>
+                            <input type="password" class="form-control" placeholder="Company name*">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="sr-only">Company registration no.*</label>
+                            <input type="password" class="form-control" placeholder="Company registration no.*">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="sr-only">VAT number*</label>
+                            <input type="password" class="form-control" placeholder="VAT number*">
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="sr-only">VAT rate % in your country*</label>
+                            <input type="password" class="form-control"
+                                   placeholder="VAT rate % in your country*">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/custom.js"></script>
+</body>
+</html>

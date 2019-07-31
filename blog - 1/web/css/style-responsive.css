@@ -1,0 +1,147 @@
+@media screen and (max-width: 767px) {
+    .brand img {
+        padding-right: 72px;
+        padding-left: 12px;
+    }
+
+    .navbar-sub .dropdown-menu {
+        text-align: left;
+    }
+
+    .social {
+        padding: 0;
+    }
+
+    .footer .h4 {
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .subscribe .form-control {
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .subscribe {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .social {
+        background: none;
+        border: none;
+    }
+
+    .footer .form-control {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .footer .form-group {
+        width: 100%;
+    }
+
+    .footer .btn-pink {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    .navbar-sub .navbar-nav {
+        margin-left: 30px;
+    }
+
+    .partners .thumbnail > img {
+        max-width: 120px;
+    }
+
+    .partners .carousel-control {
+        margin-top: 11.2%;
+    }
+
+    .subscribe .form-control {
+        margin-bottom: 12px;
+    }
+
+    .footer .form-control {
+        margin-bottom: 12px;
+    }
+
+    .footer .form-inline {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-sub .navbar-nav > li > a {
+        font-size: 22px;
+        padding: 15px 30px;
+    }
+
+    .navbar-pink .navbar-nav > li > a {
+        font-size: 16px;
+    }
+
+    .navbar-sub .navbar-nav {
+        margin-left: 0;
+    }
+
+    .partners .thumbnail > img {
+        max-width: 220px;
+    }
+
+    .partners .carousel-control {
+        margin-top: 7%;
+    }
+
+    .subscribe .form-control {
+        margin-bottom: 12px;
+    }
+
+    .footer .form-control {
+        margin-bottom: 12px;
+    }
+
+    .footer .form-inline {
+        margin-bottom: 10px;
+    }
+
+    .footer .col-md-6:last-child {
+        padding: 0;
+    }
+
+    .subscribe {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-pink .navbar-nav > li > a {
+        font-size: 24px;
+    }
+
+    .navbar-sub .navbar-nav > li > a {
+        font-size: 28px;
+        padding: 15px 30px;
+    }
+
+    .subscribe .form-control {
+        margin-bottom: 12px;
+    }
+
+    .footer .form-control {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .footer .form-inline {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 1110px;
+    }
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+     <link href="../web/css/bootstrap.css" rel="stylesheet">
+     <link href="../web/css/select2-bootstrap.css" rel="stylesheet">
+     <link href="../web/css/select2.css" rel="stylesheet">
+     <link href="../web/css/bootstrap-slider.css" rel="stylesheet">
+     <link href="../web/css/rateit.css" media="all" rel="stylesheet" type="text/css"/>
+     <link href="../web/css/datepicker3.css" rel="stylesheet">
+     <link href="../web/css/style.css" rel="stylesheet">
+     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+     <!--[if lt IE 9]>
+     <script src="../web/js/html5shiv.min.js"></script>
+     <script src="../web/js/respond.min.js"></script>
+     <![endif]-->
+
+
+</head>
+<body>
+<nav class="navbar head navbar-static-top" role="navigation">
+    <div class="container">
+        <a class="profile user navbar-brand navbar-right" href="#">
+            <img src="../web/images/user_img.png" alt="user_foto" class="img-circle">
+            Костянтин
+        </a>
+
+        <a class="profile navbar-brand navbar-right" href="#">
+            Мій графік
+            <span>(+1)</span>
+        </a>
+
+    </div>
+</nav>
+<div class="container-fild nav-main-static">
+    <div class="container">
+        <a href="#" class="col-md-3 col-xs-12 col-sm-4">
+            <img src="../web/images/logo_page.png" alt="">
+        </a>
+
+        <div class="col-md-6 col-xs-12 col-sm-4 text-center">
+            <div class="list-group list-group-horizontal">
+                <a href="#" class="list-group-item">ГАРЯЧІ ПОЇЗДКИ</a>
+                <a href="#" class="list-group-item">ВИБІР РЕДАКЦІЇ</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-4 text-right">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Пошук по сайту">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<ol class="breadcrumb">
+    <li><a href="#"><span class="icon-breadcrumb"></span></a></li>
+    <li><a href="#">Тут</a></li>
+    <li><a href="#">Будут</a></li>
+    <li><a href="#">Хлебные</a></li>
+    <li class="active">Крошки</li>
+</ol>
+
+
+<div class="row form-group full-page event">
+<div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="row">
+        <div class="content author">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="thumbnail">
+                        <img src="../web/upload/author_photo/test_120x115.png" alt="...">
+                    </div>
+                    <div class="caption">
+                        <h3>КОСТЯНТИН Костянтинопольський</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-info full-page">
+            <div class="content">
+                <a href="#" class="btn btn-main btn-xs">Назад у профіль</a>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 user-info">
+                        <p>Відвідано</p>
+
+                        <p>Проживання</p>
+                    </div>
+                    <div class="col-xs-6 row">
+                        <p>6</p>
+
+                        <p>Дніпропетровськ <a href="#" class="user-lock"></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-xs-12 h5">Коротко про себе</div>
+                    <div class="col-xs-12">
+                        Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Nulla quam velit, vulputate
+                        eu pharetra nec, mattis ac neque. Duis
+                        vulputate commodo lectus, ac blandit elit tincidunt id.
+                    </div>
+                </div>
+            </div>
+            <div class="content search-block">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="imaginary_container">
+                            <div class="input-group stylish-input-group">
+                                <input type="text" placeholder="Знайти запис" class="form-control">
+                                <span class="input-group-addon">
+                                    <button type="submit">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-8">
+    <div class="form-group">
+        <div class="row">
+            <div class="user-galery">
+                <div class="h3 content">
+                    Особистий кабінет
+                    <a class="btn btn-default btn-sm pull-right" href="#">Новий альбом
+                        <span class="icon-pluse glyphicon"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="form-group content col-xs-12">
+                <div class="content form-inline">
+                    <div class="radio">
+                        <input id="albums" class="css-radio" type="radio" name="sorting">
+                        <label class="css-label-radio" for="albums">Альбомами</label>
+                    </div>
+                    <div class="radio">
+                        <input id="all" class="css-radio" type="radio" name="sorting">
+                        <label class="css-label-radio" for="all">Усі фото</label>
+                    </div>
+                    <div class="radio">
+                        <input id="list" class="css-radio" type="radio" name="sorting">
+                        <label class="css-label-radio" for="list">Списком</label>
+                    </div>
+                </div>
+                <div class="row user-galery">
+                    <div class="content h4 user-galery">
+                        Червень 2015
+                    </div>
+                    <div class="form-group user-galery">
+                        <div class="row">
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Nature Portfolio" href="#">Nature</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Food Portfolio" href="#">Food</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Sports Portfolio" href="#">собор св. Юра</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="People Portfolio" href="#">People</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/add_photo.png">
+                                            <img alt="..." src="../web/images/add_photo.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="row user-galery">
+                    <div class="content h4 user-galery">
+                        Червень 2015
+                    </div>
+                    <div class="form-group user-galery">
+                        <div class="row">
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Nature Portfolio" href="#">Nature</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Food Portfolio" href="#">Food</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="Sports Portfolio" href="#">собор св. Юра</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/test_foto.jpg">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                            <span class="overlay"><span>Галерея</span></span>
+                                        </a>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <h4><a title="People Portfolio" href="#">People</a></h4>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a class="zoom" href="../web/images/add_photo.png">
+                                            <img alt="People Portfolio" src="../web/images/add_photo.png">
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <a href="#" class="col-md-3 col-xs-12 col-sm-4">
+                <img src="../web/images/logo_bot.png" alt="">
+            </a>
+
+            <div class="col-md-6 col-xs-12 col-sm-4">
+                <a href="#" class="btn-footer col-md-6 col-xs-12 col-sm-6  text-center">Гарячі поїздки</a>
+                <a href="#" class="btn-footer col-md-6 col-xs-12 col-sm-6 text-center">Вибір редакції</a>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-4 text-right">
+                <div class="h3">8 800 232 20 43</div>
+                <small>По Україні безкоштовно</small>
+
+                <div class="h3 border">(0432) 55-55-55</div>
+                <small>Для жителів Вінниці</small>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--js_block-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../web/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.js"></script>
+<script src="../web/js/bootstrap-datepicker.uk.js"></script>
+<script src="../web/js/bootstrap-slider.js"></script>
+<script src="../web/js/jquery.tinyscrollbar.min.js"></script>
+<script src="../web/js/jquery.rateit.js"></script>
+<script src="../web/js/select2.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#scrollbarY').tinyscrollbar();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#e-date,#e-date2,#e-mounce,#e-mounce2,#e-year,#e-year2").select2({
+            minimumResultsForSearch: -1,
+            adaptDropdownCssClass: function (c) {
+                if ('form-control' != c) {
+                    return c
+                }
+            }
+        });
+
+        $('#calendar').datepicker({
+            language: "uk",
+            todayHighlight: true
+        });
+
+        $("#ex2").slider({});
+    });
+</script>
+<!--end_block-->
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+@import "main/top-bar";
+@import "main/head";
+@import "main/menu";
+@import "main/main-slider";
+@import "main/category";
+@import "main/main-info";
+@import "main/hits";
+@import "main/video-review";
+@import "main/footer";
+
+@import "main/modal-chart";
+@import "main/modal-sale";
+@import "main/modal-to";
+@import "main/item-page";
+@import "main/nav-mob";
+@import "main/form-finale";
+
+
+@font-face {
+  font-family: 'Arial-Black';
+  src: url('../fonts/arial_black/Arial-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/arial_black/Arial-Black.woff') format('woff'), url('../fonts/arial_black/Arial-Black.ttf')  format('truetype'), url('../fonts/arial_black/Arial-Black.svg#Arial-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+@media screen and (max-width: $screen-xs-max) {
+  .row-offcanvas {
+    background-color: #ffffff;
+    position: relative;
+    @include transition(all .25s ease-out);
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -230px;
+  }
+
+  .row-offcanvas-left.active {
+    left: 230px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: ($zindex-navbar-fixed + 1);
+  }
+
+  .sidebar-offcanvas {
+    background-color: $brand-primary;
+    padding-right: 0;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 230px;
+    .list-group {
+      @include border-bottom-radius(0);
+      @include border-top-radius(0);
+      margin-bottom: 0;
+      .list-group-item {
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+        border-bottom-color: #7283a4;
+        border-top-color: #7283a4;
+        color: #fff;
+        &:first-child,
+        &:last-child {
+          @include border-bottom-radius(0);
+          @include border-top-radius(0);
+        }
+        .fa {
+          margin-right: 10px;
+          text-align: center;
+          width: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) and (orientation: landscape) {
+  .row-offcanvas {
+    width: 94%;
+  }
+}
+
+@media (max-width: $screen-xs-max) and (orientation: portrait) {
+  .row-offcanvas {
+    margin-bottom: 66px;
+  }
+}
+
+.title-block {
+  color: #494949;
+  font-size: 16px;
+  position: relative;
+  span {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 10px 40px;
+    position: relative;
+    z-index: 2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    @include translate(0, -50%);
+    height: 1px;
+    width: 100%;
+    background-color: #ebebeb;
+  }
+}
+
+.icon-cart-btn {
+  background-image: url("../images/icon/icon-cart-btn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: -3px;
+  height: 16px;
+  width: 20px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .modal {
+    text-align: center;
+    padding: 0!important;
+    &:before {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      margin-right: -4px;
+    }
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}
+
+.row-15 {
+  margin-left: -10px;
+  margin-right: -10px;
+  @media (min-width: $screen-sm-min) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: $screen-sm-min) {
+  .col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
+
+.modal_fix {
+  padding-right: 0 !important;
+}
+
+.pull-clear {
+  float: none !important;
+}
+
+.form-login {
+  margin-bottom: 30px;
+  .share {
+    margin-top: 10px;
+  }
+}
+
+.zoomContainer {
+  z-index: 10;
+}
+
+@media (max-width: $screen-xs-max) {
+  .btn-group-justified {
+    overflow-x: scroll;
+  }
+}

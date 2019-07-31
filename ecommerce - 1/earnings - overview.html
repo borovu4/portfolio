@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="checkout chat">
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand normal" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="text text-link">
+                            Good morning, Jane Doe!
+                        </li>
+                        <li class="dropdown dropdown-user">
+                            <a href="#" class="dropdown-toggle user-img" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <img src="web/images/home-img/test_author.jpg" alt="...">
+                            </a>
+                            <span class="user-name">Christopher Raeburn</span>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Getting started</a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><a href="#">Projects</a></li>
+                        <li class="active"><a href="#">Earnings</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid container-checkout">
+    <div class="jumbotron">
+        <h1>Earnings</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul class="nav nav-pills nav-pills--custom">
+                <li role="presentation" class="active"><a href="#">Overview</a></li>
+                <li role="presentation"><a href="#">Deposit funds</a></li>
+                <li role="presentation"><a href="#">Withdraw Funds</a></li>
+            </ul>
+            <div class="row">
+                <div class="col-lg-11">
+                    <div class="row account_balance">
+                        <div class="col-sm-8">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="web/images/icon/piggy-bank.png" alt="...">
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        Account balance
+                                    </div>
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            EUR
+                                            <span class="pull-right">50.00</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <a href="#" class="btn btn-primary btn-block">DEPOSIT</a>
+                            <a href="#" class="btn btn-primary btn-block">WITHDRAW</a>
+                        </div>
+                    </div>
+                    <div class="transaction_history">
+                        <h4>Transaction History</h4>
+                        <form class="form-deposit form-inline">
+                            <label>Deposit funds</label>
+                            <div class="input-group">
+                                <input class="form-control" placeholder="50" type="text">
+                                <span class="input-group-addon">EUR</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">GO</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="deposit_funds">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#all" role="tab" data-toggle="tab">All</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#invoices" role="tab" data-toggle="tab">Invoices</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#milestones" role="tab" data-toggle="tab">Milestones</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="all">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-overview">
+                                <tbody>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="invoices">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-overview">
+                                <tbody>
+                                <tr>
+                                    <td>Description tab2</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="milestones">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-overview">
+                                <tbody>
+                                <tr>
+                                    <td>Description tab3</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                <tr>
+                                    <td>Description</td>
+                                    <td>Date</td>
+                                    <td>Amount</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                       placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/bootstrap-tabcollapse.js"></script>
+<script src="web/javascripts/custom.js"></script>
+<script>
+    $('#myTab').tabCollapse({
+        tabsClass: 'hidden-sm hidden-xs',
+        accordionClass: 'visible-sm visible-xs'
+    });
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+</script>
+</body>
+</html>

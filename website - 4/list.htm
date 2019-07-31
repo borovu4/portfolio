@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Авторизация на площадке</title>
+
+
+    <!--THIS FILES WEBSITE-->
+    <link href="test_files/bootstrap.css"
+          rel="stylesheet">
+    <link href="test_files/font-awesome.css"
+          rel="stylesheet">
+    <link href="test_files/site.css"
+          rel="stylesheet">
+    <link href="test_files/language_flags.css"
+          rel="stylesheet">
+    <link href="test_files/fix.css"
+          rel="stylesheet">
+    <link href="test_files/language-picker.css"
+          rel="stylesheet">
+    <link href="test_files/flags-small.css"
+          rel="stylesheet">
+    <link href="web/css/font-awesome.min.css" rel="stylesheet">
+    <!--THIS FILES WEBSITE-->
+
+
+    <!--new style-->
+
+    <link href="web/css/material-icons.min.css" rel="stylesheet">
+    <link href="web/css/select2.min.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <!--end new style-->
+</head>
+<body>
+<nav class="navbar navbar-head">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li>
+                <a class="phone">
+                    (123) - 456 - 7890
+                </a>
+            </li>
+            <li>
+                <a class="mail">
+                    info@name.org
+                </a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Авторизація</a></li>
+            <li><a href="#">Реєстрація</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="navbar-main" class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="web/img/logo-fix.png" alt="..." class="logo-fix">
+                <img src="web/img/logo.png" alt="..." class="logo">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right navbar-icons">
+                <li><a href="#"><i class="mdi mdi-lg mdi-search"></i></a></li>
+                <li><a href="#"><i class="mdi mdi-lg mdi-shopping-cart"></i></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">ЗАКУПІВЛІ</a></li>
+                <li><a href="#">PRO</a></li>
+                <li><a href="#">ZORRO</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">pages</a></li>
+            </ul>
+            <button class="btn btn-primary btn-fab btn-menu" type="button" data-toggle="offcanvas">
+                <i class="material-icons mdi-2x">menu</i>
+                <i class="material-icons mdi-2x">close</i>
+            </button>
+            <div class="control-sidebar">
+                <div class="container-fluid">
+                    <div class="row control-sidebar-head">
+                        <a href="#" class="navbar-brand">
+                            <img alt="..." src="web/img/logo-fix.png">
+                        </a>
+                        <div class="sub-text">
+                            ВЕБ ПОРТАЛ ДЕРЖАВНИХ ЗАКУПІВЕЛЬ
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">home</i>
+                                Головна
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">book</i>
+                                Корисне
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">event</i>
+                                Події
+                            </a>
+                            <div class="dropdown">
+                                <button class="list-group-item dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="true">
+                                    <i class="material-icons mdi-lg">layers</i>
+                                    Лоти
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Автотранспорт</a></li>
+                                    <li><a href="#">Нерухомість</a></li>
+                                    <li><a href="#">Виробниче обладнання</a></li>
+                                    <li><a href="#">Меблі</a></li>
+                                    <li><a href="#">Будівництво</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">description</i>
+                                Договір
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="material-icons mdi-lg">drafts</i>
+                                Контакти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="main-head ">
+            <div class="container">
+                <h1>Закупівлі</h1>
+            </div>
+        </div>
+        <div class="container recommend-block recommend-block-list">
+            <div class="block-cloud search-filter">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active">
+                        <a href="#tab-1" data-toggle="tab">Актуальні</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-2" data-toggle="tab">Активні</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-3" data-toggle="tab">Архів</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-4" data-toggle="tab">Всі закупівлі</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-5" data-target="tab">Річні плани</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-6" data-target="tab">Договори</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-7" data-target="tab">Мої закупівлі</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tab-1">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-2">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-3">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-4">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-5">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-6">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="tab-7">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за ключовими словами</option>
+                                                <option>за ключовими словами</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте слово для пошуку</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control select2">
+                                        <option>всі статуси</option>
+                                        <option>всі статуси</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <div class="row">
+                                        <div class="col-sm-4 control-label">
+                                            Пошук даних
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <select class="form-control select2">
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                                <option>за кодом ДК 021-2016 (CPV)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" required>
+                                    <label>визначте коди за ДК 021-2016 (CPV)</label>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary btn-block">Пошук</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="thumbnail">
+                        <div class="header">
+                            <img src="web/uploads/test_photo.png" alt="...">
+                        </div>
+                        <div class="caption">
+                            <a href="#" class="btn btn-primary btn-fab btn-item">
+                                <i class="material-icons">add</i>
+                            </a>
+                            <div class="title">Майновий комплекс<br>
+                                ТОВ "КОРПОРАЦІЯ ВІП ХАУЗ"
+                            </div>
+                            <div class="text-muted">
+                                <div class="date">03.06.2016</div>
+                                <span class="text-primary"> 80 312 100,00 </span>грн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">chevron_left</i>
+                        </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#">
+                            <i class="material-icons">chevron_right</i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container footer-first">
+                <div class="col-sm-4">
+                    <h4>ТБ «OPEN TENDER»</h4>
+                    <p>
+                        01011, м. Київ, вул. Панаса, буд. 1, оф. 1
+                    </p>
+                    <p>
+                        Якщо у вас є які-небудь питання, звертайтесь до нас. Ми відповімо на всі ваші запитання якомога
+                        швидше.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +1 (2) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            +1 (2) 345 6789
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            contact@opentender.com
+                        </li>
+                    </ul>
+                    <ul class="list-inline social">
+                        <li>
+                            <a href="#" class="twitter">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="google-plus">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-8">
+                    <h4 class="text-uppercase">Отримувати щотижневе оновлення лотів на Вашу поштову скриньку</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                    </p>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">підписатися</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-last">
+        <div class="row">
+            <div class="container">
+                <div class="pull-left">© Copyright 2016. open tender</div>
+                <ul class="list-inline pull-right">
+                    <li>
+                        <a href="#">
+                            РЕГЛАМЕНТ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ДОГОВІР
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            ПАРТНЕРСЬКА ПРОГРАМА
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--THIS FILES WEBSITE-->
+<script src="test_files/jquery_002.js"></script>
+<script src="test_files/yii_002.js"></script>
+<script src="test_files/yii.js"></script>
+<script src="test_files/yii_003.js"></script>
+<script src="test_files/moment.js"></script>
+<script src="test_files/bootstrap-datetimepicker.js"></script>
+<script src="test_files/jquery.js"></script>
+<script src="test_files/index.js"></script>
+<script src="test_files/sign.js"></script>
+<script src="test_files/nav_block.js"></script>
+<script src="test_files/language-picker.js"></script>
+<script src="test_files/bootstrap.js"></script>
+<!--THIS FILES WEBSITE-->
+
+
+<!--new js-->
+<script src="web/js/select2.full.min.js"></script>
+<script src="web/js/custom.js"></script>
+<!--end js-->
+</body>
+</html>

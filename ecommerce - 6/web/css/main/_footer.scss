@@ -1,0 +1,33 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+.footer {
+  background-color: #f0f0f0;
+  color: $gray-darker;
+  font-size: 13px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  a {
+    color: $gray-darker;
+    .fa {
+      color: #474747;
+      &:hover {
+        color: $gray-darker;
+      }
+    }
+  }
+  .fa {
+    color: #9d9d9d;
+  }
+  h5, .h5 {
+    color: #ababab;
+  }
+  .copyright {
+    margin-top: 25px;
+  }
+
+  .list-unstyled,
+  .list-inline {
+    margin-bottom: 40px;
+  }
+}

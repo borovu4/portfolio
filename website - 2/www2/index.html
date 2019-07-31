@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Exchanger 2.0</title>
+
+    <link rel="stylesheet" href="web/css/material.min.css">
+    <link rel="stylesheet" href="web/css/select2.min.css">
+    <link rel="stylesheet" href="web/css/style.css">
+</head>
+<body>
+
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall theme-header">
+        <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">
+                    <a href="#">
+                        <img src="web/img/logo.png" alt="Changer">
+                    </a>
+                </span>
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="#">
+                    Главная
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    Отзывы
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    О нас
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    Контакты
+                </a>
+            </nav>
+        </div>
+        <div class="mdl-layout__header-row login-row">
+            <div class="mdl-layout-spacer">
+                <ol class="breadcrumb">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active">Breadcrumbs</li>
+                </ol>
+            </div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <div class="dropdown">
+                    <div class="mdl-navigation__link dropbtn">
+                        Вход
+                    </div>
+                    <div class="dropdown-content mdl-shadow--2dp">
+                        <form class="form-login">
+                            <div class="title">
+                                Вход
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div class="form-group">
+                               <a href="#" class="recovery">Востановить пароль</a>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                    Войти
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="mdl-navigation__link dropbtn">
+                        Авторизация
+                    </div>
+                    <div class="dropdown-content">
+                        <form class="form-login">
+                            <div class="title">
+                                Авторизация
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Пароль">
+                            </div>
+                            <div class="form-group">
+                                <label>Введите текст с картинки</label>
+                                <div class="left">
+                                    <input type="text">
+                                </div>
+                                <div class="right">
+                                    <img src="web/img/captha.jpg" alt="...">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                    Авторизироваться
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--<div class="mdl-navigation__link mdl-js-menu-on-hover" id="drop_1">-->
+                    <!--Вход-->
+                    <!--<ul class="mdl-menu mdl-menu&#45;&#45;bottom-right mdl-js-menu mdl-js-ripple-effect"-->
+                        <!--for="drop_1">-->
+                        <!--<li class="mdl-menu__item">Вход</li>-->
+                        <!--<li class="mdl-menu__item mdl-menu__item&#45;&#45;full-bleed-divider">Another Action</li>-->
+                        <!--<li class="mdl-menu__item">Yet Another Action</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="mdl-navigation__link mdl-js-menu-on-hover" id="drop_2">-->
+                    <!--Авторизация-->
+                    <!--<ul class="mdl-menu mdl-menu&#45;&#45;bottom-right mdl-js-menu mdl-js-ripple-effect login"-->
+                        <!--for="drop_2">-->
+                        <!--<li class="mdl-menu__item">-->
+                            <!--<div>-->
+                                <!--<form class="form-login">-->
+                                    <!--<div class="title">-->
+                                        <!--Авторизация-->
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="email" placeholder="Email">-->
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <!--<input type="password" placeholder="Пароль">-->
+                                    <!--</div>-->
+                                    <!--<div class="form-group">-->
+                                        <!--<label>Введите текст с картинки</label>-->
+                                        <!--<div class="left">-->
+                                            <!--<input type="text">-->
+                                        <!--</div>-->
+                                        <!--<div class="right">-->
+                                            <!--<img src="web/img/captha.jpg" alt="...">-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<a href="#" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">-->
+                                        <!--Авторизироваться-->
+                                    <!--</a>-->
+                                <!--</form>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer mdl-layout__drawer-theme mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <span class="mdl-layout-title">Меню</span>
+            <a class="mdl-navigation__link is-active" href="#">
+                Главная
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                Отзывы
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                О нас
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                Контакты
+            </a>
+            <div class="separator"></div>
+            <a class="mdl-navigation__link" href="#">
+                Вход
+            </a>
+            <a class="mdl-navigation__link" href="#">
+                Авторизация
+            </a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-main__form">
+            <h1>Курсы обмена</h1>
+            <div class="mdl-grid table-responsive">
+                <table class="mdl-data-table table mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-shadow--2dp">
+                    <thead>
+                    <tr>
+                        <th>
+                            Отдаете
+                            <span>
+                                <a href="#" class="active">USD</a>
+                                <a href="#">RUB</a>
+                                <a href="#">EUR</a>
+                            </span>
+                        </th>
+                        <th>Получаете</th>
+                        <th>Резерв</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-1.png" alt="...">
+                                    </span>
+                                    Webmoney
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  57.2999
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-1.png" alt="...">
+                                    </span>
+                                    WMR
+                                </span>
+                            </a>
+                        </td>
+                        <td>3 459.97</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-4.png" alt="...">
+                                    </span>
+                                    Payer
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  25.2999
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-1.png" alt="...">
+                                    </span>
+                                    WMU
+                                </span>
+                            </a>
+                        </td>
+                        <td>13 459.97</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item active">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-5.png" alt="...">
+                                    </span>
+                                    AdvCash
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  2.0500
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-2.png" alt="...">
+                                    </span>
+                                    Perfect  EUR
+                                </span>
+                            </a>
+                        </td>
+                        <td>105.65</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-6.png" alt="...">
+                                    </span>
+                                    Bitcoin
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  5.0500
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-2.png" alt="...">
+                                    </span>
+                                    Perfect  RUB
+                                </span>
+                            </a>
+                        </td>
+                        <td>805.65</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-3.png" alt="...">
+                                    </span>
+                                    OkPay
+                                </span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.0500
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-6.png" alt="...">
+                                    </span>
+                                    Bitcoin
+                                </span>
+                            </a>
+                        </td>
+                        <td>2. 00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-2.png" alt="...">
+                                    </span>
+                                    Perfect
+                                </span>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-7.png" alt="...">
+                                    </span>
+                                    Наличные
+                                </span>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#" class="mdl-list__item">
+                                <span class="mdl-list__item-primary-content">
+                                  1.00
+                                </span>
+                                <span class="mdl-list__item-secondary">
+                                    <span class="img-logo">
+                                        <img src="web/img/icons/icon-8.png" alt="...">
+                                    </span>
+                                    PayPal
+                                </span>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="mdl-grid grid__theme">
+                <div class="mdl-main mdl-cell mdl-cell--8-col">
+                    <div class="swap mdl-card mdl-shadow--2dp">
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text">Обмен Webmoney</h2>
+                        </div>
+                        <form action="#">
+                            <div class="mdl-card__actions mdl-card--border">
+                                <div class="mdl-grid line-swap">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <select class="select2">
+                                            <option>Webmoney USD</option>
+                                            <option>Webmoney RUB</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--fab btn-swap">
+                                        <i class="material-icons">cached</i>
+                                    </button>
+
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <select class="select2">
+                                            <option>Webmoney RUB</option>
+                                            <option>Webmoney USD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Отдаете</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Получаете</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Отдаете <span>с учетом комиссии системы WMT</span></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>C кошелька</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>На кошелек</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Фамилия</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Email</label>
+                                        <input type="email">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Имя</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Телефон</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <label>Отчество</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet">
+                                        <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                            Дальше
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <h5>Резервы</h5>
+
+                    <ul class="mdl-mini-footer__link-list reserve">
+                        <li><a><img src="web/img/icons/icon-1.png" alt="WMZ">5420 <span>WMZ</span></a></li>
+                        <li><a><img src="web/img/icons/icon-1.png" alt="WME">1820 <span>WME</span></a></li>
+                        <li><a><img src="web/img/icons/icon-2.png" alt="WMU">98120 <span>WMU</span></a></li>
+                        <li><a><img src="web/img/icons/icon-3.png" alt="WMR">98200 <span>WMR</span></a></li>
+                    </ul>
+
+                    <h4>Выгодный обмен Webmoney</h4>
+                    <p>
+                        WMSell.biz – это быстрый и выгодный обмен Webmoney. Также выгодно и быстро можно купить или
+                        продать
+                        Webmoney (WMZ, WMR, WMU) через Приват24.
+                    </p>
+                    <p>
+                        Для того, чтобы обменять webmoney (купить иили продать через Приват24) необходимо обязательно
+                        прочитать и принять Публичную оферту сервиса. После этого, выбрать в форме обмена нужное
+                        направление
+                        обмена Webmoney, указать собственные платежные данные и завершить операцию. Как правило, обмен
+                        вебмани (также как и вывод на карту Приватбанка) происходит в считанные минуты.
+                    </p>
+                    <p>
+                        WMSell.biz старается осуществлять обмен вебмани по всем направлениям по наиболее выгодному курсу
+                        на
+                        рынке (для этого работает специальная система мониторинга курсов).
+                    </p>
+                    <p>
+                        Также Вы можете принять участие в нашей партнерской программе и заработать дополнительные деньги
+                        на
+                        выгодных webmoney обменах. WMSell.biz - это лучший и наиболее выгодный способ обменять webmoney,
+                        а
+                        также продать или купить webmoney через Приват24!
+                    </p>
+                </div>
+                <div class="mdl-sidebar mdl-cell mdl-cell--4-col mdl-cell--hide-phone mdl-cell--hide-tablet">
+                    <div class="owl-recall">
+                        <div class="h4">Отзывы (2548)</div>
+                        <div class="owl-recall-group">
+                            <div class="owl-recall-item">
+                                <ul class="demo-list-two mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                                    </li>
+                                    <li class="mdl-list__item mdl-shadow--2dp">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="owl-recall-item">
+                                <ul class="demo-list-two mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                                    </li>
+                                    <li class="mdl-list__item mdl-shadow--2dp">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="owl-recall-item">
+                                <ul class="demo-list-two mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                                    </li>
+                                    <li class="mdl-list__item mdl-shadow--2dp">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="owl-recall-item">
+                                <ul class="demo-list-two mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                                    </li>
+                                    <li class="mdl-list__item mdl-shadow--2dp">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="owl-recall-item">
+                                <ul class="demo-list-two mdl-list">
+                                    <li class="mdl-list__item mdl-list__item--two-line">
+                            <span class="mdl-list__item-primary-content">
+                              <span class="mdl-list__item-sub-user">Когут Ната</span>
+                              <span class="mdl-list__item-sub-title">17 грудня</span>
+                            </span>
+                                    </li>
+                                    <li class="mdl-list__item mdl-shadow--2dp">
+                            <span class="mdl-list__item-text">
+                                Дуже відповільний менеджер дякую. Все було зробленне вчасно, що саме Головне.
+                            </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                Показать еще
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer theme-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">
+                    <a href="#">
+                        <img src="web/img/logo_footer.png" alt="Changer">
+                    </a>
+                </div>
+            </div>
+            <ul class="mdl-mini-footer__link-list mdl-typography--text-uppercase theme-footer__link">
+                <li><a href="#">О сервисе</a></li>
+                <li><a href="#">Правила</a></li>
+                <li><a href="#">Faq</a></li>
+            </ul>
+            <ul class="mdl-mini-footer__link-list mdl-typography--text-uppercase theme-footer__link">
+                <li><a href="#">Партнерка</a></li>
+                <li><a href="#">Бонусы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mdl-mini-footer__left-section">
+                <ul class="mdl-mini-footer__link-list mdl-typography--text-uppercase theme-footer__elements">
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_1.png" alt="...">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_2.png" alt="...">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_3.png" alt="...">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="web/img/footer_4.png" alt="...">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</div>
+
+
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/material.min.js"></script>
+<script src="web/js/select2.full.min.js"></script>
+<script src="web/js/custom.js"></script>
+
+<script>
+    $(".dropbtn").click(function(){
+        $(this).parent(".dropdown").toggleClass('open');
+    });
+    var $el = $('.dropdown'); // твой элемент
+
+    $('body').click(function (e) {
+        if (!$(e.target).closest($el).length) {
+            $el.removeClass('open');
+        }
+    });
+</script>
+
+<script>
+    function formatState (state) {
+        if (!state.id) { return state.text; }
+        var $state = $(
+            '<span><img src="web/img/icons/icon-1.png" class="img-icon" /> ' + state.text + '</span>'
+        );
+        return $state;
+    };
+
+    $(".select2").select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        dropdownCssClass: "swap-drop",
+        templateResult: formatState,
+        templateSelection: formatState
+    });
+</script>
+</body>
+</html>

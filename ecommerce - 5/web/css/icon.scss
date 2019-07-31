@@ -1,0 +1,150 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-time {
+  background-image: url("../img/icons/icon-time.png");
+  height: 25px;
+  margin-right: 10px;
+  vertical-align: -6px;
+  width: 25px;
+}
+
+.icon-number {
+  background-image: url("../img/icons/icon-number.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 14px;
+  @media (max-width: $screen-xs-max) {
+    margin-top: -2px;
+  }
+}
+
+.icon-smile {
+  background-image: url("../img/icons/icon-smile.png");
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: -8px;
+  width: 30px;
+}
+
+.icon-search {
+  background-image: url("../img/icons/icon-search.png");
+  background-position: center center;
+  height: 25px;
+  vertical-align: top;
+  width: 50px;
+}
+
+.icon-basket {
+  background-color: $brand-info;
+  background-image: url("../img/icons/icon-basket.png");
+  background-position: center center;
+  height: 45px;
+  margin-right: 10px;
+  width: 51px;
+}
+
+.icon-action {
+  background-image: url("../img/icons/icon-action.png");
+  display: table-cell;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-hits {
+  background-image: url("../img/icons/icon-hits.png");
+  display: table-cell;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-new {
+  background-image: url("../img/icons/icon-new.png");
+  display: table-cell;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-category-1 {
+  background-image: url("../img/icons/icon-category-1.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-category-2 {
+  background-image: url("../img/icons/icon-category-2.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-category-3 {
+  background-image: url("../img/icons/icon-category-3.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-category-4 {
+  background-image: url("../img/icons/icon-category-4.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-category-5 {
+  background-image: url("../img/icons/icon-category-5.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-category-6 {
+  background-image: url("../img/icons/icon-category-6.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-category-7 {
+  background-image: url("../img/icons/icon-category-7.png");
+  height: 25px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.icon-footer-mail {
+  background-image: url("../img/icons/icon-footer-mail.png");
+  background-size: contain;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.icon-footer-mark {
+  background-image: url("../img/icons/icon-footer-mark.png");
+  background-size: contain;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.icon-footer-phone {
+  background-image: url("../img/icons/icon-footer-phone.png");
+  background-size: contain;
+  height: 24px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.nav-justified .icon-footer-phone {
+  vertical-align: -5px;
+}

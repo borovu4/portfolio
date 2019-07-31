@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2</title>
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../web/css/rate.css" rel="stylesheet">
+    <link href="../web/css/select2.min.css" rel="stylesheet">
+    <link href="../web/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-top navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="dropdown hamburger">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                </button>
+            </div>
+            <a class="navbar-brand" href="#">
+                VYBORY.UA
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+            <form class="navbar-form nav navbar-nav" role="search">
+                <div class="input-group stylish-input-group">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" id="search" placeholder="Поиск">
+                </div>
+            </form>
+
+            <!--if logout-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+            <!--<li><a href="#">О Нас</a></li>-->
+            <!--<li><a href="#">Теги</a></li>-->
+            <!--<li><a href="#">RSS</a></li>-->
+            <!--<li>-->
+            <!--<a href="#myModal" data-toggle="modal" data-target="#myModal">-->
+            <!--<span class="fa-stack">-->
+            <!--<i class="fa fa-circle fa-stack-2x"></i>-->
+            <!--<i class="fa fa-user fa-stack-1x"></i>-->
+            <!--</span>-->
+            <!--</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--end if-->
+            <!--if login-->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li><a href="#">О Нас</a></li>
+                <li><a href="#">Теги</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Просмотреть профиль</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--end if-->
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-menu navbar-static-top">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        Город <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Винница</a></li>
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Одесса</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Аналитика</a></li>
+                <li><a href="#">Пратии</a></li>
+                <li><a href="#">Политики</a></li>
+                <li><a href="#">Мажоритарные округа</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right nav-social-link">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container main">
+    <div class="row">
+        <div class="col-md-18">
+            <div class="row">
+                <div class="title_media news col-md-25">
+                    <h1>Новости</h1>
+                </div>
+            </div>
+            <div class="news-list">
+                <div class="news-list-title">
+                    Сегодня
+                </div>
+                <div class="news-list-content">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-list-title">
+                    28 марта 2016
+                </div>
+                <div class="news-list-content">
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left media-middle">
+                            08:10
+                        </div>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="../web/img/test-news.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a href="#" class="media-heading">Освобождены большинство пассажиров египетского лайнера</a>
+                            <div class="media-body-text">Освобождены все пассажиры захваченного во вторник утром в
+                                Египте пассажирского самолета,
+                                кроме членов экипажа и еще четырех человек.
+                            </div>
+                            <div class="icon-block">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-list-filter">
+                    <ul class="list-inline list-number pull-left">
+                        <li>Страница</li>
+                        <li class="active">1</li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">54</a></li>
+                    </ul>
+                    <ul class="list-inline list-number pull-right">
+                        <li>Выводить:</li>
+                        <li class="active">15</li>
+                        <li><a href="#">30</a></li>
+                        <li><a href="#">60</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="calendar">
+                <div class="calendar-head container-fluid">
+                    <div class="pull-left">29 Марта 2016</div>
+                    <div class="pull-right like-block-comment">
+                        <button type="button" class="btn">
+                            <i aria-hidden="true" class="fa fa-caret-down"></i>
+                        </button>
+                        <button class="btn"><i class="fa fa-calendar"></i></button>
+                        <button type="button" class="btn">
+                            <i aria-hidden="true" class="fa fa-caret-up"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="calendar-main"></div>
+            </div>
+            <div class="top-news list-group">
+                <a href="#" class="list-group-item">
+                    <img src="../web/img/test-top_news.jpg" alt="...">
+                    <span class="media">
+                    <span class="media-left">01</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо —
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+                </a>
+                <a href="#" class="list-group-item">
+                    <img src="../web/img/test-top_news.jpg" alt="...">
+                    <span class="media">
+                    <span class="media-left">02</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо —
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+                </a>
+                <a href="#" class="list-group-item">
+                    <img src="../web/img/test-top_news.jpg" alt="...">
+                    <span class="media">
+                    <span class="media-left">03</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо —
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+                </a>
+                <a href="#" class="list-group-item">
+                    <img src="../web/img/test-top_news.jpg" alt="...">
+                    <span class="media">
+                    <span class="media-left">04</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо —
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+                </a>
+            </div>
+            <div class="vote-block">
+                <div class="title-block">
+                    <a href="#" class="pull-right small text-muted">Архив опросов</a>
+                    <h3>
+                        Опрос:
+                    </h3>
+                </div>
+                <form>
+                    <div class="vote-block-list">
+                        <div class="radio">
+                            <input type="radio" class="css-checkbox" id="radio1" name="radiog_lite">
+                            <label class="css-label" for="radio1">
+                                Переформатированием Кабмина
+                                во главе с Арсением Яценюком
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" class="css-checkbox" id="radio2" name="radiog_lite">
+                            <label class="css-label" for="radio2">
+                                Отставкой Яценюка и формированием
+                                нового правительства с новым премьером
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" class="css-checkbox" id="radio3" name="radiog_lite">
+                            <label class="css-label" for="radio3">
+                                Досрочными парламентскими выборами
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" class="css-checkbox" id="radio4" name="radiog_lite">
+                            <label class="css-label" for="radio4">
+                                Кризис не завершится, ситуация
+                                законсервируется
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" class="css-checkbox" id="radio5" name="radiog_lite">
+                            <label class="css-label" for="radio5">
+                                Затрудняюсь ответить
+                            </label>
+                        </div>
+                    </div>
+                    <div class="vote-block-btn row">
+                        <div class="col-sm-12 col-sm-12-fix">
+                            <button type="submit" class="btn btn-danger btn-block">
+                                Голосовать
+                            </button>
+                        </div>
+                        <div class="col-sm-12 col-sm-12-fix">
+                            <button type="submit" class="btn btn-default btn-block">
+                                Результаты
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="block-reclam">
+                <a href="#">
+                    <img src="../web/img/322_4.jpg" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="social-block">
+                <div class="title-block">
+                    <h3>
+                        Vybory.ua в соц.сетях:
+                    </h3>
+                </div>
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#fb" role="tab" data-toggle="tab">Facebook</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tw" role="tab" data-toggle="tab">Twitter</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#vk" role="tab" data-toggle="tab">Вконтакте</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#gplus" role="tab" data-toggle="tab">Google+</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="fb">
+                            Facebook
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="tw">
+                            Twitter
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="vk">
+                            Вконтакте
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="gplus">
+                            Google+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container main news-regions">
+    <div class="row">
+        <div class="col-md-17">
+            <div class="row">
+                <div class="col-sm-25">
+                    <div class="title-block">
+                        <div class="pull-right">
+                            <div class="dropdown">
+                                <a aria-expanded="false" aria-haspopup="true" data-toggle="dropdown"
+                                   class="dropdown-toggle">
+                                    Выбрать город: <i class="fa fa-map-marker"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">АР Крым</a></li>
+                                    <li><a href="#">Винница</a></li>
+                                    <li><a href="#">Волынь</a></li>
+                                    <li><a href="#">Днепропетровск</a></li>
+                                    <li><a href="#">Донецк</a></li>
+                                    <li><a href="#">Житомир</a></li>
+                                    <li><a href="#">Ужгород</a></li>
+                                    <li><a href="#">Запорожье</a></li>
+                                    <li><a href="#">Ивано-Франковск</a></li>
+                                    <li><a href="#">Киев</a></li>
+                                    <li><a href="#">Кировоград</a></li>
+                                    <li><a href="#">Луганск</a></li>
+                                    <li><a href="#">Львов</a></li>
+                                    <li><a href="#">Николаев</a></li>
+                                    <li><a href="#">Одесса</a></li>
+                                    <li><a href="#">Полтава</a></li>
+                                    <li><a href="#">Ровно</a></li>
+                                    <li><a href="#">Суммы</a></li>
+                                    <li><a href="#">Тернополь</a></li>
+                                    <li><a href="#">Харьков</a></li>
+                                    <li><a href="#">Херсон</a></li>
+                                    <li><a href="#">Хмельницк</a></li>
+                                    <li><a href="#">Черкассы</a></li>
+                                    <li><a href="#">Чернигов</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3>
+                            Новости Областей:
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="col-sm-8 col-sm-3-fix">
+                    <div class="thumbnail main-news">
+                        <a href="#">
+                            <img src="../web/img/test_region-img.png" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">БПП ждет отставку Яценюка, уже есть кандидат на
+                                пост премьера</a></h4>
+                            <p>
+                                БПП планирует внести кандидатуру на&nbsp;пост премьер-министра, как только глава
+                                правительства Яценюк подаст в&nbsp;отставку.
+                            </p>
+                        </div>
+                        <div class="info_block">
+                            <a href="#">
+                                КорреспонденТ.net
+                            </a>
+                            <div class="icon-block pull-right">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-region-news main-scroll">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span class="time text-red">14:34</span>
+                                    <span class="title-news">Волынь прилетела в Индию на турнир с призом 30 тысяч долларов</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span class="time">14:34</span>
+                                    <span class="title-news">Волынь прилетела в Индию на турнир с призом 30 тысяч долларов</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-sm-3-fix">
+                    <div class="thumbnail main-news">
+                        <a href="#">
+                            <img src="../web/img/test_region-img.png" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">БПП ждет отставку Яценюка, уже есть кандидат на
+                                пост премьера</a></h4>
+                            <p>
+                                БПП планирует внести кандидатуру на&nbsp;пост премьер-министра, как только глава
+                                правительства Яценюк подаст в&nbsp;отставку.
+                            </p>
+                        </div>
+                        <div class="info_block">
+                            <a href="#">
+                                КорреспонденТ.net
+                            </a>
+                            <div class="icon-block pull-right">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-region-news main-scroll">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span class="time text-red">14:34</span>
+                                    <span class="title-news">Волынь прилетела в Индию на турнир с призом 30 тысяч долларов</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span class="time">14:34</span>
+                                    <span class="title-news">Волынь прилетела в Индию на турнир с призом 30 тысяч долларов</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-sm-3-fix">
+                    <div class="thumbnail main-news">
+                        <a href="#">
+                            <img src="../web/img/test_region-img.png" alt="...">
+                        </a>
+                        <div class="caption">
+                            <h4><a href="#">БПП ждет отставку Яценюка, уже есть кандидат на
+                                пост премьера</a></h4>
+                            <p>
+                                БПП планирует внести кандидатуру на&nbsp;пост премьер-министра, как только глава
+                                правительства Яценюк подаст в&nbsp;отставку.
+                            </p>
+                        </div>
+                        <div class="info_block">
+                            <a href="#">
+                                КорреспонденТ.net
+                            </a>
+                            <div class="icon-block pull-right">
+                                <i class="fa fa-eye"></i> 322
+                                <i class="fa fa-comment"></i> 17
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-region-news main-scroll">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span class="time text-red">14:34</span>
+                                    <span class="title-news">Волынь прилетела в Индию на турнир с призом 30 тысяч долларов</span>
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">
+                                    <span class="time">14:34</span>
+                                    <span class="title-news">Волынь прилетела в Индию на турнир с призом 30 тысяч долларов</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-25">
+                    <hr class="clear-hr">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 top-block party-top">
+            <div class="title-block">
+                <h3>
+                    Рейтинг партий:
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left top-block-position">
+                        1
+                    </div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test_party-logo-top.png" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">
+                            Самопопощь
+                            <span>Садовый</span>
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <div data-value="12" class="rate-circle"
+                             style="position: relative; display: block; width: 40px; height: 40px; margin: 0px auto; text-align: center;">
+                            <canvas height="40" width="40" class="rate-circle-back rate-color-back"></canvas>
+                            <canvas height="40" width="40" class="rate-circle-front rate-color1"></canvas>
+                            <span class="rate-circle-value"
+                                  style="line-height: 40px; font-size: 11px; color: rgb(219, 38, 27);">12</span></div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left top-block-position">
+                        2
+                    </div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test_party-logo-top.png" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">
+                            Блок Петра Порошенко
+                            <span>Луценко</span>
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <div data-value="12" class="rate-circle"
+                             style="position: relative; display: block; width: 40px; height: 40px; margin: 0px auto; text-align: center;">
+                            <canvas height="40" width="40" class="rate-circle-back rate-color-back"></canvas>
+                            <canvas height="40" width="40" class="rate-circle-front rate-color1"></canvas>
+                            <span class="rate-circle-value"
+                                  style="line-height: 40px; font-size: 11px; color: rgb(219, 38, 27);">12</span></div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left top-block-position">
+                        3
+                    </div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test_party-logo-top.png" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">
+                            ВО Батькивщина
+                            <span>Тимошенко</span>
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <div data-value="12" class="rate-circle"
+                             style="position: relative; display: block; width: 40px; height: 40px; margin: 0px auto; text-align: center;">
+                            <canvas height="40" width="40" class="rate-circle-back rate-color-back"></canvas>
+                            <canvas height="40" width="40" class="rate-circle-front rate-color1"></canvas>
+                            <span class="rate-circle-value"
+                                  style="line-height: 40px; font-size: 11px; color: rgb(219, 38, 27);">12</span></div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left top-block-position">
+                        4
+                    </div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test_party-logo-top.png" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">
+                            Радикальная партия
+                            Олега Ляшко
+                            <span>Ляшко</span>
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <div data-value="12" class="rate-circle"
+                             style="position: relative; display: block; width: 40px; height: 40px; margin: 0px auto; text-align: center;">
+                            <canvas height="40" width="40" class="rate-circle-back rate-color-back"></canvas>
+                            <canvas height="40" width="40" class="rate-circle-front rate-color1"></canvas>
+                            <span class="rate-circle-value"
+                                  style="line-height: 40px; font-size: 11px; color: rgb(219, 38, 27);">12</span></div>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-left top-block-position">
+                        5
+                    </div>
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test_party-logo-top.png" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <a class="media-heading" href="#">
+                            Оппозиционный блок
+                            <span>Бойко</span>
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <div data-value="12" class="rate-circle"
+                             style="position: relative; display: block; width: 40px; height: 40px; margin: 0px auto; text-align: center;">
+                            <canvas height="40" width="40" class="rate-circle-back rate-color-back"></canvas>
+                            <canvas height="40" width="40" class="rate-circle-front rate-color1"></canvas>
+                            <span class="rate-circle-value"
+                                  style="line-height: 40px; font-size: 11px; color: rgb(219, 38, 27);">12</span></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn btn-default btn-block">Больше</a>
+        </div>
+    </div>
+</div>
+<div class="container main video-block">
+    <div class="row">
+        <div class="col-md-25">
+            <div class="title-block">
+                <div class="pull-right">
+                    <a href="#">
+                        Все медия материалы
+                        <i class="fa fa-caret-square-o-right"></i>
+                    </a>
+                </div>
+                <h3>
+                    Медиа:
+                </h3>
+            </div>
+        </div>
+        <div class="col-md-25">
+            <div id="carousel-example-generic" class="carousel slide" data-interval="false" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row video-block-row hidden-xs">
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row video-block-row visible-xs">
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row video-block-row hidden-xs">
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row video-block-row visible-xs">
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row video-block-row hidden-xs">
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-picture-o text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                                <div class="thumbnail main-news video-block-video">
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                       <span class="video-block-video-icon_block">
+                                           <i class="fa fa-youtube-play text-red"></i>
+                                       </span>
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-youtube-play text-red"></i>БПП ждет отставку
+                                            Яценюка, уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row video-block-row visible-xs">
+                            <div class="col-sm-6 col-sm-6-fix">
+                                <div class="thumbnail main-news">
+                                    <a class="main-news-tags" href="#">Stream</a>
+                                    <a href="#">
+                                        <img alt="..." src="../web/img/news_big.jpg">
+                                    </a>
+                                    <div class="caption">
+                                        <h3><a href="#"><i class="fa fa-circle text-red"></i>БПП ждет отставку
+                                            Яценюка,
+                                            уже есть кандидат на
+                                            пост премьера</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div><!-- /carousel -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg_last">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 bg_last-left">
+                    <a href="#" class="btn btn-link">
+                        <i class="fa icon-pluse"></i>
+                        Стань частью проекта
+                    </a>
+                </div>
+                <div class="col-sm-9 col-sm-offset-7 bg_last-right">
+                    <a href="#" class="btn btn-link">
+                        Отправить новость
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-16">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>О проекте</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Партии</a></li>
+                            <li><a href="#">Мажоритарные округа</a></li>
+                            <li><a href="#">Политики</a></li>
+                            <li><a href="#">Нормативная база</a></li>
+                            <li><a href="#">Что нужно занть?</a></li>
+                            <li><a href="#"><strong>Для партий и кандидатов</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>материалы</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Аналитика</a></li>
+                            <li><a href="#">Фото</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>Голосование</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Пропорциональная система</a></li>
+                            <li><a href="#">Мажоритарная система</a></li>
+                            <li><a href="#">ТОП-25 политиков</a></li>
+                            <li><a href="#">Опросы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h4>Контактные данные</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>+38 097 553 55 88</p>
+                        <p>+38 063 882 34 04</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-md-offset-1">
+                        <p>info@vybory.ua</p>
+                        <p>office@vybory.ua</p>
+                    </div>
+                </div>
+                <h4>О выборах</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><strong>Стань частью проекта</strong></a></li>
+                    <li><a href="#">Размещение рекламы</a></li>
+                    <li><a href="#">Праaвовая информация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            &copy; 2016 Vybory.ua Все права защищены. При использовании материалов ссылка на «Vybory.ua» &mdash;
+            обязательна.
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<div class="modal fade modal-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-2 form-login">
+                        <div class="form-login-head">
+                            <div class="h2">ВХОД</div>
+                            <p>Вы можете войти, используя вашу</p>
+                            <p>учетную запись следующих соцсетей:</p>
+                        </div>
+                        <div class="form-login-social">
+                            <a class="btn btn-block btn-fb" href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                Войти через Facebook
+                            </a>
+                            <a class="btn btn-block btn-tw" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                Войти через Twitter
+                            </a>
+                        </div>
+                        <div class="form-login-or">
+                            <span>или</span>
+                        </div>
+                        <form class="form-login-form">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Введите ваш email</label>
+                                <input type="email" class="form-control input_fa" id="exampleInputEmail1"
+                                       placeholder="popel@bk.ru">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Введите пароль</label>
+                                <input type="password" class="form-control input_fa" id="exampleInputPassword1"
+                                       placeholder="Password">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group last-block row">
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkboxG2" checked="checked" class="css-checkbox"
+                                               id="checkboxG2">
+                                        <label for="checkboxG2" class="css-label">Запомнить меня</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-sm-offset-1 text-right">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Войти</button>
+                        </form>
+                        <div class="form-login-footer">
+                            У вас нет аккаунта на Vybory.ua?
+                            <a href="#" data-dismiss="modal">Зарегистрируйтесь</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/jquery.rate.min.js"></script>
+<script src="../web/js/select2.full.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.ru.min.js"></script>
+<script src="../web/js/custom.js"></script>
+</body>
+</html>

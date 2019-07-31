@@ -1,0 +1,103 @@
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+.form-finale {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  .panel {
+    @include box-shadow(none);
+    @include border-bottom-radius(0);
+    @include border-top-radius(0);
+    border: none;
+    .panel-heading {
+      background-color: #ebebeb;
+      border-bottom: none;
+      @include border-top-radius(0);
+      .panel-title {
+        small {
+          @media (min-width: $screen-sm-min) {
+            float: right;
+            margin-top: 3px;
+          }
+        }
+      }
+    }
+    .panel-body {
+      padding: 20px 0;
+    }
+  }
+  .share {
+    float: none;
+    margin-bottom: 27px;
+  }
+
+  .register-u {
+    background-color: $brand-info;
+    @include border-bottom-radius(4px);
+    @include border-top-radius(4px);
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    padding: 10px;
+    a {
+      color: #FFFFFF;
+      font-size: 12px;
+      display: block;
+      margin-top: 5px;
+      text-decoration: underline;
+      &:hover,
+      &:focus,
+      &:active {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .form-invite {
+    margin-bottom: 30px;
+    margin-top: 15px;
+  }
+
+  .control-label {
+    font-weight: normal;
+    text-align: left;
+  }
+  textarea.form-control {
+    resize: none;
+  }
+
+  .radio {
+    padding-bottom: 10px;
+    .label {
+      background-color: #ebebeb;
+      border: 1px solid #c1c1c1;
+      color: #222222;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: normal;
+      height: 25px;
+      line-height: 1.2;
+      width: 100px;
+      @media (min-width: $screen-sm-min) {
+        float: right;
+      }
+    }
+  }
+  .radio-footer {
+    border-bottom: 1px solid #ababab;
+    color: #222222;
+    font-size: 9px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .last-info {
+    @media (min-width: $screen-sm-min) {
+      text-align: right;
+    }
+  }
+}

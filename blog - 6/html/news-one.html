@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SabaiOpen</title>
+
+    <link rel="icon" type="image/png" href="../web/img/favicon.ico">
+
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href="../web/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../web/img/logo.png" alt="Brand">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="input-group stylish-input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"
+                           class="dropdown-toggle" href="#">menu1</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"
+                           class="dropdown-toggle" href="#">menu2</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"
+                           class="dropdown-toggle" href="#">menu3</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"
+                           class="dropdown-toggle" href="#">menu4</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a aria-expanded="true" aria-haspopup="true" role="button" data-toggle="dropdown"
+                           class="dropdown-toggle" href="#">menu5</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class="container">
+    <div class="container-border">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default menu-lvl-2">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                        data-target="#menu-lvl-2" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Community</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="menu-lvl-2">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="#">Forum</a></li>
+                                    <li><a href="#">Live Chat</a></li>
+                                    <li class="active"><a href="#">News</a></li>
+                                    <li><a href="#">Hall of Fame</a></li>
+                                    <li><a href="#">Badges</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-sm-8 col-md-9">
+                    <h1>Yii 2.0.7 is released</h1>
+
+                    <div class="text-muted date">Feb 14, 2016</div>
+                    <div class="content">
+                        <p><strong>Yii 2.0.7 is released</strong></p>
+
+                        <p>We are very pleased to announce the release of Yii Framework version 2.0.7.
+                            Please refer to the instructions at
+                            <a href="#">http://www.yiiframework.com/download/</a>
+                            to install or upgrade to this version.</p>
+
+                        <p>Version 2.0.7 is a patch release of Yii 2.0 which contains
+                            <a href="#">over 100 minor new features and bug fixes</a>
+                            as well as numerous improvements to documentation and guide translations.</p>
+
+                        <p>There are extra steps to do while upgrading so check the
+                            <a href="#">UPGRADE.md</a> file.</p>
+
+                        <p>Thanks to our awesome <a href="#">Yii community</a> we've got
+                            valuable pull requests and discussions that made this release possible. Thank you!</p>
+
+                        <p>You may follow the development progress of Yii 2 by starring or watching Yii 2.0
+                            <a href="#">GitHub Project</a>. You may also follow <a href="#">Yii Twitter feeds</a>
+                            or join <a href="#">Yii Facebook group</a> to connect with other Yii developers.</p>
+
+                        <p>Below we summarize some of most important features/fixes included in this release.</p>
+
+                        <h2>IP validator</h2>
+
+                        <p>There's now new validator for IP addreesses, ranges and masks. It could be used either as
+                            standalone validator or as a part of model's <code>rules()</code> method:</p>
+
+
+                        <pre><span class="hl-reserved">public</span> <span class="hl-reserved">function</span> <span
+                                class="hl-identifier">rules</span><span class="hl-brackets">(</span><span
+                                class="hl-brackets">)</span>
+<span class="hl-brackets">{</span>
+    <span class="hl-reserved">return</span> <span class="hl-brackets">[</span>
+        <span class="hl-brackets">[</span><span class="hl-quotes">'</span><span class="hl-string">address</span><span
+                                    class="hl-quotes">'</span><span class="hl-code">, </span><span
+                                    class="hl-quotes">'</span><span class="hl-string">ip</span><span
+                                    class="hl-quotes">'</span><span class="hl-code">, </span><span
+                                    class="hl-quotes">'</span><span class="hl-string">ranges</span><span
+                                    class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                    class="hl-brackets">[</span>
+             <span class="hl-quotes">'</span><span class="hl-string">192.168.10.128</span><span
+                                    class="hl-quotes">'</span>
+             <span class="hl-quotes">'</span><span class="hl-string">!192.168.10.0/24</span><span
+                                    class="hl-quotes">'</span><span class="hl-code">,
+             </span><span class="hl-quotes">'</span><span class="hl-string">any</span><span
+                                    class="hl-quotes">'</span> <span class="hl-comment">//</span><span
+                                    class="hl-comment"> allows any other IP addresses</span>
+        <span class="hl-brackets">]</span><span class="hl-brackets">]</span><span class="hl-code">,
+    </span><span class="hl-brackets">]</span><span class="hl-code">;
+</span><span class="hl-brackets">}</span></pre>
+
+
+                        <p>You can get an idea of what's capable of by looking at <a
+                                href="http://www.yiiframework.com/doc-2.0/guide-tutorial-core-validators.html#ip">the
+                            paragraph of the guide</a>, <a
+                                href="http://www.yiiframework.com/doc-2.0/yii-validators-ipvalidator.html">class
+                            comments</a> or <a
+                                href="https://github.com/yiisoft/yii2/blob/2.0.7/tests/framework/validators/IpValidatorTest.php">tests</a>.
+                        </p>
+
+                        <h2>i18n</h2>
+
+                        <p>Formatter got a new <code>asDuration()</code> method for getting a human readable string from
+                            an interval presented by either <a href="http://php.net/manual/en/class.dateinterval.php">DateInterval
+                                object</a>, number of seconds or <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO8601
+                                string</a>:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-reserved">echo</span> <span class="hl-identifier">Yii</span><span
+                                    class="hl-code">::</span><span class="hl-var">$app</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">formatter</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">asDuration</span><span
+                                    class="hl-brackets">(</span><span class="hl-number">131</span><span
+                                    class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-comment">//</span><span class="hl-comment"> outputs "2 minutes, 11 seconds"</span></pre>
+                            </div>
+                        </div>
+
+                        <p>Another enhancement is an ability to choose the calendar that would be used for date
+                            formatting. You can do so by setting the <code>yii\i18n\Formatter::$calendar</code>
+                            property. The following is an example of using Persian calendar:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-identifier">Yii</span><span
+                                    class="hl-code">::</span><span class="hl-var">$app</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">formatter</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">locale</span><span
+                                    class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">fa_IR@calendar=persian</span><span
+                                    class="hl-quotes">'</span><span class="hl-code">;
+</span><span class="hl-identifier">Yii</span><span class="hl-code">::</span><span class="hl-var">$app</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">formatter</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">calendar</span><span
+                                    class="hl-code"> = \</span><span class="hl-identifier">IntlDateFormatter</span><span
+                                    class="hl-code">::</span><span class="hl-identifier">TRADITIONAL</span><span
+                                    class="hl-code">;
+</span><span class="hl-identifier">Yii</span><span class="hl-code">::</span><span class="hl-var">$app</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">formatter</span><span
+                                    class="hl-code">-&gt;</span><span class="hl-identifier">timeZone</span><span
+                                    class="hl-code"> = </span><span class="hl-quotes">'</span><span class="hl-string">UTC</span><span
+                                    class="hl-quotes">'</span><span class="hl-code">;
+</span><span class="hl-var">$value</span><span class="hl-code"> = </span><span class="hl-number">1451606400</span><span
+                                    class="hl-code">; </span><span class="hl-comment">//</span><span class="hl-comment"> Fri, 01 Jan 2016 00:00:00 (UTC)</span>
+<span class="hl-reserved">echo</span> <span class="hl-identifier">Yii</span><span class="hl-code">::</span><span
+                                        class="hl-var">$app</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">formatter</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">asDate</span><span class="hl-brackets">(</span><span
+                                        class="hl-var">$value</span><span class="hl-code">, </span><span
+                                        class="hl-quotes">'</span><span class="hl-string">php:Y</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">;
+</span><span class="hl-comment">//</span><span class="hl-comment"> outputs "۱۳۹۴"</span></pre>
+                            </div>
+                        </div>
+
+                        <p>Check <a href="http://www.yiiframework.com/doc-2.0/yii-i18n-formatter.html#$calendar-detail">class
+                            documentation</a> for details.</p>
+
+                        <p>Besides that, non-URL specific transliteration is now exposed as <a
+                                href="http://www.yiiframework.com/doc-2.0/yii-helpers-baseinflector.html#transliterate()-detail"><code>Inflector::transliterate()</code></a>
+                            which is useful for generating keywords and other metadata for languages such as Vietnamese.
+                        </p>
+
+                        <h2>Database</h2>
+
+                        <p>Besides fixes there are some notable enhancements.
+                            You can now use <code>yii\db\Expression</code> in <code>Query::groupBy()</code> and <code>Query::orderBy()</code>:
+                        </p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-var">$expression</span><span
+                                    class="hl-code"> = </span><span class="hl-reserved">new</span> <span
+                                    class="hl-identifier">Expression</span><span class="hl-brackets">(</span><span
+                                    class="hl-quotes">'</span><span class="hl-string">SUBSTR(name, 2)</span><span
+                                    class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">;
+</span><span class="hl-var">$users</span><span class="hl-code"> = </span><span class="hl-brackets">(</span><span
+                                    class="hl-reserved">new</span><span class="hl-code"> \</span><span
+                                    class="hl-identifier">yii</span><span class="hl-code">\</span><span
+                                    class="hl-identifier">db</span><span class="hl-code">\</span><span
+                                    class="hl-identifier">Query</span><span class="hl-brackets">)</span><span
+                                    class="hl-code">
+    -&gt;</span><span class="hl-identifier">from</span><span class="hl-brackets">(</span><span
+                                    class="hl-quotes">'</span><span class="hl-string">user</span><span
+                                    class="hl-quotes">'</span><span class="hl-brackets">)</span><span class="hl-code">
+    -&gt;</span><span class="hl-identifier">orderBy</span><span class="hl-brackets">(</span><span class="hl-var">$expression</span><span
+                                    class="hl-brackets">)</span><span class="hl-code">
+    -&gt;</span><span class="hl-identifier">limit</span><span class="hl-brackets">(</span><span
+                                    class="hl-number">10</span><span class="hl-brackets">)</span><span class="hl-code">
+    -&gt;</span><span class="hl-identifier">all</span><span class="hl-brackets">(</span><span
+                                    class="hl-brackets">)</span><span class="hl-code">;</span></pre>
+                            </div>
+                        </div>
+
+                        <p>For SQLite you can now use aliases in DSN:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-quotes">'</span><span
+                                    class="hl-string">db</span><span class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                    class="hl-brackets">[</span>
+    <span class="hl-quotes">'</span><span class="hl-string">dsn</span><span class="hl-quotes">'</span><span
+                                        class="hl-code"> =&gt; </span><span class="hl-quotes">'</span><span
+                                        class="hl-string">sqlite:@app/db/database.sqlite3</span><span class="hl-quotes">'</span><span
+                                        class="hl-code">,
+</span><span class="hl-brackets">]</span></pre>
+                            </div>
+                        </div>
+
+                        <p>For joining with relations in active record a simpler way for specifying a table alias has
+                            been added.
+                            One can now use a similar syntax as with <code>join()</code> also in <code>joinWith()</code>:
+                        </p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-comment">//</span><span class="hl-comment"> join the orders relation and sort the result by orders.id</span>
+<span class="hl-var">$query</span><span class="hl-code">-&gt;</span><span class="hl-identifier">joinWith</span><span
+                                        class="hl-brackets">(</span><span class="hl-brackets">[</span><span
+                                        class="hl-quotes">'</span><span class="hl-string">orders o</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">]</span><span
+                                        class="hl-brackets">)</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">orderBy</span><span class="hl-brackets">(</span><span
+                                        class="hl-quotes">'</span><span class="hl-string">o.id</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">;</span></pre>
+                            </div>
+                        </div>
+
+                        <h2>Enhancements to new migration syntax</h2>
+
+                        <p>New migrations syntax introduced in 2.0.6 got some enhancements. First of all, that's <code>unsigned</code>
+                            support:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main">
+                                <pre><span class="hl-quotes">'</span><span class="hl-string">createdBy</span><span
+                                        class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                        class="hl-var">$this</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">integer</span><span class="hl-brackets">(</span><span
+                                        class="hl-number">10</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">-&gt;</span><span class="hl-identifier">unsigned</span><span
+                                        class="hl-brackets">(</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">,</span></pre>
+                            </div>
+                        </div>
+
+                        <p>Second, you can now use expression as default value:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main">
+                                <pre><span class="hl-var">$this</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">integer</span><span class="hl-brackets">(</span><span
+                                        class="hl-brackets">)</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">defaultExpression</span><span class="hl-brackets">(</span><span
+                                        class="hl-quotes">'</span><span class="hl-string">CURRENT_TIMESTAMP</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">;</span></pre>
+                            </div>
+                        </div>
+
+                        <h2>Console migration generator</h2>
+
+                        <p><code>./yii migrate/create</code> got smarter. Based on migration name it can now generate
+                            boilerplate code for migration so you don't have to type that much:</p>
+
+<pre>./yii migrate/create create_post --fields=title:string,body:text
+</pre>
+
+                        <p>would generate:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-reserved">class</span> <span
+                                    class="hl-identifier">m150811_220037_create_post</span> <span class="hl-reserved">extends</span> <span
+                                    class="hl-identifier">Migration</span>
+<span class="hl-brackets">{</span>
+    <span class="hl-reserved">public</span> <span class="hl-reserved">function</span> <span
+                                        class="hl-identifier">up</span><span class="hl-brackets">(</span><span
+                                        class="hl-brackets">)</span>
+    <span class="hl-brackets">{</span>
+        <span class="hl-var">$this</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">createTable</span><span class="hl-brackets">(</span><span
+                                        class="hl-quotes">'</span><span class="hl-string">post</span><span
+                                        class="hl-quotes">'</span><span class="hl-code">, </span><span
+                                        class="hl-brackets">[</span>
+            <span class="hl-quotes">'</span><span class="hl-string">id</span><span class="hl-quotes">'</span><span
+                                        class="hl-code"> =&gt; </span><span class="hl-var">$this</span><span
+                                        class="hl-code">-&gt;</span><span class="hl-identifier">primaryKey</span><span
+                                        class="hl-brackets">(</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">,
+            </span><span class="hl-quotes">'</span><span class="hl-string">title</span><span
+                                        class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                        class="hl-var">$this</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">string</span><span class="hl-brackets">(</span><span
+                                        class="hl-brackets">)</span><span class="hl-code">,
+            </span><span class="hl-quotes">'</span><span class="hl-string">body</span><span
+                                        class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                        class="hl-var">$this</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">text</span><span class="hl-brackets">(</span><span
+                                        class="hl-brackets">)</span>
+        <span class="hl-brackets">]</span><span class="hl-brackets">)</span><span class="hl-code">;
+    </span><span class="hl-brackets">}</span>
+
+    <span class="hl-reserved">public</span> <span class="hl-reserved">function</span> <span
+                                        class="hl-identifier">down</span><span class="hl-brackets">(</span><span
+                                        class="hl-brackets">)</span>
+    <span class="hl-brackets">{</span>
+        <span class="hl-var">$this</span><span class="hl-code">-&gt;</span><span
+                                        class="hl-identifier">dropTable</span><span class="hl-brackets">(</span><span
+                                        class="hl-quotes">'</span><span class="hl-string">post</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">)</span><span
+                                        class="hl-code">;
+    </span><span class="hl-brackets">}</span>
+<span class="hl-brackets">}</span></pre>
+                            </div>
+                        </div>
+
+                        <p><a href="http://www.yiiframework.com/doc-2.0/guide-db-migrations.html#generating-migrations">Check
+                            the guide to learn the syntax</a>. We hope it would save you even more time.</p>
+
+                        <h2>RBAC interface expansion</h2>
+
+                        <p>RBAC interface was extended with <a
+                                href="http://www.yiiframework.com/doc-2.0/yii-rbac-managerinterface.html#getUserIdsByRole()-detail"><code>getUserIdsByRole()</code></a>
+                            method which
+                            should come in handy when implementing your own UI to manage roles and permissions.</p>
+
+                        <h2>Error handling and dumping</h2>
+
+                        <ul>
+                            <li>Yii got improved JSON error handling to support PHP 5.5 error codes which is really
+                                helpful to determine why encoding failed.
+                            </li>
+                            <li><code>VarDumper::dump()</code> now respects <code>__debugInfo()</code> PHP magic method.
+                            </li>
+                            <li>Error handler now doesn't display <code>$_ENV</code> and <code>$_SERVER</code> at error
+                                page by default for the security reasons. What's displayed could be customized by <a
+                                        href="http://www.yiiframework.com/doc-2.0/yii-web-errorhandler.html#$displayVars-detail"><code>yii\web\ErrorHandler::$displayVars</code></a>.
+                            </li>
+                            <li><code>yii\helpers\VarDumper::export()</code> is now able to export circle referenced
+                                objects which makes logging and debug toolbar much more reliable.
+                            </li>
+                        </ul>
+                        <h2>Security</h2>
+
+                        <p>We're constantly monitoring and checking the best ways to get truly random values and deal
+                            with passwords and evolving accordingly.
+                            Now <code>Security</code> component uses <code>random_bytes()</code>, LibreSSL,
+                            <code>mcrypt</code>, limits OpenSSL usage to Windows and prefers
+                            <code>password_hash()</code> over <code>crypt()</code>.</p>
+
+                        <h2>PHP 7</h2>
+
+                        <p>ApcCache is now able to handle PHP 7 APCu properly. In order to use it set
+                            <code>useApcu</code> cache property to <code>true</code>.</p>
+
+                        <h2>Built-in webserver</h2>
+
+                        <p>You're now able to develop Yii 2.0 apps without installing full featured web server such as
+                            nginx or Apache, by typing <code>./yii serve</code> in console and opening your
+                            browser at <code>http://localhost:8080</code>. Hostname and port could be specified via
+                            extra parameters type <code>./yii help serve</code> for syntax details.</p>
+
+                        <h2>PJAX</h2>
+
+                        <p>PJAX experience overall should be significantly better. There are fixes for data-methods,
+                            redirects, loading scripts that present in PJAX response and more.</p>
+
+                        <h2>Validation</h2>
+
+                        <ul>
+                            <li>Client validation now skips disabled inputs.</li>
+                            <li>"compare" validator got improved error messages.</li>
+                            <li>There's now ability to specify <code>range</code> for <code>in</code> validator using
+                                anonymous function.
+                            </li>
+                            <li>File validator now could have <code>maxFiles</code> set to <code>0</code> to allow
+                                unlimited number of files.
+                            </li>
+                        </ul>
+                        <h2>Events</h2>
+
+                        <p>Events are now respecting inheritance and could be attached to the whole class/interface
+                            hierarchy.
+                            See
+                            <a href="http://www.yiiframework.com/doc-2.0/guide-concept-events.html#interface-level-event-handlers">guide
+                                for details</a>.</p>
+
+                        <h2>Assets</h2>
+
+                        <p>It's now possible to specify CSS and JavaScript options per file in an asset bundle
+                            class:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-reserved">public</span> <span
+                                    class="hl-var">$css</span><span class="hl-code"> = </span><span class="hl-brackets">[</span>
+    <span class="hl-quotes">'</span><span class="hl-string">default_options.css</span><span
+                                        class="hl-quotes">'</span><span class="hl-code">,
+    </span><span class="hl-brackets">[</span><span class="hl-quotes">'</span><span class="hl-string">tv.css</span><span
+                                        class="hl-quotes">'</span><span class="hl-code">, </span><span
+                                        class="hl-quotes">'</span><span class="hl-string">media</span><span
+                                        class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                        class="hl-quotes">'</span><span class="hl-string">tv</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">]</span><span
+                                        class="hl-code">,
+    </span><span class="hl-brackets">[</span><span class="hl-quotes">'</span><span class="hl-string">screen_and_print.css</span><span
+                                        class="hl-quotes">'</span><span class="hl-code">, </span><span
+                                        class="hl-quotes">'</span><span class="hl-string">media</span><span
+                                        class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                        class="hl-quotes">'</span><span class="hl-string">screen, print</span><span
+                                        class="hl-quotes">'</span><span class="hl-brackets">]</span>
+<span class="hl-brackets">]</span><span class="hl-code">;
+
+</span><span class="hl-reserved">public</span> <span class="hl-var">$js</span><span class="hl-code"> = </span><span
+                                        class="hl-brackets">[</span>
+    <span class="hl-quotes">'</span><span class="hl-string">normal.js</span><span class="hl-quotes">'</span><span
+                                        class="hl-code">,
+    </span><span class="hl-brackets">[</span><span class="hl-quotes">'</span><span
+                                        class="hl-string">defered.js</span><span class="hl-quotes">'</span><span
+                                        class="hl-code">, </span><span class="hl-quotes">'</span><span
+                                        class="hl-string">defer</span><span class="hl-quotes">'</span><span
+                                        class="hl-code"> =&gt; </span><span class="hl-reserved">true</span><span
+                                        class="hl-brackets">]</span><span class="hl-code">,
+</span><span class="hl-brackets">]</span><span class="hl-code">;</span></pre>
+                            </div>
+                        </div>
+
+                        <h2>REST API</h2>
+
+                        <p>For debugging purpose <code>JsonResponseFormatter</code> can now be configured to format the
+                            returned JSON in better readable format.
+                            You may configure the response application component in the following way:</p>
+
+                        <div class="hl-code">
+                            <div class="hl-main"><pre><span class="hl-quotes">'</span><span
+                                    class="hl-string">response</span><span class="hl-quotes">'</span><span
+                                    class="hl-code"> =&gt; </span><span class="hl-brackets">[</span>
+    <span class="hl-comment">//</span><span class="hl-comment"> ...</span>
+    <span class="hl-quotes">'</span><span class="hl-string">formatters</span><span class="hl-quotes">'</span><span
+                                        class="hl-code"> =&gt; </span><span class="hl-brackets">[</span><span
+                                        class="hl-code">
+        \</span><span class="hl-identifier">yii</span><span class="hl-code">\</span><span
+                                        class="hl-identifier">web</span><span class="hl-code">\</span><span
+                                        class="hl-identifier">Response</span><span class="hl-code">::</span><span
+                                        class="hl-identifier">FORMAT_JSON</span><span
+                                        class="hl-code"> =&gt; </span><span class="hl-brackets">[</span>
+             <span class="hl-quotes">'</span><span class="hl-string">class</span><span class="hl-quotes">'</span><span
+                                        class="hl-code"> =&gt; </span><span class="hl-quotes">'</span><span
+                                        class="hl-string">yii\web\JsonResponseFormatter</span><span
+                                        class="hl-quotes">'</span><span class="hl-code">,
+             </span><span class="hl-quotes">'</span><span class="hl-string">prettyPrint</span><span
+                                        class="hl-quotes">'</span><span class="hl-code"> =&gt; </span><span
+                                        class="hl-identifier">YII_DEBUG</span><span class="hl-code">, </span><span
+                                        class="hl-comment">//</span><span class="hl-comment"> use "pretty" output in debug mode</span>
+             <span class="hl-comment">//</span><span class="hl-comment"> ...</span>
+        <span class="hl-brackets">]</span><span class="hl-code">,
+    </span><span class="hl-brackets">]</span><span class="hl-code">,
+</span><span class="hl-brackets">]</span><span class="hl-code">,</span></pre>
+                            </div>
+                        </div>
+                        <div class="panel panel-default tags">
+                            <div class="panel-heading">Tags <a href="#">release</a></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <div class="panel panel-clear">
+                        <div class="panel-heading"><strong>Related News</strong></div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        Yii 1.1.13 Release Candidate (RC) is released
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/news/85/yii-2-0-3-is-released/" class="">
+                                        Yii 2.0.3 is released</a></li>
+                                <li>
+                                    <a href="#">
+                                        Yii PHP framework 1.1.7 is released
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Yii 2.0 Beta is released
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Yii PHP Framework 1.1.8 is released
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">News Archive</div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                                <li><a href="#">2016 (3)</a></li>
+                                <li><a href="#">2015 (9)</a></li>
+                                <li><a href="#">2014 (6)</a></li>
+                                <li><a href="#">2013 (11)</a></li>
+                                <li><a href="#">2012 (14)</a></li>
+                                <li><a href="#">2011 (10)</a></li>
+                                <li><a href="#">2010 (10)</a></li>
+                                <li><a href="#">2009 (23)</a></li>
+                                <li><a href="#">2008 (5)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-clear">
+                        <div class="panel-heading"><strong>Popular Tags</strong></div>
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#">
+                                        IDE
+                                    </a>
+                                    <span class="text-muted">(5)</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        NetBeans
+                                    </a>
+                                    <span class="text-muted">(1)</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        RC
+                                    </a>
+                                    <span class="text-muted">(1)</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Yii 1.1
+                                    </a>
+                                    <span class="text-muted">(1)</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Yii 2.0
+                                    </a>
+                                    <span class="text-muted">(1)</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        books
+                                    </a>
+                                    <span class="text-muted">(5)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer small">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4">
+                        Menu1
+                        <ul class="list-unstyled">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        Menu1
+                        <ul class="list-unstyled">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        Menu1
+                        <ul class="list-unstyled">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        Menu1
+                        <ul class="list-unstyled">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                        Menu1
+                        <ul class="list-unstyled">
+                            <li><a href="#">Submenu1</a></li>
+                            <li><a href="#">Submenu2</a></li>
+                            <li><a href="#">Submenu3</a></li>
+                            <li><a href="#">Submenu4</a></li>
+                            <li><a href="#">Submenu5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1">SabaiOpen Supporters</div>
+            <div class="col-sm-12 copyright text-center">
+                <ul class="social list-inline">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook-square fa-3x social"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter-square fa-3x social"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-google-plus-square fa-3x social"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope-square fa-3x social"></i></a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <a href="#">Terms of Service</a> |
+                <a href="#">License</a> |
+                <a href="#">Contact Us</a><br>
+                Copyright &copy; 2016 by <a href="http://www.sabaitechnology.com">Sabai Technology</a>.
+                All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../web/js/bootstrap.min.js"></script>
+</body>
+</html>

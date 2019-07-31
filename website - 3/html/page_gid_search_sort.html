@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="../web/css/bootstrap.css" rel="stylesheet">
+    <link href="../web/css/select2-bootstrap.css" rel="stylesheet">
+    <link href="../web/css/select2.css" rel="stylesheet">
+    <link href="../web/css/bootstrap-slider.css" rel="stylesheet">
+    <link href="../web/css/rateit.css" media="all" rel="stylesheet" type="text/css"/>
+    <link href="../web/css/datepicker3.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+<nav class="navbar head navbar-static-top" role="navigation">
+    <div class="container">
+        <a class="profile user navbar-brand navbar-right" href="#">
+            <img src="../web/images/user_img.png" alt="user_foto" class="img-circle">
+            Костянтин
+        </a>
+
+        <a class="profile navbar-brand navbar-right" href="#">
+            Мій графік
+            <span>(+1)</span>
+        </a>
+
+    </div>
+</nav>
+<div class="container-fild nav-main-static">
+    <div class="container">
+        <a href="#" class="col-md-3 col-xs-12 col-sm-4">
+            <img src="../web/images/logo_page.png" alt="">
+        </a>
+
+        <div class="col-md-6 col-xs-12 col-sm-4 text-center">
+            <div class="list-group list-group-horizontal">
+                <a href="#" class="list-group-item">ГАРЯЧІ ПОЇЗДКИ</a>
+                <a href="#" class="list-group-item">ВИБІР РЕДАКЦІЇ</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12 col-sm-4 text-right">
+            <div id="imaginary_container">
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control" placeholder="Пошук по сайту">
+                                    <span class="input-group-addon">
+                                        <button type="submit">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="#"><span class="icon-breadcrumb"></span></a></li>
+        <li><a href="#">Тут</a></li>
+        <li><a href="#">Будут</a></li>
+        <li><a href="#">Хлебные</a></li>
+        <li class="active">Крошки</li>
+    </ol>
+
+
+    <div class="row form-group full-page event">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="row">
+                <div class="content author">
+                    <div class="h4">
+                        Відсортувати по:
+                    </div>
+                </div>
+                <div class="sort_search full-page">
+                    <div class="content select_orange">
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Екскурсіям</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">Імені</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="content author">
+                        <div class="form-inline">
+                            <div class="h4">Оберіть дату</div>
+                            <div class="row select_white">
+                                <div class="col-xs-12">
+                                    <label class="first">з</label>
+                                    <select id="e-date" class="form-control select_white">
+                                        <option value="1">Дата</option>
+                                        <option value="2">Option two</option>
+                                    </select>
+                                    <select id="e-mounce" name="selectbasic" class="form-control select_white">
+                                        <option value="1">Місяць</option>
+                                        <option value="2">Option two</option>
+                                    </select>
+                                    <select id="e-year" name="selectbasic" class="form-control select_white">
+                                        <option value="1">Рік</option>
+                                        <option value="2">Option two</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-12">
+                                    <label>по</label>
+                                    <select id="e-date2" name="selectbasic" class="form-control select_white">
+                                        <option value="1">Дата</option>
+                                        <option value="2">Option two</option>
+                                    </select>
+                                    <select id="e-mounce2" name="selectbasic" class="form-control select_white">
+                                        <option value="1">Місяць</option>
+                                        <option value="2">Option two</option>
+                                    </select>
+                                    <select id="e-year2" name="selectbasic" class="form-control select_white">
+                                        <option value="1">Рік</option>
+                                        <option value="2">Option two</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content select_orange">
+                        <div class="form-group">
+                            <select id="e-date" class="form-control select_orange">
+                                <option value="1">По кругам</option>
+                                <option value="2">Option two</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+            <div class="row">
+                <div class="sort text-right">
+                    <a href="#" class="btn btn-default btn-xs">Додати до групи
+                        <span class="icon-pluse glyphicon"></span>
+                    </a>
+                    <a href="#" class="btn btn-primary btn-xs">Відправити все
+                        <span class="icon-add glyphicon"></span>
+                    </a>
+                </div>
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="sort-list autor-list">
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="col-xs-12 col-sm-6 col-md-8">
+                                <div class="h4">Осінній Львів. 24.11 — 26.11
+                                    <span class="online active"></span>
+                                    <span class="number">+38 (093) 252-25-55</span>
+                                </div>
+                                <div class="discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+                                    Duis vulputate commodo lectus, ac blandit elit tincidunt id.
+                                    Sed Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    Duis vulputate commodo lectus, ac blandit elit ...
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sort-list autor-list">
+                            <article class="col-xs-12 col-sm-6 col-md-4">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <a href="#">
+                                            <img alt="..." src="../web/images/test_foto.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                            <div class="col-xs-12 col-sm-6 col-md-8">
+                                <div class="h4">Осінній Львів. 24.11 — 26.11
+                                    <span class="online"></span>
+                                    <span class="number">+38 (093) 252-25-55</span>
+                                </div>
+                                <div class="discription">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
+                                    Duis vulputate commodo lectus, ac blandit elit tincidunt id.
+                                    Sed Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                    Duis vulputate commodo lectus, ac blandit elit ...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <a href="#" class="col-md-3 col-xs-12 col-sm-4">
+                <img src="../web/images/logo_bot.png" alt="">
+            </a>
+
+            <div class="col-md-6 col-xs-12 col-sm-4">
+                <a href="#" class="btn-footer col-md-6 col-xs-12 col-sm-6  text-center">Гарячі поїздки</a>
+                <a href="#" class="btn-footer col-md-6 col-xs-12 col-sm-6 text-center">Вибір редакції</a>
+            </div>
+            <div class="col-md-3 col-xs-12 col-sm-4 text-right">
+                <div class="h3">8 800 232 20 43</div>
+                <small>По Україні безкоштовно</small>
+
+                <div class="h3 border">(0432) 55-55-55</div>
+                <small>Для жителів Вінниці</small>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--js_block-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../web/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.js"></script>
+<script src="../web/js/bootstrap-datepicker.uk.js"></script>
+<script src="../web/js/bootstrap-slider.js"></script>
+<script src="../web/js/jquery.tinyscrollbar.min.js"></script>
+<script src="../web/js/jquery.rateit.js"></script>
+<script src="../web/js/select2.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('#scrollbarY').tinyscrollbar();
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#e-date,#e-date2,#e-mounce,#e-mounce2,#e-year,#e-year2").select2({
+            minimumResultsForSearch: -1,
+            adaptDropdownCssClass: function (c) {
+                if ('form-control' != c) {
+                    return c
+                }
+            }
+        });
+
+        $('#calendar').datepicker({
+            language: "uk",
+            todayHighlight: true
+        });
+
+        $("#ex2").slider({});
+    });
+</script>
+<!--end_block-->
+</body>
+</html>

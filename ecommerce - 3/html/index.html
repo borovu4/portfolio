@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/owl.carousel.css" rel="stylesheet">
+    <link href="../web/css/owl.theme.css" rel="stylesheet">
+    <link href="../web/css/owl.transitions.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../web/css/animate.min.css" rel="stylesheet">
+    <link href="../web/css/select2.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700&subset=latin,cyrillic-ext' rel='stylesheet'
+          type='text/css'>
+
+    <link href="../web/css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <!--menu first level-->
+    <nav class="navbar navbar-level-1 navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav navbar-left  hidden-xs">
+                    <li class="active">
+                        <a href="#">Условия доставки</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-user text-theme"></span>
+                            <span class="hidden-xs">Личный кабинет</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-heart text-theme">
+                                <span class="icon-sum">1</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown-cart-btn">
+                        <a href="#" class="dropdown-toggle">
+                            <span class="fa fa-shopping-basket text-theme">
+                                <span class="icon-sum">1</span>
+                            </span>
+
+                            <span class="hidden-xs">Корзина:<strong>12080 руб</strong></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-cart animated fadeIn" role="menu">
+                            <li class="media dropdown-cart-item">
+                                    <span class="media-left">
+                                        <a href="#">
+                                            <img alt="img" class="media-object"
+                                                 src="../web/uploads/test-img-130x90_2.png">
+                                        </a>
+                                    </span>
+                                    <span class="media-body">
+                                        <a href="#" class="media-heading text-uppercase">
+                                            Кровать двухспальная Престиж, 2000*1600
+                                        </a>
+                                        <span class="dropdown-cart-price"><s>300 000 ₽</s> 200 988 ₽</span>
+                                    </span>
+                                    <span class="media-right">
+                                        <a href="#">
+                                            <span class="glyphicon icon-del-cart"></span>
+                                        </a>
+                                    </span>
+                            </li>
+                            <li class="media dropdown-cart-item">
+                                    <span class="media-left">
+                                        <a href="#">
+                                            <img alt="img" class="media-object"
+                                                 src="../web/uploads/test-img-130x90.png">
+                                        </a>
+                                    </span>
+                                    <span class="media-body">
+                                        <a href="#" class="media-heading text-uppercase">
+                                            Шкаф-купе, 4000*2400*600
+                                        </a>
+                                        <span class="dropdown-cart-price">40 000 ₽</span>
+                                    </span>
+                                    <span class="media-right">
+                                        <a href="#">
+                                            <span class="glyphicon icon-del-cart"></span>
+                                        </a>
+                                    </span>
+                            </li>
+                            <li class="dropdown-cart-total row text-right">
+                                <span class="col-sm-8 col-xs-7">В корзине:</span>
+                                <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">2 товара</span>
+                                <span class="col-sm-8 col-xs-7">Итоговая стоимость:</span>
+                                <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">240 988 ₽</span>
+                            </li>
+                            <li class="dropdown-cart-btns row text-uppercase">
+                                    <span class="col-sm-6">
+                                        <a href="#" class="btn btn-theme_2 btn-block">Продолжить покупки</a>
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <a href="#" class="btn btn-theme_1 btn-block">Оформить</a>
+                                    </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end-->
+
+    <!--menu second level-->
+    <div class="container header-info">
+        <div class="navbar-left">
+            <a class="navbar-brand" href="#">
+                <img src="../web/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav navbar-nav text-uppercase text-block-1">
+            <p>Инновационная</p>
+            <p>многофункциональная</p>
+            <p class="text-theme2">мебель трансформер</p>
+        </div>
+        <div class="navbar-nav navbar-right text-block-phone">
+            <a href="tel:84956603035" class="text-block-phone_link">
+                <span class="fa fa-phone"></span>
+                +7 (916) 60-242-83
+            </a>
+            <div>
+                <p>Режим работы: с 9.00 до 18.00</p>
+                <p>Мы работаем без выходных</p>
+            </div>
+        </div>
+        <form class="navbar-form navbar-right">
+            <div class="input-group stylish-input-group">
+                <input type="text" class="form-control" placeholder="Я ищу...">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </span>
+            </div>
+        </form>
+    </div><!-- /.container -->
+
+    <nav class="navbar navbar-static-top container-fluid navbar-level-2">
+        <div class="row">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        Меню
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <div class="nav navbar-nav row navbar-menu">
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Кровати<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-5 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-7 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Столы<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-5 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-7 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Шкафы<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-5 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-7 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Мебель<br class="hidden-lg"> для детской
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-6 col-sm-push-6 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-sm-pull-6 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                другие<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-6 col-sm-push-6 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-sm-pull-6 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<!--end-->
+
+<!--main-slide-->
+<div class="carousel fade-carousel" data-ride="carousel" data-interval="9000" id="bs-carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="#" data-animation="animated fadeIn">
+                <img src="../web/uploads/test-slide-main-1.png" alt="img" class="center-block" width="1920"
+                     height="600">
+            </a>
+            <div class="hero" data-animation="animated zoomIn">
+                <div class="h1"><a href="#">трансформируемая
+                    <br class="hidden-xs"/>
+                    мебель
+                    <br class="hidden-xs"/>
+                    для Гостинной</a>
+                </div>
+                <div class="clearfix"></div>
+                <a class="btn btn-hero btn-lg" role="button">Подобрать</a>
+            </div>
+        </div>
+        <div class="item">
+            <a href="#" data-animation="animated fadeIn">
+                <img src="../web/uploads/test-slide-main-2.png" alt="img" class="center-block" width="1920"
+                     height="600">
+            </a>
+            <div class="hero" data-animation="animated zoomIn">
+                <div class="h1"><a href="#">трансформируемая
+                    <br class="hidden-xs"/>
+                    мебель
+                    <br class="hidden-xs"/>
+                    для Гостинной2
+                </a>
+                </div>
+                <div class="clearfix"></div>
+                <a class="btn btn-hero btn-lg" role="button">Подобрать</a>
+            </div>
+        </div>
+        <div class="item">
+            <a href="#" data-animation="animated fadeIn">
+                <img src="../web/uploads/test-slide-main-3.png" alt="img" class="center-block" width="1920"
+                     height="600">
+            </a>
+            <div class="hero" data-animation="animated zoomIn">
+                <div class="h1"><a href="#">трансформируемая
+                    <br class="hidden-xs"/>
+                    мебель
+                    <br class="hidden-xs"/>
+                    для Гостинной3</a>
+                </div>
+                <div class="clearfix"></div>
+                <a class="btn btn-hero btn-lg" role="button">Подобрать</a>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#bs-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#bs-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--end-->
+<!-- Main -->
+<div class="container">
+    <div class="page-header theme">
+        <div class="row">
+            <div class="col-xs-8">
+                <h2 class="theme-title"><a href="#">Новые поступления</a></h2>
+            </div>
+            <div class="col-xs-4">
+                <nav>
+                    <ul class="pager">
+                        <li>
+                            <a data-slide="prev" href="#myCarousel" class="">
+                                <i class="glyphicon glyphicon glyphicon-menu-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide="next" href="#myCarousel" class="">
+                                <i class="glyphicon glyphicon glyphicon-menu-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="carousel slide slide_product" id="myCarousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like active">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Slide1 -->
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like active">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Slide2 -->
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like active">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Slide3 -->
+        </div>
+
+        <!--end-->
+    </div>
+</div>
+<div class="container-fluid">
+    <ul class="list-unstyled row clearfix list-slide">
+        <li class="col-sm-6">
+            <a href="#">
+                <img src="../web/uploads/test-slide-list.png" alt="img" class="img-responsive">
+                <div class="list-slide-block">
+                    <h2 class="list-slide-title">
+                        <span class="list-slide-first">Детские-трансформеры</span>
+                        <em class="list-slide-next">Детские-трансформеры</em>
+                    </h2>
+                    <div class="clearfix"></div>
+                    <p>Мебель трансформер - позволяет по новому взглянуть на домашний уют</p>
+                </div>
+            </a>
+        </li>
+        <li class="col-sm-6">
+            <a href="#">
+                <img src="../web/uploads/test-slide-list2.png" alt="img" class="img-responsive">
+                <div class="list-slide-block">
+                    <h2 class="list-slide-title">
+                        <span class="list-slide-first">Кровати-трансформеры</span>
+                        <em class="list-slide-next">Кровати-трансформеры</em>
+                    </h2>
+                    <div class="clearfix"></div>
+                    <p>Позволяет по новому взглянуть на домашний уют</p>
+                </div>
+            </a>
+        </li>
+        <li class="col-sm-6">
+            <a href="#">
+                <img src="../web/uploads/test-slide-list3.png" alt="img" class="img-responsive">
+                <div class="list-slide-block">
+                    <h2 class="list-slide-title">
+                        <span class="list-slide-first">СТОЛЫ-трансформеры</span>
+                        <em class="list-slide-next">СТОЛЫ-трансформеры</em>
+                    </h2>
+                    <div class="clearfix"></div>
+                    <p>Мебель трансформер - позволяет по новому взглянуть на домашний уют</p>
+                </div>
+            </a>
+        </li>
+        <li class="col-sm-6">
+            <a href="#">
+                <img src="../web/uploads/test-slide-list4.png" alt="img" class="img-responsive">
+                <div class="list-slide-block">
+                    <h2 class="list-slide-title">
+                        <span class="list-slide-first">Гладильные доски</span>
+                        <em class="list-slide-next">Гладильные доски</em>
+                    </h2>
+                    <div class="clearfix"></div>
+                    <p>Мебель трансформер - позволяет по новому взглянуть на домашний уют</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="page-header theme">
+        <div class="row">
+            <div class="col-xs-8">
+                <h2 class="theme-title"><a href="#">Лидеры продаж</a></h2>
+            </div>
+            <div class="col-xs-4">
+                <nav>
+                    <ul class="pager">
+                        <li>
+                            <a data-slide="prev" href="#myCarousel2" class="">
+                                <i class="glyphicon glyphicon glyphicon-menu-left"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-slide="next" href="#myCarousel2" class="">
+                                <i class="glyphicon glyphicon glyphicon-menu-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="carousel slide slide_product" id="myCarousel2">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like active">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Slide1 -->
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like active">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Slide2 -->
+            <div class="item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like active">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_new ribbon">
+                                            <span class="shape-text">Новинка</span>
+                                        </span>
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="media product">
+                            <div class="media-left">
+                                <a href="#" class="media-link">
+                                    <span class="media-object first">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-1.png" alt="img">
+                                    </span>
+                                    <span class="media-object last">
+                                        <span class="shape_sale-text ribbon">
+                                            <span class="shape-text">ХИТ</span>
+                                        </span>
+                                        <span class="shape_sale ribbon">
+                                            <span class="shape-text">-20%</span>
+                                        </span>
+                                        <img class="media-object" height="245" width="350"
+                                             src="../web/uploads/test-new-product-2.png" alt="img">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-block">
+                                    <h4 class="media-heading">
+                                        <a href="#">Стол для гостинной трансформер</a>
+                                    </h4>
+                                    <div class="media-descript">
+                                        Эти модели будут хорошо смотреться и в гостиных, и в детских
+                                    </div>
+                                </div>
+                                <div class="media-price">
+                                    <small>300 000 ₽</small>
+                                    200 988 ₽
+                                </div>
+                                <div class="media-btn">
+                                    <a href="#" class="btn btn-theme_2">Подробнее</a>
+                                    <a href="#" class="media-like">
+                                        <i class="fa fa-heart-o"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /Slide3 -->
+        </div>
+
+        <!--end-->
+    </div>
+</div>
+<div class="container-fluid">
+    <ul class="list-unstyled row clearfix list-slide">
+        <li class="col-sm-6">
+            <a href="#" class="overflow">
+                <img src="../web/uploads/test-slide-list3.png" alt="img" class="img-responsive">
+                <div class="list-slide-block">
+                    <h2 class="list-slide-title">
+                        <span class="list-slide-first">ТОВАР ДНЯ</span>
+                        <em class="list-slide-next">ТОВАР ДНЯ</em>
+                    </h2>
+                    <div class="clearfix"></div>
+                    <p></p>
+                </div>
+            </a>
+        </li>
+        <li class="col-sm-6">
+            <a href="#" class="overflow">
+                <img src="../web/uploads/test-slide-list4.png" alt="img" class="img-responsive">
+                <div class="list-slide-block">
+                    <h2 class="list-slide-title">
+                        <span class="list-slide-first">Акция дня</span>
+                        <em class="list-slide-next">Акция дня</em>
+                    </h2>
+                    <div class="clearfix"></div>
+                    <p>Только сегодня при покупке дивана-трансформера "БамблБи", гладильная доска "Мегатрон" в
+                        подарок!</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="container">
+    <div class="page-header theme">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2 class="theme-title theme-title-other"><a href="#">Лидеры продаж</a></h2>
+            </div>
+            <div class="col-sm-4">
+                <a href="#" class="theme-title-link">Смотреть все статьи</a>
+            </div>
+        </div>
+    </div>
+    <div class="theme-news">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#">
+                        <img src="../web/uploads/test-theme-news.png" class="img-responsive" alt="img"
+                             height="165" width="270">
+                    </a>
+                    <div class="caption">
+                        <div class="theme-news-title">
+                            <a href="#">Кровать-трансформер с диваном и нишей для белья</a>
+                        </div>
+                        <div class="theme-news-descript">
+                            Мебель трансформер - позволяет по новому взглянуть на домашний уют. Это не просто удобные,
+                            шкафы, диваны, рабочие столы, которые несут в себе сразу несколько функций, и позволяют...
+                            распоряжаться своей жилой площадью более свободно
+                        </div>
+                        <div class="theme-news-footer">
+                            <a href="#">Подробнее</a>
+                            <span><i class="fa fa-eye"></i>245</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#">
+                        <img src="../web/uploads/test-theme-news.png" class="img-responsive" alt="img"
+                             height="165" width="270">
+                    </a>
+                    <div class="caption">
+                        <div class="theme-news-title">
+                            <a href="#">Кровать-трансформер с диваном и нишей для белья</a>
+                        </div>
+                        <div class="theme-news-descript">
+                            Мебель трансформер - позволяет по новому взглянуть на домашний уют. Это не просто удобные,
+                            шкафы, диваны, рабочие столы, которые несут в себе сразу несколько функций, и позволяют...
+                            распоряжаться своей жилой площадью более свободно
+                        </div>
+                        <div class="theme-news-footer">
+                            <a href="#">Подробнее</a>
+                            <span><i class="fa fa-eye"></i>245</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#">
+                        <img src="../web/uploads/test-theme-news.png" class="img-responsive" alt="img"
+                             height="165" width="270">
+                    </a>
+                    <div class="caption">
+                        <div class="theme-news-title">
+                            <a href="#">Кровать-трансформер с диваном и нишей для белья</a>
+                        </div>
+                        <div class="theme-news-descript">
+                            Мебель трансформер - позволяет по новому взглянуть на домашний уют. Это не просто удобные,
+                            шкафы, диваны, рабочие столы, которые несут в себе сразу несколько функций, и позволяют...
+                            распоряжаться своей жилой площадью более свободно
+                        </div>
+                        <div class="theme-news-footer">
+                            <a href="#">Подробнее</a>
+                            <span><i class="fa fa-eye"></i>245</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <a href="#">
+                        <img src="../web/uploads/test-theme-news.png" class="img-responsive" alt="img"
+                             height="165" width="270">
+                    </a>
+                    <div class="caption">
+                        <div class="theme-news-title">
+                            <a href="#">Кровать-трансформер с диваном и нишей для белья</a>
+                        </div>
+                        <div class="theme-news-descript">
+                            Мебель трансформер - позволяет по новому взглянуть на домашний уют. Это не просто удобные,
+                            шкафы, диваны, рабочие столы, которые несут в себе сразу несколько функций, и позволяют...
+                            распоряжаться своей жилой площадью более свободно
+                        </div>
+                        <div class="theme-news-footer">
+                            <a href="#">Подробнее</a>
+                            <span><i class="fa fa-eye"></i>245</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="seo-block">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="../web/uploads/test-seo-img.png" alt="img" class="img-responsive" height="270"
+                     width="270">
+            </div>
+            <div class="col-sm-9">
+                <h1>SEO описание главной странички</h1>
+                <p>Мебель трансформер - позволяет по новому взглянуть на домашний уют. Это не просто удобные, шкафы,
+                    диваны, рабочие столы, которые несут в себе сразу несколько функций, и позволяют... распоряжаться
+                    своей жилой площадью более свободно. Мебель трансформер - позволяет по новому взглянуть на домашний
+                    уют. Это не просто удобные, шкафы, диваны, рабочие столы, которые несут в себе сразу несколько
+                    функций, и позволяют... распоряжаться своей жилой площадью более свободно. Мебель трансформер -
+                    позволяет по новому взглянуть на домашний уют. Это не просто удобные, шкафы, диваны, рабочие столы,
+                    которые несут в себе сразу несколько функций, и позволяют... распоряжаться своей жилой площадью
+                    более свободно. Мебель трансформер - позволяет по новому взглянуть на домашний уют. Это не просто
+                    удобные, шкафы, диваны, рабочие столы, которые несут в себе сразу несколько функций, и позволяют...
+                    распоряжаться своей жилой площадью более свободно. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="social-block">
+        <div class="page-header theme"></div>
+        <div class="row">
+            <img src="../web/uploads/test-social.png" alt="img" class="img-responsive center-block">
+        </div>
+    </div>
+</div>
+<!--end-->
+<footer class="footer container-fluid">
+    <div class="row">
+        <div class="footer-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Контакты
+                            </button>
+                            <div class="footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <table class="table">
+                                    <tr>
+                                        <td rowspan="2" class="first">
+                                        <span class="fa-stack">
+                                        <i class="fa fa-map-marker fa-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td>г. Москва,</td>
+                                    </tr>
+                                    <tr>
+                                        <td> ул. Тверская, 108, офис 45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-phone fa-stack-1x"></i>
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td><a href="tel:84956603035">+7 (495) 456-68-68</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <span class="fa-stack">
+                                        <i class="fa fa-envelope-o fa-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td><a href="#">Отправить письмо</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <span class="fa-stack">
+                                        <i class="fa fa-skype fa-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td>Skype: umf-mebel</td>
+                                    </tr>
+                                </table>
+                                <a href="#"><img src="../web/img/yandex_market.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Информация
+                            </button>
+                            <ul class="list-unstyled footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Условия доставки</a></li>
+                                <li><a href="#">Условия оплаты</a></li>
+                                <li><a href="#">Гарантии качества</a></li>
+                                <li><a href="#">Договор оферты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Разделы
+                            </button>
+                            <ul class="list-unstyled footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Кровати - трансформеры</a></li>
+                                <li><a href="#">Столы - трансформеры</a></li>
+                                <li><a href="#">Столы - трансформеры</a></li>
+                                <li><a href="#">Мебель для детской</a></li>
+                                <li><a href="#">Другие трансформеры</a></li>
+                                <li><a href="#">Акции / скидки</a></li>
+                                <li><a href="#">Галлерея</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Подписка
+                            </button>
+                            <div class="footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <p>Подпишитесь на наши увлекательные статьи и изумительные новинки!</p>
+                                <form>
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Ваш e-mail" class="form-control">
+                                        <span class="input-group-addon">
+                                        <button type="submit">
+                                            ок
+                                        </button>
+                                        </span>
+                                    </div>
+                                </form>
+                                <p>Присоединяйтесь к нашей тусовке в соцсетях!</p>
+                                <div class="footer-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-vk"></i></a>
+                                    <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <p>Мы принимаем к оплате</p>
+                                <img src="../web/img/footer-cards.png" alt="img" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="text-muted">Copyright © 2015, Интернет магазин трансформируемой мебели</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#" class="scrollToTop"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+<!-- Modal -->
+<div class="modal fade modal-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Войти на сайт</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#registration" aria-controls="registration" role="tab" data-toggle="tab">Новый
+                                пользователь</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Я – постоянный
+                                клиент</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="registration">
+                            <div class="footer-social-link text-right">
+                                <div class="social-label">
+                                    Регистрация<br class="hidden-xs"/>
+                                    с помощью соцсетей
+                                </div>
+                                <div class="social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-vk"></i></a>
+                                    <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">ФИО*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="ФИО" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Телефон*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="Телефон" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Email*</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Пароль</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" placeholder="Пароль"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label long">Подтвердить<br
+                                            class="hidden-xs"/>Пароль</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control error"
+                                               placeholder="Подтвердить пароль" required>
+                                        <span class="help-block">Ошибка! Пароли не совпадают</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Подписаться на акции и скидки
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-7">
+                                        <div class="text-help text-error">* Поля обязательны для заполнения
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="btn btn-theme_1 btn-lg btn-block" type="submit">ОК
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="login">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Email*</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Пароль</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" placeholder="Пароль"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-7">
+                                        <div class="text-help"><a href="#">Забыли пароль?</a></div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="btn btn-theme_1 btn-lg btn-block" type="submit">Войти
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-login modal-card" id="myModal2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">Товар добавлен в корзину</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dropdown-cart">
+                    <div class="media dropdown-cart-item">
+                                    <span class="media-left">
+                                        <a href="#">
+                                            <img src="../web/uploads/test-img-130x90.png" class="media-object"
+                                                 alt="img">
+                                        </a>
+                                    </span>
+                                    <span class="media-body">
+                                        <a class="media-heading text-uppercase" href="#">
+                                            Шкаф-купе, 4000*2400*600
+                                        </a>
+                                        <span class="dropdown-cart-price"><s>300 000 ₽</s> 200 988 ₽</span>
+                                    </span>
+                    </div>
+                    <div class="dropdown-cart-total row text-right">
+                        <span class="col-sm-8 col-xs-7">В корзине:</span>
+                        <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">2 товара</span>
+                        <span class="col-sm-8 col-xs-7">Итоговая стоимость:</span>
+                        <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">240 988 ₽</span>
+                    </div>
+                    <div class="dropdown-cart-btns row text-uppercase">
+                                    <span class="col-sm-6">
+                                        <a class="btn btn-theme_2 btn-block" href="#">Продолжить покупки</a>
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <a class="btn btn-theme_1 btn-block" href="#">Оформить</a>
+                                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-->
+
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/select2.min.js"></script>
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/owl.carousel.min.js"></script>
+<script src="../web/js/custom.js"></script>
+
+</body>
+</html>

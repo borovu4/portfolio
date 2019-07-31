@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/owl.carousel.css" rel="stylesheet">
+    <link href="../web/css/owl.theme.css" rel="stylesheet">
+    <link href="../web/css/owl.transitions.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../web/css/animate.min.css" rel="stylesheet">
+    <link href="../web/css/select2.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700italic,700&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:700&subset=latin,cyrillic-ext' rel='stylesheet'
+          type='text/css'>
+
+    <link href="../web/css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <!--menu first level-->
+    <nav class="navbar navbar-level-1 navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav navbar-left  hidden-xs">
+                    <li class="active">
+                        <a href="#">Условия доставки</a>
+                    </li>
+                    <li>
+                        <a href="#">Гарантия</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#myModal">
+                            <span class="fa fa-user text-theme"></span>
+                            <span class="hidden-xs">Личный кабинет</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="fa fa-heart text-theme">
+                                <span class="icon-sum">1</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown-cart-btn">
+                        <a href="#" class="dropdown-toggle">
+                            <span class="fa fa-shopping-basket text-theme">
+                                <span class="icon-sum">1</span>
+                            </span>
+
+                            <span class="hidden-xs">Корзина:<strong>12080 руб</strong></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-cart animated fadeIn" role="menu">
+                            <li class="media dropdown-cart-item">
+                                    <span class="media-left">
+                                        <a href="#">
+                                            <img alt="img" class="media-object"
+                                                 src="../web/uploads/test-img-130x90_2.png">
+                                        </a>
+                                    </span>
+                                    <span class="media-body">
+                                        <a href="#" class="media-heading text-uppercase">
+                                            Кровать двухспальная Престиж, 2000*1600
+                                        </a>
+                                        <span class="dropdown-cart-price"><s>300 000 ₽</s> 200 988 ₽</span>
+                                    </span>
+                                    <span class="media-right">
+                                        <a href="#">
+                                            <span class="glyphicon icon-del-cart"></span>
+                                        </a>
+                                    </span>
+                            </li>
+                            <li class="media dropdown-cart-item">
+                                    <span class="media-left">
+                                        <a href="#">
+                                            <img alt="img" class="media-object"
+                                                 src="../web/uploads/test-img-130x90.png">
+                                        </a>
+                                    </span>
+                                    <span class="media-body">
+                                        <a href="#" class="media-heading text-uppercase">
+                                            Шкаф-купе, 4000*2400*600
+                                        </a>
+                                        <span class="dropdown-cart-price">40 000 ₽</span>
+                                    </span>
+                                    <span class="media-right">
+                                        <a href="#">
+                                            <span class="glyphicon icon-del-cart"></span>
+                                        </a>
+                                    </span>
+                            </li>
+                            <li class="dropdown-cart-total row text-right">
+                                <span class="col-sm-8 col-xs-7">В корзине:</span>
+                                <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">2 товара</span>
+                                <span class="col-sm-8 col-xs-7">Итоговая стоимость:</span>
+                                <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">240 988 ₽</span>
+                            </li>
+                            <li class="dropdown-cart-btns row text-uppercase">
+                                    <span class="col-sm-6">
+                                        <a href="#" class="btn btn-theme_2 btn-block">Продолжить покупки</a>
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <a href="#" class="btn btn-theme_1 btn-block">Оформить</a>
+                                    </span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end-->
+
+    <!--menu second level-->
+    <div class="container header-info">
+        <div class="navbar-left">
+            <a class="navbar-brand" href="#">
+                <img src="../web/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav navbar-nav text-uppercase text-block-1">
+            <p>Инновационная</p>
+            <p>многофункциональная</p>
+            <p class="text-theme2">мебель трансформер</p>
+        </div>
+        <div class="navbar-nav navbar-right text-block-phone">
+            <a href="tel:84956603035" class="text-block-phone_link">
+                <span class="fa fa-phone"></span>
+                +7 (916) 60-242-83
+            </a>
+            <div>
+                <p>Режим работы: с 9.00 до 18.00</p>
+                <p>Мы работаем без выходных</p>
+            </div>
+        </div>
+        <form class="navbar-form navbar-right">
+            <div class="input-group stylish-input-group">
+                <input type="text" class="form-control" placeholder="Я ищу...">
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </span>
+            </div>
+        </form>
+    </div><!-- /.container -->
+
+    <nav class="navbar navbar-static-top container-fluid navbar-level-2">
+        <div class="row">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        Меню
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                    <div class="nav navbar-nav row navbar-menu">
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Кровати<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-5 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-7 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Столы<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-5 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-7 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Шкафы<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-5 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-7 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                Мебель<br class="hidden-lg"> для детской
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-6 col-sm-push-6 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-sm-pull-6 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-15 dropdown">
+                            <a href="#" class="navbar-menu-link dropdown-toggle">
+                                другие<br class="visible-xs"> трансформеры
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <div class="dropdown-content">
+                                        <div class="row dropdown-content-table">
+                                            <div class="col-sm-6 col-sm-push-6 dropdown-content-table_cell">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Кровать шкаф</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать стол</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать диван</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Кровать уголок</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Двухярусные кровати</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-sm-pull-6 dropdown-content-table_cell hidden-xs">
+                                                <a href="#">
+                                                    <img src="../web/uploads/test-img-to-list.png"
+                                                         alt="img" class="dropdown-content-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<!--end-->
+
+<!-- Main -->
+<div class="container personal_page">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-theme">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h3 class="panel-title">
+                            <a role="button" class="hidden-md hidden-lg panel-theme-head" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Личный кабинет
+                            </a>
+                            <span class="hidden-xs hidden-sm">Личный кабинет</span>
+                        </h3>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in panel-theme-drop" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <ul class="list-unstyled">
+                                <li class="active"><a href="#">Личная информация</a></li>
+                                <li><a href="#">Заказы</a></li>
+                                <li><a href="#">Корзина</a></li>
+                                <li><a href="#">Избранное</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-theme">
+                    <div class="panel-heading" role="tab" id="headingOne2">
+                        <h3 class="panel-title">
+                            <a role="button" class="hidden-md hidden-lg panel-theme-head" data-toggle="collapse" data-parent="#accordion" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                Вы недавно смотрели
+                            </a>
+                            <span class="hidden-xs hidden-sm">Вы недавно смотрели</span>
+                        </h3>
+                    </div>
+                    <div id="collapseOne2" class="panel-collapse collapse in panel-theme-drop" role="tabpanel" aria-labelledby="headingOne2">
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../web/uploads/test-see-before.png" alt="img"
+                                             height="83" width="120">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">Кровать двухспальная Престиж, 2000*1600</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="../web/uploads/test-see-before.png" alt="img"
+                                             height="83" width="120">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a href="#" class="media-heading">Кровать двухспальная Престиж, 2000*1600</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <ol class="breadcrumb theme">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li class="active">личная информация</li>
+            </ol>
+            <div class="h2 text-uppercase">
+                Добрый день, <span>анатолий Борисович</span>
+            </div>
+            <div class="text_help">
+                В личном кабинете Вы можете проверить текущее состояние корзины, ход выполнения Ваших заказов,
+                просмотреть или изменить личную информацию, а также подписаться на новости и другие информационные
+                рассылки.
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">ФИО*</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="ФИО">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Телефон*</label>
+                            <div class="col-sm-8">
+                                <input type="tel" class="form-control" placeholder="Телефон">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Email*</label>
+                            <div class="col-sm-8">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Пароль</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" placeholder="Пароль">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label control-small">Подтвердить Пароль</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" placeholder="Подтвердить Пароль">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Подписаться на акции и скидки
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <span class="text-help text-error">
+                                    * Поля обязательны для заполнения
+                                </span>
+                                <button type="submit" class="btn btn-lg btn-default">сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-->
+<footer class="footer container-fluid">
+    <div class="row">
+        <div class="footer-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Контакты
+                            </button>
+                            <div class="footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <table class="table">
+                                    <tr>
+                                        <td rowspan="2" class="first">
+                                        <span class="fa-stack">
+                                        <i class="fa fa-map-marker fa-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td>г. Москва,</td>
+                                    </tr>
+                                    <tr>
+                                        <td> ул. Тверская, 108, офис 45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <span class="fa-stack fa-lg">
+                                        <i class="fa fa-phone fa-stack-1x"></i>
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td><a href="tel:84956603035">+7 (495) 456-68-68</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <span class="fa-stack">
+                                        <i class="fa fa-envelope-o fa-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td><a href="#">Отправить письмо</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        <span class="fa-stack">
+                                        <i class="fa fa-skype fa-2x"></i>
+                                        </span>
+                                        </td>
+                                        <td>Skype: umf-mebel</td>
+                                    </tr>
+                                </table>
+                                <a href="#"><img src="../web/img/yandex_market.png" alt="img"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Информация
+                            </button>
+                            <ul class="list-unstyled footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Условия доставки</a></li>
+                                <li><a href="#">Условия оплаты</a></li>
+                                <li><a href="#">Гарантии качества</a></li>
+                                <li><a href="#">Договор оферты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Разделы
+                            </button>
+                            <ul class="list-unstyled footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Кровати - трансформеры</a></li>
+                                <li><a href="#">Столы - трансформеры</a></li>
+                                <li><a href="#">Столы - трансформеры</a></li>
+                                <li><a href="#">Мебель для детской</a></li>
+                                <li><a href="#">Другие трансформеры</a></li>
+                                <li><a href="#">Акции / скидки</a></li>
+                                <li><a href="#">Галлерея</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dropdown">
+                            <button class="footer-block-head btn dropdown-toggle" type="button"
+                                    aria-haspopup="true" aria-expanded="true">
+                                Подписка
+                            </button>
+                            <div class="footer-block-body dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <p>Подпишитесь на наши увлекательные статьи и изумительные новинки!</p>
+                                <form>
+                                    <div class="input-group">
+                                        <input type="email" placeholder="Ваш e-mail" class="form-control">
+                                        <span class="input-group-addon">
+                                        <button type="submit">
+                                            ок
+                                        </button>
+                                        </span>
+                                    </div>
+                                </form>
+                                <p>Присоединяйтесь к нашей тусовке в соцсетях!</p>
+                                <div class="footer-social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-vk"></i></a>
+                                    <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                                <p>Мы принимаем к оплате</p>
+                                <img src="../web/img/footer-cards.png" alt="img" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="text-muted">Copyright © 2015, Интернет магазин трансформируемой мебели</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="#" class="scrollToTop"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+
+<!-- Modal -->
+<div class="modal fade modal-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Войти на сайт</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#registration" aria-controls="registration" role="tab" data-toggle="tab">Новый
+                                пользователь</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#login" aria-controls="login" role="tab" data-toggle="tab">Я – постоянный
+                                клиент</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="registration">
+                            <div class="footer-social-link text-right">
+                                <div class="social-label">
+                                    Регистрация<br class="hidden-xs"/>
+                                    с помощью соцсетей
+                                </div>
+                                <div class="social-link">
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-vk"></i></a>
+                                    <a href="#"><i class="fa fa-odnoklassniki"></i></a>
+                                    <a href="#"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">ФИО*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="ФИО" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Телефон*</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" placeholder="Телефон" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Email*</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Пароль</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" placeholder="Пароль"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label long">Подтвердить<br
+                                            class="hidden-xs"/>Пароль</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control error"
+                                               placeholder="Подтвердить пароль" required>
+                                        <span class="help-block">Ошибка! Пароли не совпадают</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-4 col-sm-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Подписаться на акции и скидки
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-7">
+                                        <div class="text-help text-error">* Поля обязательны для заполнения
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="btn btn-theme_1 btn-lg btn-block" type="submit">ОК
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="login">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Email*</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">Пароль</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" placeholder="Пароль"
+                                               required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-7">
+                                        <div class="text-help"><a href="#">Забыли пароль?</a></div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="btn btn-theme_1 btn-lg btn-block" type="submit">Войти
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-login modal-card" id="myModal2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel2">Товар добавлен в корзину</h4>
+            </div>
+            <div class="modal-body">
+                <div class="dropdown-cart">
+                    <div class="media dropdown-cart-item">
+                                    <span class="media-left">
+                                        <a href="#">
+                                            <img src="../web/uploads/test-img-130x90.png" class="media-object"
+                                                 alt="img">
+                                        </a>
+                                    </span>
+                                    <span class="media-body">
+                                        <a class="media-heading text-uppercase" href="#">
+                                            Шкаф-купе, 4000*2400*600
+                                        </a>
+                                        <span class="dropdown-cart-price"><s>300 000 ₽</s> 200 988 ₽</span>
+                                    </span>
+                    </div>
+                    <div class="dropdown-cart-total row text-right">
+                        <span class="col-sm-8 col-xs-7">В корзине:</span>
+                        <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">2 товара</span>
+                        <span class="col-sm-8 col-xs-7">Итоговая стоимость:</span>
+                        <span class="col-sm-4 col-xs-5 dropdown-cart-total_sum">240 988 ₽</span>
+                    </div>
+                    <div class="dropdown-cart-btns row text-uppercase">
+                                    <span class="col-sm-6">
+                                        <a class="btn btn-theme_2 btn-block" href="#">Продолжить покупки</a>
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <a class="btn btn-theme_1 btn-block" href="#">Оформить</a>
+                                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-->
+
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/owl.carousel.min.js"></script>
+<script src="../web/js/select2.min.js"></script>
+<script src="../web/js/custom.js"></script>
+
+</body>
+</html>

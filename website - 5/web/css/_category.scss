@@ -1,0 +1,368 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.filter-sort {
+  display: block;
+  margin: ($line-height-computed * 2) 0;
+  .control-label {
+    color: #45474e;
+    font-family: $font-family-sub;
+    font-size: 15px;
+    font-weight: normal;
+    margin-right: 17px;
+  }
+  .select2-container {
+    border-color: #bababa;
+    min-width: 260px;
+    .select2-selection--single {
+      border-color: #bababa;
+      @include border-radius(0);
+      height: 35px;
+      outline: none;
+      .select2-selection__rendered {
+        font-family: $font-family-sub;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-left: 10px;
+      }
+      .select2-selection__arrow {
+        height: 35px;
+        right: 6px;
+        top: 1px;
+        b {
+          color: #bababa;
+        }
+      }
+    }
+  }
+  &.pull-right {
+    .select2-container {
+      min-width: inherit;
+    }
+  }
+}
+
+.select2-container--open .select2-dropdown--above,
+.select2-container--open .select2-dropdown--below {
+  &.select--drop_2 {
+    color: #242731;
+    border:1px solid #bababa;
+    @include border-radius(0);
+    .select2-results__option {
+      font-size: 16px;
+      font-weight: 300;
+      height: 35px;
+      line-height: 35px;
+      padding: 0 15px;
+    }
+  }
+}
+.select2-container--default .select--drop_2 {
+  .select2-results__option[aria-selected="true"] {
+    background-color: #383e52;
+    color: #ffffff;
+  }
+  .select2-results__option--highlighted[aria-selected] {
+    background-color: #383e52;
+    color: #ffffff;
+  }
+}
+
+.filter-group {
+  border-color: #dadada;
+  margin-bottom: 0;
+  .panel-heading {
+    background-color: #70a2c1;
+    color: #ffffff;
+    padding: 18px 20px;
+    .panel-title {
+      font-size: 21px;
+      line-height: 1;
+      a {
+        font-family: $font-family-sub;
+        font-size: 14px;
+        float: right;
+        line-height: 20px;
+        position: relative;
+        &:before {
+          content: "\f106";
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+          font-size: 21px;
+          position: absolute;
+          left: -25px;
+          text-decoration: none;
+        }
+        span:first-child {
+          display: none;
+        }
+        &.collapsed {
+          &:before {
+            content: "\f107";
+          }
+          span:first-child {
+            display: block;
+          }
+          span:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .panel-body {
+    background-color: #efefef;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    padding: 40px 30px 30px;
+    position: relative;
+    &:before {
+      border-top: 15px solid #70a2c1;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      content: "";
+      left: 40px;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+    @media (max-width: $screen-xs-max) {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      padding: 30px 10px;
+    }
+    .title {
+      color: #222a44;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+    .custom_checkbox {
+      font-family: $font-family-sub;
+      font-size: 15px;
+      margin: 0;
+      label {
+        padding-left: 0;
+      }
+      .cr {
+        background-color: #ffffff;
+        margin-top: 1px;
+        margin-bottom: 13px;
+      }
+    }
+  }
+  .panel-footer {
+    background-color: #e7e7e7;
+    color: $brand-info;
+    padding: 18px 30px;
+    .form-group {
+      label {
+        color: #222a44;
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: 10px;
+      }
+      .form-control {
+        @include box-shadow(none);
+        border-color: #bababa;
+        height: 35px;
+        font-family: $font-family-sub;
+        padding: 6px 10px;
+      }
+      .form-col {
+        float: left;
+        width: 50%;
+        .form-control {
+          display: inline-block;
+          margin-left: 4%;
+          width: 75%;
+          @media (min-width: $screen-lg-min) {
+            width: 100px;
+            font-size: 18px;
+            font-family: $font-family-sub;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .btn-filter {
+      text-align: right;
+      .btn {
+        font-size: 16px;
+        height: 45px;
+        &.btn-link {
+          color: $brand-info;
+          font-family: $font-family-sub;
+          padding-left: 30px;
+          padding-right: 30px;
+          .fa {
+            margin-right: 10px;
+          }
+        }
+        &.btn-primary {
+          font-size: 15px;
+          font-weight: 500;
+          text-transform: uppercase;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .select2-container {
+    border-color: #bababa;
+    .select2-selection--single {
+      @include border-radius(0);
+      border-color: #bababa;
+      height: 35px;
+      outline: none;
+      .select2-selection__rendered {
+        font-family: $font-family-sub;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-left: 10px;
+      }
+      .select2-selection__arrow {
+        height: 35px;
+        right: 6px;
+        top: 1px;
+        b {
+          color: #bababa;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .filter-group {
+    border: none;
+    margin-left: -15px;
+    margin-right: -15px;
+    .panel-heading {
+      padding-left: 10px;
+      padding-right: 10px;
+      .panel-title {
+        font-size: 18px;
+        a {
+          display: block;
+          float: none;
+          margin-left: 25px;
+          margin-top: 8px;
+        }
+      }
+    }
+    .panel-footer {
+      padding-left: 5px;
+      padding-right: 5px;
+      .form-group .form-col .form-control {
+        width: 82%;
+      }
+      .btn-filter {
+        text-align: center;
+        .btn {
+          margin-bottom: 10px;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .filter-sort {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.drop-down-section {
+  display: block;
+  position: relative
+}
+@media screen and (min-width: 760px) {
+  .drop-down-section {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .drop-down-section {
+    width: 100%;
+  }
+}
+.heading-checkbox {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  padding: 32px;
+  margin: -16px 0 0;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
+}
+.heading-checkbox + .heading:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e260";
+}
+.heading-checkbox:checked ~ .link-list,
+.heading-checkbox:checked + .heading + .link-list {
+  display: none;
+}
+.heading-checkbox:checked + .heading:after {
+  font-family: 'Glyphicons Halflings';
+  content: "\e259";
+}
+.heading {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 300;
+  color: #222a44;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.heading:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 23.8px;
+  height: 23.8px;
+  background-size: cover;
+}
+.link-list:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  .heading-checkbox {
+    display: none;
+  }
+  .heading-checkbox + .heading:after {
+    background-image: none;
+  }
+  .heading-checkbox:checked ~ .link-list,
+  .heading-checkbox:checked + .heading + .link-list {
+    display: block;
+  }
+  .heading-checkbox:checked + .heading:after {
+    content: '';
+  }
+}

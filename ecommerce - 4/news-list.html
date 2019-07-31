@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Интернет магазин подарков - купить необычные и оригинальные подарки в Минске и Беларуси</title>
+
+    <link href="web/css/jquery-ui.css" rel="stylesheet">
+    <link href="web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="web/css/font-bebas.css" rel="stylesheet">
+    <link href="web/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="web/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="web/css/prettyPhoto.css" rel="stylesheet">
+    <link href="web/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="web/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <link href="web/css/media.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="web/js/html5shiv.min.js"></script>
+    <script src="web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper container">
+    <header>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
+                        <nav class="navbar navbar-top">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li><a href="#" class="hidden-xs">О магазине</a></li>
+                                <li><a href="#" class="hidden-xs">Доставка и оплата</a></li>
+                                <li><a href="#" class="hidden-xs">Скидки и акции</a></li>
+                                <li><a href="#" class="hidden-xs">Магазины</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#" data-toggle="modal" data-target="#modal_login">Личный кабинет</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3 col-sm-2">
+                        <a class="navbar-logo" href="#">
+                            <img alt="Интернет магазин подарков" title="Подарки" src="web/img/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-xs-9 col-sm-10 header_sub">
+                        <div class="row">
+                            <div class="col-sm-8 col-md-7">
+                                <div class="row hidden-xs">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                Быстрый заказ подарков по телефонам в Минске:
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <ul class="list-unstyled header_sub-mob-1">
+                                            <li>
+                                                +375 29 173-60-50
+                                            </li>
+                                            <li>
+                                                +375 29 123-51-68
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4">
+                                        <ul class="list-unstyled header_sub-mob-2">
+                                            <li>
+                                                +375 29 173-60-50
+                                            </li>
+                                            <li>
+                                                +375 29 123-51-68
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-md-5 work-time">
+                                Время работы интернет-магазина подарков:
+                                <span class="work-time-t">с 9:00 до 22:00 <span class="text-red">Пн-Пт</span>
+                                    <span class="text-orange delivery">Доставка по всей Беларуси</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-xs-12 col-sm-10 header_sub">
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <form>
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Искать в магазине">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-xs-5 col-md-5 work-time last">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">
+                                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                                        </button>
+                                    </span>
+                                    <!--if empty-->
+                                    <!--<div class="form-control text-center">Ваша корзина пуста</div>-->
+                                    <!--else -->
+                                    <div class="form-control">5 <span class="hidden-xs">шт - <strong
+                                            class="text-orange">252 500
+                                        руб</strong></span></div>
+                                    <!--end if-->
+                                    <div class="input-group-btn drop-cart">
+                                        <button type="button" class="btn btn-default dropdown-toggle"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="glyphicon glyphicon-menu-down"></span>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-right">
+                                            <li>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">Корзина заказа</div>
+                                                    <div class="panel-body">
+                                                        <!--if not item-->
+                                                        <div class="media">
+                                                            <div class="media-body media-middle text-center">
+                                                                Ваша корзина пуста
+                                                            </div>
+                                                        </div>
+                                                        <!--end if-->
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="#">
+                                                                    <img class="media-object"
+                                                                         src="web/uploads/test-cart.jpg" alt="...">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body media-middle">
+                                                                <a href="#">Силиконовый чайник</a>
+                                                            </div>
+                                                            <div class="media-right media-middle">
+                                                                1 шт
+                                                            </div>
+                                                            <div class="media-right media-middle text-nowrap p-b-p">
+                                                                34.9 руб.
+                                                                <small>349 000 руб.</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="media">
+                                                            <div class="media-left">
+                                                                <a href="#">
+                                                                    <img class="media-object"
+                                                                         src="web/uploads/test-cart.jpg" alt="...">
+                                                                </a>
+                                                            </div>
+                                                            <div class="media-body media-middle">
+                                                                <a href="#"> Автостакан ЧайWay 450 мл арабика</a>
+                                                            </div>
+                                                            <div class="media-right media-middle">
+                                                                1 шт
+                                                            </div>
+                                                            <div class="media-right media-middle text-nowrap p-b-p">
+                                                                34.9 руб.
+                                                                <small>349 000 руб.</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" media-complect">
+                                                            <div class="hidden-xs">
+                                                                <div class="media">
+                                                                    <div class="media-left">
+                                                                        <a href="#">
+                                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="media-body media-middle p-b-n">
+                                                                        <a href="#">Плащ-палатка с карманом под рюкзак
+                                                                            на все случаи жизни</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media pluse">
+                                                                    <div class="media-left">
+                                                                        <div class="pluse_icon">+</div>
+                                                                    </div>
+                                                                    <div class="media-body media-middle p-b-n">
+                                                                    </div>
+                                                                    <div class="media-right media-middle">
+                                                                        1 шт
+                                                                    </div>
+                                                                    <div class="media-right media-middle text-nowrap p-b-p">
+                                                                        34.9 руб.
+                                                                        <small>349 000 руб.</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="media">
+                                                                    <div class="media-left">
+                                                                        <a href="#">
+                                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="media-body media-middle p-b-n">
+                                                                        <a href="#">Плащ-палатка с карманом под рюкзак
+                                                                            на все случаи жизни</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="media visible-xs">
+                                                                <div class="media">
+                                                                    <div class="media-left">
+                                                                        <a href="#">
+                                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                                        </a>
+                                                                        <a href="#">
+                                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="media-body media-middle p-b-n">
+                                                                        <a href="#">Комплект <span>1248-1214-12</span></a>
+                                                                    </div>
+                                                                    <div class="media-right media-middle">
+                                                                        1 шт
+                                                                    </div>
+                                                                    <div class="media-right media-middle text-nowrap p-b-p">
+                                                                        34.9 руб.
+                                                                        <small>349 000 руб.</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="panel-footer">
+                                                        <a href="#" class="btn btn-theme">Оформить заказ</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="ex1" class="navbar navbar-default navbar-menu">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse" aria-expanded="false">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+                <span class="navbar-brand visible-xs">Меню</span>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-justified">
+                    <li class="active dropdown">
+                        <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown"
+                           role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            Прикольные подарки
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <ul class="list-unstyled col-sm-6">
+                                        <li><a href="#">Костровое оборудование</a></li>
+                                        <li><a href="#">Фонари</a></li>
+                                        <li><a href="#">Бинокли</a></li>
+                                        <li><a href="#">Гамаки, пледы, коврики</a></li>
+                                        <li><a href="#">Компасы, курвиметры</a></li>
+                                        <li><a href="#">Походное оборудование</a></li>
+                                        <li><a href="#">Посуда</a></li>
+                                        <li><a href="#">Тарелки, миски</a></li>
+                                        <li><a href="#">Кружки, стаканы</a></li>
+                                        <li><a href="#">Термокружки</a></li>
+                                        <li><a href="#">Термосы</a></li>
+                                        <li><a href="#">Наборы посуды</a></li>
+                                        <li><a href="#">Столовые приборы</a></li>
+                                        <li><a href="#">Зажигалки</a></li>
+                                        <li><a href="#">Полотенце</a></li>
+                                        <li><a href="#">Очки</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled col-sm-6">
+                                        <li><a href="#">Костровое оборудование</a></li>
+                                        <li><a href="#">Фонари</a></li>
+                                        <li><a href="#">Бинокли</a></li>
+                                        <li><a href="#">Гамаки, пледы, коврики</a></li>
+                                        <li><a href="#">Компасы, курвиметры</a></li>
+                                        <li><a href="#">Походное оборудование</a></li>
+                                        <li><a href="#">Посуда</a></li>
+                                        <li><a href="#">Тарелки, миски</a></li>
+                                        <li><a href="#">Кружки, стаканы</a></li>
+                                        <li><a href="#">Термокружки</a></li>
+                                        <li><a href="#">Термосы</a></li>
+                                        <li><a href="#">Наборы посуды</a></li>
+                                        <li><a href="#">Столовые приборы</a></li>
+                                        <li><a href="#">Зажигалки</a></li>
+                                        <li><a href="#">Полотенце</a></li>
+                                        <li><a href="#">Очки</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-target="#" href="#" data-toggle="dropdown"
+                           role="button"
+                           aria-haspopup="true" aria-expanded="false">
+                            Автоподарки
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="row">
+                                    <ul class="list-unstyled col-sm-6">
+                                        <li><a href="#">Костровое оборудование</a></li>
+                                        <li><a href="#">Фонари</a></li>
+                                        <li><a href="#">Бинокли</a></li>
+                                        <li><a href="#">Гамаки, пледы, коврики</a></li>
+                                        <li><a href="#">Компасы, курвиметры</a></li>
+                                        <li><a href="#">Походное оборудование</a></li>
+                                        <li><a href="#">Посуда</a></li>
+                                        <li><a href="#">Тарелки, миски</a></li>
+                                        <li><a href="#">Кружки, стаканы</a></li>
+                                        <li><a href="#">Термокружки</a></li>
+                                        <li><a href="#">Термосы</a></li>
+                                        <li><a href="#">Наборы посуды</a></li>
+                                        <li><a href="#">Столовые приборы</a></li>
+                                        <li><a href="#">Зажигалки</a></li>
+                                        <li><a href="#">Полотенце</a></li>
+                                        <li><a href="#">Очки</a></li>
+                                    </ul>
+                                    <ul class="list-unstyled col-sm-6">
+                                        <li><a href="#">Костровое оборудование</a></li>
+                                        <li><a href="#">Фонари</a></li>
+                                        <li><a href="#">Бинокли</a></li>
+                                        <li><a href="#">Гамаки, пледы, коврики</a></li>
+                                        <li><a href="#">Компасы, курвиметры</a></li>
+                                        <li><a href="#">Походное оборудование</a></li>
+                                        <li><a href="#">Посуда</a></li>
+                                        <li><a href="#">Тарелки, миски</a></li>
+                                        <li><a href="#">Кружки, стаканы</a></li>
+                                        <li><a href="#">Термокружки</a></li>
+                                        <li><a href="#">Термосы</a></li>
+                                        <li><a href="#">Наборы посуды</a></li>
+                                        <li><a href="#">Столовые приборы</a></li>
+                                        <li><a href="#">Зажигалки</a></li>
+                                        <li><a href="#">Полотенце</a></li>
+                                        <li><a href="#">Очки</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Для путешествий</a></li>
+                    <li><a href="#">Для пикника</a></li>
+                    <li><a href="#">Одежда</a></li>
+                    <li><a href="#">Настоящему мужчине</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav class="navbar navbar-mobile" data-spy="affix" data-offset-top="250">
+        <div class="container">
+            <div class="collapse navbar-collapse in" id="navbar-collapse-1">
+                <ul class="nav nav-justified">
+                    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="#ex1"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <form>
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" placeholder="Искать в магазине" class="form-control">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-search"></span>
+                                        </button>
+                                    </span>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown drop-cart">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                            <span class="label">5</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Корзина заказа</div>
+                                    <div class="panel-body">
+                                        <!--if not item-->
+                                        <div class="media">
+                                            <div class="media-body media-middle text-center">
+                                                Ваша корзина пуста
+                                            </div>
+                                        </div>
+                                        <!--end if-->
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object"
+                                                         src="web/uploads/test-cart.jpg" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body media-middle">
+                                                <a href="#">Силиконовый чайник</a>
+                                            </div>
+                                            <div class="media-right media-middle">
+                                                1 шт
+                                            </div>
+                                            <div class="media-right media-middle text-nowrap p-b-p">
+                                                34.9 руб.
+                                                <small>349 000 руб.</small>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img class="media-object"
+                                                         src="web/uploads/test-cart.jpg" alt="...">
+                                                </a>
+                                            </div>
+                                            <div class="media-body media-middle">
+                                                <a href="#"> Автостакан ЧайWay 450 мл арабика</a>
+                                            </div>
+                                            <div class="media-right media-middle">
+                                                1 шт
+                                            </div>
+                                            <div class="media-right media-middle text-nowrap p-b-p">
+                                                34.9 руб.
+                                                <small>349 000 руб.</small>
+                                            </div>
+                                        </div>
+                                        <div class=" media-complect">
+                                            <div class="hidden-xs">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body media-middle p-b-n">
+                                                        <a href="#">Плащ-палатка с карманом под рюкзак
+                                                            на все случаи жизни</a>
+                                                    </div>
+                                                </div>
+                                                <div class="media pluse">
+                                                    <div class="media-left">
+                                                        <div class="pluse_icon">+</div>
+                                                    </div>
+                                                    <div class="media-body media-middle p-b-n">
+                                                    </div>
+                                                    <div class="media-right media-middle">
+                                                        1 шт
+                                                    </div>
+                                                    <div class="media-right media-middle text-nowrap p-b-p">
+                                                        34.9 руб.
+                                                        <small>349 000 руб.</small>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body media-middle p-b-n">
+                                                        <a href="#">Плащ-палатка с карманом под рюкзак
+                                                            на все случаи жизни</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media visible-xs">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                        </a>
+                                                        <a href="#">
+                                                            <img class="media-object" src="web/uploads/test-cart.jpg" alt="...">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body media-middle p-b-n">
+                                                        <a href="#">Комплект <span>1248-1214-12</span></a>
+                                                    </div>
+                                                    <div class="media-right media-middle">
+                                                        1 шт
+                                                    </div>
+                                                    <div class="media-right media-middle text-nowrap p-b-p">
+                                                        34.9 руб.
+                                                        <small>349 000 руб.</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-footer">
+                                        <a href="#" class="btn btn-theme">Оформить заказ</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#modal_login"><span
+                            class="glyphicon glyphicon-user"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main row">
+        <div class="col-xs-12 fixed">
+            <div class="panel panel-theme">
+                <div class="panel-heading">
+                    <span class="hidden-xs">Горячие предложения</span>
+                    <a class="visible-xs collapsed" role="button" data-toggle="collapse" href="#collapse-h-1">
+                        Горячие предложения
+                    </a>
+                </div>
+                <div class="panel-body collapse" id="collapse-h-1">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#">
+                                <span>new</span>Новинки
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><i class="span_info">!</i></span>Скоро в продаже
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>%</span>Распродажа
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>хит</span>Хиты продаж
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-theme">
+                <div class="panel-heading">
+                    <span class="hidden-xs">Идеи для подарков</span>
+                    <a class="visible-xs collapsed" role="button" data-toggle="collapse" href="#collapse-h-2">
+                        Идеи для подарков
+                    </a>
+                </div>
+                <div class="panel-body collapse" id="collapse-h-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_1">
+                                Подарки на 14 февраля
+                            </a>
+                            <div class="collapse" id="collapse_1">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_2">
+                                Подарки на 23 февраля
+                            </a>
+                            <div class="collapse" id="collapse_2">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_3">
+                                Подарки для мужчин
+                            </a>
+                            <div class="collapse" id="collapse_3">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_4">
+                                Подарки для женщин
+                            </a>
+                            <div class="collapse" id="collapse_4">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_5">
+                                Подарки для детей
+                            </a>
+                            <div class="collapse" id="collapse_5">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_6">
+                                Подарки на день рождения
+                            </a>
+                            <div class="collapse" id="collapse_6">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_7">
+                                Подарки на свадьбу
+                            </a>
+                            <div class="collapse" id="collapse_7">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="head-collapse collapsed" role="button" data-toggle="collapse" href="#collapse_8">
+                                Подарки оптом
+                            </a>
+                            <div class="collapse" id="collapse_8">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#">автолюбителю</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">начальнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">охотнику</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">рыбаку</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">грибнику</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default banner hidden-xs">
+                <img src="web/uploads/left-sidebar.jpg" alt="...">
+            </div>
+            <div class="panel panel-news hidden-xs">
+                <div class="panel-heading">
+                    Новости
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            27 декабря 2012 г.
+                            <a href="#">
+                                Четвертый Международный слет любителей активного отдыха!
+                            </a>
+                        </li>
+                        <li>
+                            27 декабря 2012 г.
+                            <a href="#">
+                                Открытие нового магазина «Экспедиция»!
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Все новости</a>
+                </div>
+            </div>
+            <div class="panel panel-news hidden-xs">
+                <div class="panel-heading">
+                    Статьи
+                </div>
+                <div class="panel-body">
+                    <ul class="list-unstyled">
+                        <li>
+                            27 декабря 2012 г.
+                            <a href="#">
+                                Четвертый Международный слет любителей активного отдыха!
+                            </a>
+                        </li>
+                        <li>
+                            27 декабря 2012 г.
+                            <a href="#">
+                                Открытие нового магазина «Экспедиция»!
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <a href="#">Все статьи</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 main-list news-list">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <div class="main-list-group">
+                <div class="main-list-header">
+                    Новости
+                </div>
+                <div class="main-list-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/uploads/test_news-list.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a class="h4 media-heading"> Анонс «умных часов» Google предположительно состоится 31
+                                октября</a>
+                            <div class="news-data">03 июня 2013</div>
+                            <p>Анонс "умных часов" Google предположительно состоится 31 октября
+                            Мы уже писали о том, что сегодня одним их самых перспективных устройств являются так
+                            называемые «умные часы». Вот и компания Google не осталась в стороне – в сети уже давно
+                            появлялась информация о том, что поисковый гигант работает над своими...</p>
+                            <div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/uploads/test_news-list.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a class="h4 media-heading"> Анонс «умных часов» Google предположительно состоится 31
+                                октября</a>
+                            <div class="news-data">03 июня 2013</div>
+                            <p>Анонс "умных часов" Google предположительно состоится 31 октября
+                                Мы уже писали о том, что сегодня одним их самых перспективных устройств являются так
+                                называемые «умные часы». Вот и компания Google не осталась в стороне – в сети уже давно
+                                появлялась информация о том, что поисковый гигант работает над своими...</p>
+                            <div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/uploads/test_news-list.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a class="h4 media-heading"> Анонс «умных часов» Google предположительно состоится 31
+                                октября</a>
+                            <div class="news-data">03 июня 2013</div>
+                            <p>Анонс "умных часов" Google предположительно состоится 31 октября
+                                Мы уже писали о том, что сегодня одним их самых перспективных устройств являются так
+                                называемые «умные часы». Вот и компания Google не осталась в стороне – в сети уже давно
+                                появлялась информация о том, что поисковый гигант работает над своими...</p>
+                            <div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/uploads/test_news-list.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a class="h4 media-heading"> Анонс «умных часов» Google предположительно состоится 31
+                                октября</a>
+                            <div class="news-data">03 июня 2013</div>
+                            <p>Анонс "умных часов" Google предположительно состоится 31 октября
+                                Мы уже писали о том, что сегодня одним их самых перспективных устройств являются так
+                                называемые «умные часы». Вот и компания Google не осталась в стороне – в сети уже давно
+                                появлялась информация о том, что поисковый гигант работает над своими...</p>
+                            <div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/uploads/test_news-list.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a class="h4 media-heading"> Анонс «умных часов» Google предположительно состоится 31
+                                октября</a>
+                            <div class="news-data">03 июня 2013</div>
+                            <p>Анонс "умных часов" Google предположительно состоится 31 октября
+                                Мы уже писали о том, что сегодня одним их самых перспективных устройств являются так
+                                называемые «умные часы». Вот и компания Google не осталась в стороне – в сети уже давно
+                                появлялась информация о том, что поисковый гигант работает над своими...</p>
+                            <div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="web/uploads/test_news-list.jpg" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <a class="h4 media-heading"> Анонс «умных часов» Google предположительно состоится 31
+                                октября</a>
+                            <div class="news-data">03 июня 2013</div>
+                            <p>Анонс "умных часов" Google предположительно состоится 31 октября
+                                Мы уже писали о том, что сегодня одним их самых перспективных устройств являются так
+                                называемые «умные часы». Вот и компания Google не осталась в стороне – в сети уже давно
+                                появлялась информация о том, что поисковый гигант работает над своими...</p>
+                            <div>
+                                <a href="#">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row nav-list">
+                    <div class="col-xs-6 col-lg-8">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+                                </li>
+                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-6 col-lg-4">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">
+                                Показать:
+                            </span>
+                            <div class="form-control">20 новостей</div>
+                            <div class="input-group-btn drop-cart">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">20 новостей</a></li>
+                                    <li><a href="#">40 новостей</a></li>
+                                    <li><a href="#">60 новостей</a></li>
+                                    <li><a href="#">80 новостей</a></li>
+                                    <li><a href="#">100 новостей</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 col-md-offset-1">
+                    <a href="#" class="hidden-xs">
+                        <img src="web/img/logo.png" alt="..." class="img-responsive center-block">
+                    </a>
+                    <ul class="soc-block list-inline">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-vk" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-block hidden-xs">
+                        <p>
+                            Лучшие идеи подарков в интернет-магазине "Экспедиция"!
+                        </p>
+                        <p>
+                            Бесплатная доставка подарков по Минску <span>от 449 000 руб.</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 col-middle">
+                    <form class="footer-form">
+                        <div class="title_block">Подписка на акции</div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Ваш e-mail">
+                            <span class="input-group-btn">
+                                <button type="submit" class="btn btn-theme">Ок</button>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="form-text small">
+                            <p>
+                                Подпишитесь на рассылку и первыми узнавайте о скидках и акциях.
+                            </p>
+                            <p>
+                                Лучшие идеи оригинальных подарков для наших подписчиков!
+                            </p>
+                        </div>
+                    </form>
+                    <form class="footer-form">
+                        <div class="title_block">Вопрос? Замечание?</div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Комментарий"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-theme">Отправить</button>
+                    </form>
+                </div>
+                <div class="col-sm-5 col-md-4 info-block">
+                    <div class="title_block">Информация</div>
+                    <div class="row">
+                        <div class="info-phone clearfix">
+                            <ul class="list-unstyled col-xs-6">
+                                <li>+375 29 173-60-50</li>
+                                <li>+375 29 261-66-88</li>
+                            </ul>
+                            <ul class="list-unstyled col-xs-6">
+                                <li>+375 29 123-51-68</li>
+                                <li>+375 17 207-81-31</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 form-text small">
+                            <p>
+                                Беларусь, г. Минск, ул. Фабрициуса, 8, 1 этаж.
+                            </p>
+                            <p>
+                                Время работы: с 9:00 до 22:00.
+                            </p>
+                            <p>
+                                Заказы через корзину принимаются круглосуточно.
+                            </p>
+                            <p>
+                                Выходные: сб-вс.
+                            </p>
+                        </div>
+                        <ul class="col-md-12 list-unstyled text-uppercase list-group">
+                            <li class="list-group-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Наши магазины</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Наши проекты</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#">Наши преимущества</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="text-muted hidden-xs">Интернет-магазин подарков «Экспедиция»™, ООО «МАГНАРТ» Все товары
+                        интернет
+                        магазина «Экспедиция» имеют
+                        сертификаты соответствия.Ножи имеют сертификаты соответствия, выданные МВД Республики Беларусь
+                        и не
+                        требуют разрешения или лицензию на покупку, хранение и ношение.
+                        Зарегистрирован в Торговом реестре 28 июля 2011.</p>
+                    <p class="copyright">© 2013 Интернет-магазин подарков «Экспедиция». Электронная почта:
+                        e-zak@bk.ru</p>
+                </div>
+            </div>
+            <div class="pull-right footer_static">
+                <script src="http://counter.rambler.ru/top100.jcn?2979891" type="text/javascript"
+                        id="top100Counter"></script>
+                <noscript>&lt;a href="http://top100.rambler.ru/navi/2979891/"&gt;&lt;img
+                    src="http://counter.rambler.ru/top100.cnt?2979891" alt="Rambler's Top100" border="0"/&gt;&lt;/a&gt;
+                </noscript>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal_login" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <ul class="list-inline">
+                    <li>Вход</li>
+                    <li><a href="#" data-dismiss="modal" data-target="#modal_reg" data-toggle="modal">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">E-mail:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Пароль:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button class="btn btn-theme" type="submit">Вход</button>
+                            <a class="pull-right forgot_password" data-dismiss="modal" data-target="#modal_forgot"
+                               data-toggle="modal">Забыли пароль?</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal_reg" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <ul class="list-inline">
+                    <li><a href="#" data-dismiss="modal" data-target="#modal_login" data-toggle="modal">Вход</a></li>
+                    <li>Регистрация</li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Имя и фамилия:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Адрес:</label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Контактный телефон:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">E-mail:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Пароль:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Пароль повторный:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Введите код:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <div class="input-group">
+                                <span class="input-group-addon captcha">
+                                    <img src="web/uploads/captcha_php.jpg" alt="captcha">
+                                </span>
+                                <input placeholder="" class="form-control input-md" required="" type="text">
+                            </div>
+                            <div class="control-label pull-left">
+                                <span>*</span> – поля обязательны для заполнения
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-4">
+                            <button class="btn btn-theme" type="submit">Регистрация</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal_forgot" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <ul class="list-inline">
+                    <li>Восстановление пароля</li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">E-mail:<span>*</span></label>
+                        <div class="col-sm-8">
+                            <input placeholder="" class="form-control input-md" required="" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-4">
+                            <button class="btn btn-theme" type="submit">Восстановить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/jquery-ui.js"></script>
+<script src="web/js/bootstrap-select.min.js"></script>
+<script src="web/js/owl.carousel.min.js"></script>
+<script src="web/js/jquery.prettyPhoto.js"></script>
+<script src="web/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="web/js/custom.js"></script>
+
+</body>
+</html>

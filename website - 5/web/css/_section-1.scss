@@ -1,0 +1,53 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.section-1 {
+  background-color: #242731;
+  border-bottom: 1px solid #242731;
+  .owl-carousel {
+    .owl-dots {
+      bottom: 12px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      .owl-dot {
+        span {
+          background-color: transparent;
+          border: 2px solid #b7b7b7;
+          height: 22px;
+          width: 22px;
+          &:hover,
+          &:focus {
+            background-color: #b7b7b7;
+            border-color: #ffffff;
+          }
+        }
+        &.active {
+          span {
+            background-color: #b7b7b7;
+            border-color: #ffffff;
+          }
+        }
+      }
+    }
+    .item {
+      height: 320px;
+      overflow: hidden;
+      img {
+        height: 100%;
+        margin: 0 auto;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .section-1 .owl-carousel .item {
+    height: 200px;
+  }
+  .section-1 .owl-carousel .item img {
+    height: 200px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../web/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../web/css/rate.css" rel="stylesheet">
+    <link href="../web/css/select2.min.css" rel="stylesheet">
+    <link href="../web/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="../web/css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../web/js/html5shiv.min.js"></script>
+    <script src="../web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-top navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target=".navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--<div class="dropdown hamburger">-->
+            <!--<button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"-->
+            <!--aria-expanded="true">-->
+            <!--</button>-->
+            <!--</div>-->
+            <a class="navbar-brand" href="#">
+                VYBORY.UA
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+            <!--if logout-->
+            <ul class="nav navbar-nav navbar-right not_login">
+                <li><a href="#">О Нас</a></li>
+                <li><a href="#">Теги</a></li>
+                <li>
+                    <a class="btn btn-danger" href="#myModal" data-toggle="modal" data-target="#myModal">
+                        Войти
+                    </a>
+                </li>
+            </ul>
+            <!--end if-->
+            <!--if login-->
+            <!--<ul class="nav navbar-nav navbar-right in_login">-->
+            <!--<li class="dropdown notification">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"-->
+            <!--role="button" aria-haspopup="true" aria-expanded="false">-->
+            <!--<i class="fa fa-bell" aria-hidden="true"></i>-->
+            <!--&lt;!&ndash;if have message &ndash;&gt;-->
+            <!--&lt;!&ndash;<span>2</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;end if&ndash;&gt;-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu">-->
+            <!--&lt;!&ndash;if have&ndash;&gt;-->
+            <!--&lt;!&ndash;<li class="menu-header text-center">&ndash;&gt;-->
+            <!--&lt;!&ndash;Уведомлений(2)&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-comments"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span>Игорь Попель</span> ответил на ваш коментарий&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#">&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-comments"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<span>Андрей Губанов</span> ответил на ваш коментарий&ndash;&gt;-->
+            <!--&lt;!&ndash;</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;</li>&ndash;&gt;-->
+            <!--&lt;!&ndash;else&ndash;&gt;-->
+            <!--<li class="menu-header text-center">-->
+            <!--Уведомлений(0)-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a class="text-center">Нет уведомлений</a>-->
+            <!--</li>-->
+            <!--&lt;!&ndash;end if&ndash;&gt;-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li class="navbar_link"><a href="#">О Нас</a></li>-->
+            <!--<li class="navbar_link"><a href="#">Теги</a></li>-->
+            <!--<li class="dropdown">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"-->
+            <!--role="button" aria-haspopup="true" aria-expanded="false">-->
+            <!--&lt;!&ndash;no-img&ndash;&gt;-->
+            <!--&lt;!&ndash;<span class="fa-stack fa-lg">&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-circle fa-stack-2x"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;<i class="fa fa-user fa-stack-1x"></i>&ndash;&gt;-->
+            <!--&lt;!&ndash;</span>&ndash;&gt;-->
+            <!--&lt;!&ndash;or&ndash;&gt;-->
+            <!--<img src="../web/img/top-5.jpg" alt="..." class="img-circle user-logo">-->
+            <!--Игорь-->
+            <!--<i class="fa fa-angle-down" aria-hidden="true"></i>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu">-->
+            <!--<li><a href="#">Просмотреть профиль</a></li>-->
+            <!--<li><a href="#">Выйти</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--end if-->
+            <form class="navbar-form" role="search">
+                <div class="input-group stylish-input-group">
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                    <input type="text" class="form-control" id="search" placeholder="Поиск">
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-menu navbar-static-top">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown menu-town">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        Город <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">АР Крым</a></li>
+                        <li><a href="#">Винница</a></li>
+                        <li><a href="#">Волынь</a></li>
+                        <li><a href="#">Днепропетровск</a></li>
+                        <li><a href="#">Донецк</a></li>
+                        <li><a href="#">Житомир</a></li>
+                        <li><a href="#">Ужгород</a></li>
+                        <li><a href="#">Запорожье</a></li>
+                        <li><a href="#">Ивано-Франковск</a></li>
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Кировоград</a></li>
+                        <li><a href="#">Луганск</a></li>
+                        <li><a href="#">Львов</a></li>
+                        <li><a href="#">Николаев</a></li>
+                        <li><a href="#">Одесса</a></li>
+                        <li><a href="#">Полтава</a></li>
+                        <li><a href="#">Ровно</a></li>
+                        <li><a href="#">Суммы</a></li>
+                        <li><a href="#">Тернополь</a></li>
+                        <li><a href="#">Харьков</a></li>
+                        <li><a href="#">Херсон</a></li>
+                        <li><a href="#">Хмельницк</a></li>
+                        <li><a href="#">Черкассы</a></li>
+                        <li><a href="#">Чернигов</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Рейтинги</a></li>
+                <li><a href="#">Аналитика</a></li>
+                <li><a href="#">Пратии</a></li>
+                <li><a href="#">Политики</a></li>
+                <li><a href="#">Мажоритарные округа</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right nav-social-link">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container error_page">
+    <div class="error_page-block">
+        404
+    </div>
+    <div class="error_page-text">
+        Запрошенная вами страница не найдена.
+    </div>
+    <div class="error_page-search clearfix">
+        <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            <input type="text" class="form-control" placeholder="Поиск на vybory.ua">
+        </div>
+    </div>
+    <div class="error_page-link">
+        <a href="#">Перейти на главную ></a>
+    </div>
+    <div class="top-news list-group">
+        <a class="list-group-item" href="#">
+            <img alt="..." src="../web/img/test-top_news.jpg">
+                    <span class="media">
+                    <span class="media-left">01</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо &mdash;
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+        </a>
+        <a class="list-group-item" href="#">
+            <img alt="..." src="../web/img/test-top_news.jpg">
+                    <span class="media">
+                    <span class="media-left">02</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо &mdash;
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+        </a>
+        <a class="list-group-item" href="#">
+            <img alt="..." src="../web/img/test-top_news.jpg">
+                    <span class="media">
+                    <span class="media-left">03</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо &mdash;
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+        </a>
+        <a class="list-group-item" href="#">
+            <img alt="..." src="../web/img/test-top_news.jpg">
+                    <span class="media">
+                    <span class="media-left">04</span>
+                        <span class="media-body">
+                            <span class="media-heading">
+                                Жить хорошо &mdash;
+                                дресс-код весны 2016
+                            </span>
+                        </span>
+                        </span>
+
+        </a>
+    </div>
+</div>
+<div class="container-fluid bg_last">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9 col-md-9 bg_last-left">
+                    <i class="fa icon-pluse"></i>
+                    Стань частью проекта
+                </div>
+                <div class="col-sm-11 col-sm-offset-5 col-md-9 col-md-offset-7 bg_last-right">
+                    Отправить нам:
+                    <a href="#" data-toggle="modal" data-target="#send_profile_1" class="btn btn-link">Профиль</a>
+                    /
+                    <a href="#" data-toggle="modal" data-target="#send_profile_2" class="btn btn-link">Новость</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-16">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h4>О проекте</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Партии</a></li>
+                            <li><a href="#">Мажоритарные округа</a></li>
+                            <li><a href="#">Политики</a></li>
+                            <li><a href="#">Нормативная база</a></li>
+                            <li><a href="#">Что нужно занть?</a></li>
+                            <li><a href="#"><strong>Для партий и кандидатов</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>материалы</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Аналитика</a></li>
+                            <li><a href="#">Фото</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-8">
+                        <h4>Голосование</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Пропорциональная система</a></li>
+                            <li><a href="#">Мажоритарная система</a></li>
+                            <li><a href="#">ТОП-25 политиков</a></li>
+                            <li><a href="#">Опросы</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <h4>Контактные данные</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>+38 097 553 55 88</p>
+                        <p>+38 063 882 34 04</p>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-md-offset-1">
+                        <p>info@vybory.ua</p>
+                        <p>office@vybory.ua</p>
+                    </div>
+                </div>
+                <h4>О выборах</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><strong>Стань частью проекта</strong></a></li>
+                    <li><a href="#">Размещение рекламы</a></li>
+                    <li><a href="#">Праaвовая информация</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center copyright">
+            &copy; 2016 Vybory.ua Все права защищены. При использовании материалов ссылка на «Vybory.ua» &mdash;
+            обязательна.
+        </div>
+    </div>
+</footer>
+
+<div class="search-field container-fluid">
+    <div class="row">
+        <div class="container">
+            <form class="search-field-form">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input class="form-control" type="text"
+                               placeholder="Поиск политиков, партий, новостей">
+                        <span class="input-group-addon stylish-input-group">
+                            <button type="submit">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="search-field-result">
+                <div class="media media-politic">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/top-1.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span>Кучер</span> Николай Иванович
+                        </a>
+                    </div>
+                </div>
+                <div class="media media-politic">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/top-1.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span>Кучер</span> Николай Иванович
+                        </a>
+                    </div>
+                </div>
+                <div class="media media-politic">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/top-1.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span>Кучер</span> Николай Иванович
+                        </a>
+                    </div>
+                </div>
+
+                <div class="media media-tag">
+                    <div class="media-left">
+                        <a href="#">
+                            <span>#</span>
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#"># Кучер</a>
+                    </div>
+                </div>
+
+                <div class="media media-news">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test-news.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span class="media-heading">
+                                Смена правительства станет огромной ошибкой Украины
+                            </span>
+                            Смена правительства станет огромной ошибкой Украины
+                        </a>
+                        <div class="icon-block">
+                            <i class="fa fa-eye"></i> 322
+                            <i class="fa fa-comment"></i> 17
+                        </div>
+                    </div>
+                </div>
+                <div class="media media-news">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test-news.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span class="media-heading">
+                                Смена правительства станет огромной ошибкой Украины
+                            </span>
+                            Смена правительства станет огромной ошибкой Украины
+                        </a>
+                        <div class="icon-block">
+                            <i class="fa fa-eye"></i> 322
+                            <i class="fa fa-comment"></i> 17
+                        </div>
+                    </div>
+                </div>
+                <div class="media media-news">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test-news.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span class="media-heading">
+                                Смена правительства станет огромной ошибкой Украины
+                            </span>
+                            Смена правительства станет огромной ошибкой Украины
+                        </a>
+                        <div class="icon-block">
+                            <i class="fa fa-eye"></i> 322
+                            <i class="fa fa-comment"></i> 17
+                        </div>
+                    </div>
+                </div>
+                <div class="media media-news">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test-news.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span class="media-heading">
+                                Смена правительства станет огромной ошибкой Украины
+                            </span>
+                            Смена правительства станет огромной ошибкой Украины
+                        </a>
+                        <div class="icon-block">
+                            <i class="fa fa-eye"></i> 322
+                            <i class="fa fa-comment"></i> 17
+                        </div>
+                    </div>
+                </div>
+                <div class="media media-news">
+                    <div class="media-left">
+                        <a href="#">
+                            <img alt="..." src="../web/img/test-news.jpg" height="60" width="60" class="media-object">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <a href="#">
+                            <span class="media-heading">
+                                Смена правительства станет огромной ошибкой Украины
+                            </span>
+                            Смена правительства станет огромной ошибкой Украины
+                        </a>
+                        <div class="icon-block">
+                            <i class="fa fa-eye"></i> 322
+                            <i class="fa fa-comment"></i> 17
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--modals-->
+<div class="modal fade modal-login" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-2 form-login">
+                        <div class="form-login-head">
+                            <div class="h2">ВХОД</div>
+                            <p>Вы можете войти, используя вашу</p>
+                            <p>учетную запись следующих соцсетей:</p>
+                        </div>
+                        <div class="form-login-social">
+                            <a class="btn btn-block btn-fb" href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                Войти через Facebook
+                            </a>
+                            <a class="btn btn-block btn-tw" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                Войти через Twitter
+                            </a>
+                        </div>
+                        <div class="form-login-or">
+                            <span>или</span>
+                        </div>
+                        <form class="form-login-form">
+                            <!--<div class="form-group has-error">-->
+                            <!--<label>Введите ваш email</label>-->
+                            <!--<input type="email" class="form-control input_fa"-->
+                            <!--placeholder="test error">-->
+                            <!--<i class="fa fa-envelope" aria-hidden="true"></i>-->
+                            <!--<div class="help-block with-errors">This email is not valid</div>-->
+                            <!--</div>-->
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Введите ваш email</label>
+                                <input type="email" class="form-control input_fa" id="exampleInputEmail1"
+                                       placeholder="popel@bk.ru">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Введите пароль</label>
+                                <input type="password" class="form-control input_fa" id="exampleInputPassword1"
+                                       placeholder="Password">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="form-group last-block row">
+                                <div class="col-sm-12">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkboxG2" checked="checked" class="css-checkbox"
+                                               id="checkboxG2">
+                                        <label for="checkboxG2" class="css-label">Запомнить меня</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-sm-offset-1 text-right">
+                                    <a href="#">Забыли пароль?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Войти</button>
+                        </form>
+                        <div class="form-login-footer">
+                            У вас нет аккаунта на Vybory.ua?
+                            <a href="#" data-dismiss="modal" data-target="#myModal2" data-toggle="modal"
+                               href="#myModal2">Зарегистрируйтесь</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-login" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModal2Label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-2 form-login">
+                        <div class="form-login-head">
+                            <div class="h2">Зарегистрироваться</div>
+                            <p>Вы можете войти, используя вашу</p>
+                            <p>учетную запись следующих соцсетей:</p>
+                        </div>
+                        <div class="form-login-social">
+                            <a class="btn btn-block btn-fb" href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                Войти через Facebook
+                            </a>
+                            <a class="btn btn-block btn-tw" href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                Войти через Twitter
+                            </a>
+                        </div>
+                        <div class="form-login-or">
+                            <span>или</span>
+                        </div>
+                        <form class="form-login-form form-r">
+                            <div class="form-group has-error">
+                                <label>Введите ваш email</label>
+                                <input type="email" class="form-control input_fa" id="exampleInputEmail2"
+                                       placeholder="Email-адрес">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                <div class="help-block with-errors">This email is not valid</div>
+                            </div>
+                            <div class="form-group has-success">
+                                <label for="exampleInputPassword1">Придумайте пароль</label>
+                                <input type="password" class="form-control input_fa" id="exampleInputPassword2"
+                                       placeholder="6 или более символов">
+                                <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                                <div class="help-block with-errors">This email is not valid</div>
+                            </div>
+
+                            <div class="form-group last-block row">
+                                <div class="col-sm-25">
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="checkboxG2" checked="checked" class="css-checkbox"
+                                               id="checkboxG233">
+                                        <label for="checkboxG233" class="css-label">Я принимаю
+                                            <a href="#">Условия пользования</a>
+                                            <br>
+                                            и <a href="#">Политика конфиденциальности</a> Vybory.ua
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-danger btn-block" data-dismiss="modal"
+                                    data-toggle="modal" data-target="#myModal3">Создать аккаунт
+                            </button>
+                        </form>
+                        <div class="form-login-footer">
+                            У вас есть аккаунта на Vybory.ua?
+                            <a href="#" data-dismiss="modal" data-target="#myModal" data-toggle="modal"
+                               href="#myModal">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-login" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModal3Label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-2 form-login">
+                        <div class="form-login-head form-user-info">
+                            <div class="h2">Зарегистрироваться</div>
+                            <a href="#" data-dismiss="modal" data-target="#myModal2" data-toggle="modal"
+                               href="#myModal2">
+                                <i class="fa fa-caret-left" aria-hidden="true"></i>
+                                Email@mail.com</a>
+                        </div>
+
+                        <form class="form-login-form form-r">
+                            <div class="form-group">
+                                <label>Имя</label>
+                                <input type="text" class="form-control input_fa" placeholder="Введите Ваше Имя">
+                                <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                <div class="help-block with-errors">This email is not valid</div>
+                            </div>
+                            <div class="form-group">
+                                <label>Фамилия</label>
+                                <input type="text" class="form-control input_fa" placeholder="Введите Вашу Фамилию"
+                                       required="">
+                                <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                <div class="help-block with-errors">This email is not valid</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12-fix">
+                                    <div class="form-group">
+                                        <label>Возраст</label>
+                                        <select class="form-control input_fa select2">
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option>
+                                            <option>21</option>
+                                            <option>22</option>
+                                            <option>23</option>
+                                            <option>24</option>
+                                            <option>25</option>
+                                            <option>26</option>
+                                            <option>27</option>
+                                        </select>
+                                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                                        <div class="help-block with-errors">This email is not valid</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-12-fix">
+                                    <div class="form-group">
+                                        <label>Пол</label>
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn btn-danger active">
+                                                <input type="radio" name="options" id="option1" autocomplete="off"
+                                                       checked>
+                                                М
+                                                <i class="fa fa-male" aria-hidden="true"></i>
+                                            </label>
+                                            <label class="btn btn-danger">
+                                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                                <i class="fa fa-female" aria-hidden="true"></i>
+                                                Ж
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Город</label>
+                                <input type="text" class="form-control input_fa"
+                                       placeholder="Ваше местонахождение">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="form-group last-block row">
+                                <div class="col-sm-25">
+                                    <div class="material-switch pull-left">
+                                        <input type="checkbox" name="someSwitchOption001" id="someSwitchOptionDanger">
+                                        <label class="label-danger" for="someSwitchOptionDanger"></label>
+                                    </div>
+                                    Отправлять уведомления мне на почту
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-send" id="send_profile_1" tabindex="-1" role="dialog" aria-labelledby="myModal3Label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="modal-send-form">
+                    <div class="form-login-head">
+                        <div class="h2">Отправить профиль</div>
+                        <div class="small">Просим Вас предоставить информацию о политическом деятеле для составления
+                            профиля на сайте
+                            «VYBORY.UA».
+                        </div>
+                        <div class="h4">Заполните необходимую информацию:</div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Область:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать область</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Округ:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать округ</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Фамилия, Имя, Отчество:</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Например: Иванов Сергей Николаевич">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Фото:</label>
+                                    <input type="file" class="form-control">
+                                    <div class="form-control">
+                                        Выбрать файл
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-16">
+                                <span class="help-photo">Цветное фото. Анфас. Не менее 400х400 пикселей.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Дата рождения:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать день</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label class="label-clear">Дата рождения:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать месяц</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label class="label-clear">Дата рождения:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать год</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Должность:</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Например: Председатель подкомитета по вопросам конституционного законодательства и конституционного судопроизводства ">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Партийность:</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Например: Блок Петра Порошенка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Партийная история:</label>
+                                    <textarea class="form-control" placeholder="Например: 12 декабря 2012 г. - народный депутат Украины VII созыва «УДАР»;
+27 ноября 2014 г. -  народный депутат Украины VIII созыва «БЛОК ПЕТРА ПОРОШЕНКО»."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Место рождения:</label>
+                                    <input class="form-control" type="text" placeholder="Например: Клебань">
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Место проживания:</label>
+                                    <input class="form-control" type="text" placeholder="Например: Киев">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Семейное положение, дети:</label>
+                                    <input class="form-control" type="text"
+                                           placeholder="Например: Женат, есть сын и дочь.">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Задекларированные доходы:</label>
+                                    <input class="form-control" type="text"
+                                           placeholder=" Например: http://gapp.rada.gov.ua/declview/Home/Main/18007/2014">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Второстепенные данные:</label>
+                                    <textarea class="form-control"
+                                              placeholder="Должности, занимаемые ранее; образование, награды, звания и т.д."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Краткая автобиография:</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Список ресурсов:</label>
+                                    <textarea class="form-control"
+                                              placeholder="Сайт, страницы в социальных сетях."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Дополнительные материалы:</label>
+                                    <textarea class="form-control" placeholder="Новости, статьи, интервью."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkboxG3" class="css-checkbox" type="checkbox" checked="checked"
+                                               name="checkboxG3">
+                                        <label class="css-label" for="checkboxG3">Я согласен , что сайт vybory.ua
+                                            публикует только проверенную информацию , и если профиль не соответствует
+                                            этому, редакция его удалит.</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9 col-md-8">
+                                <button class="btn btn-danger btn-block" type="submit">Отправить профиль</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-send" id="send_profile_2" tabindex="-1" role="dialog" aria-labelledby="myModal3Label">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <div class="modal-send-form">
+                    <div class="form-login-head">
+                        <div class="h2">Отправить новость</div>
+                        <div class="small">
+                            Просим Вас предоставить информацию о политической партии для составления профиля на сайте
+                            «VYBORY.UA» присылать свои материалы
+                        </div>
+                        <div class="h4">Заполните необходимую информацию:</div>
+                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Область:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать область</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label>Округ:</label>
+                                    <select class="form-control">
+                                        <option>Выбрать округ</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Тема ( не более 90 символов ):</label>
+                                    <input type="text" class="form-control"
+                                           placeholder="Например: В інтернеті опублікували сенсаційні документи про співпрацю вінницьких майданівців з регіоналами">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Начало cтатьи для первой страницы - самое главное ( не более 120
+                                        символов):</label>
+                                    <textarea class="form-control shot-textarea" placeholder="Например: В социальных сетях появилось документальное подтверждение того , о чем все и так давно знали. Винницкие «политики» и «активисты»
+Борис Максимчук и Анатолий Банах во время «царствования» недоброй памяти Януковича , были советниками чиновников- «регионалов».
+Максимчук - губернатора Джиги , Банах - председателя Шаргородской ОГА Николая Слобожанка.
+"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Ссылка на видео из Youtube или Vimeo (если есть):</label>
+                                    <input class="form-control" type="text"
+                                           placeholder="Например: https://www.youtube.com/watch?v=7lE6aMVrFoA">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-3-fix">
+                                <div class="form-group">
+                                    <label> Изображение на первую страницу:</label>
+                                    <input type="file" class="form-control">
+                                    <div class="form-control">
+                                        Выбрать файл
+                                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-16">
+                                <div class="form-group">
+                                    <label> Ваша контактная информация:</label>
+                                    <input class="form-control" type="text"
+                                           placeholder="Введите номер телефона или e-mail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <label>Введите текст статьи ( не более 5 000 символов):</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-25">
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <input id="checkboxG4" class="css-checkbox" type="checkbox" checked="checked"
+                                               name="checkboxG4">
+                                        <label class="css-label" for="checkboxG4">Я согласен , что сайт «VYBORY.UA»
+                                            печатает только проверены факты , и если статья не соответствует этому,
+                                            редакция ее удалит.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-9 col-md-8">
+                                <button class="btn btn-danger btn-block" type="submit">Отправить новость</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+<script src="../web/js/jquery.min.js"></script>
+<script src="../web/js/bootstrap.min.js"></script>
+<script src="../web/js/jquery.rate.min.js"></script>
+<script src="../web/js/select2.full.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.min.js"></script>
+<script src="../web/js/bootstrap-datepicker.ru.min.js"></script>
+<script src="../web/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="../web/js/custom.js"></script>
+</body>
+</html>

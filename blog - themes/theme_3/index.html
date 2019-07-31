@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html class="js">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- For SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- End SEO-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">
+
+    <link href="web/css/bootstrap.css" rel="stylesheet">
+    <link href="web/css/font-awesome.css" rel="stylesheet">
+    <link href="web/css/style.css" rel="stylesheet">
+
+    <title></title>
+
+    <!--[if lt IE 9]>
+    <script src="web/js/html5shiv.min.js"></script>
+    <script src="web/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="page">
+<!-- Wrapper Start -->
+<div class="wrapper wrapper_boxed" id="wrappermain-pix">
+    <header class="header">
+        <!-- Container Strat -->
+        <div class="container">
+            <div class="logo"><!-- Logo Start -->
+                <a href="#">
+                    <img src="web/img/270x42xlogo.png" alt="Atom Band"></a>
+                <!-- Logo End -->
+            </div>
+            <div class="full-nav" id="navigation_sticky_menu">
+                <!-- Navigation Start -->
+                <div class="container">
+                    <nav class="navigation">
+                        <ul id="menus" class="menus">
+                            <li class="menu-item">
+                                <a href="#">Home</a></li>
+                            <li class="menu-item menu-item-has-children ">
+                                <a href="#">Albums</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="#">Albums List View</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Albums Grid View</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Album With Detail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item current-menu-ancestor menu-item-has-children">
+                                <a href="#">Events</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="#">Events List View</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Events Grid View</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Event Calender</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Event with Detail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Gallery</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Photos</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="#">2 Column</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">3 Column</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">4 Column</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Photos</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="#">2 Column</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">3 Column</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">4 Column</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Gallery Albums</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">News</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="#">News With Sidebar</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">News Masonry</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">News Grid View</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">News Medium View</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">News Small Thumbnail</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">News Post Detail</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Features</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="#">Shortcodes</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">404</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Password Protected</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Price Table</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">News</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a
+                                    href="#">Contact Us</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Shop</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="#">Cart</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">My Account</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Logout</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Checkout</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">Checkout → Pay</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <select id="selectnav1" class="selectnav">
+                            <option value="#">Menu</option>
+                            <option value="#">Home</option>
+                            <option value="#">Albums</option>
+                            <option value="#">- Albums List View</option>
+                            <option value="#">- Albums Grid View</option>
+                            <option value="#">- Album With Detail</option>
+                            <option value="#">Events</option>
+                            <option selected="" value="#">- Events List View</option>
+                            <option value="#">- Events Grid View</option>
+                            <option value="#">- Event Calender</option>
+                            <option value="#">- Event with Detail</option>
+                            <option value="#">Gallery</option>
+                            <option value="#">- Photos</option>
+                            <option value="#">-- 2 Column</option>
+                            <option value="#">-- 3 Column</option>
+                            <option value="#">-- 4 Column</option>
+                            <option value="#">- Videos</option>
+                            <option value="#">-- 2 Column</option>
+                            <option value="#">-- 3 Column</option>
+                            <option value="#">-- 4 Column</option>
+                            <option value="#">- Gallery Albums</option>
+                            <option value="#">News</option>
+                            <option value="#">- News With Sidebar</option>
+                            <option value="#">- News Masonry</option>
+                            <option value="#">- News Grid View</option>
+                            <option value="#">- News Medium View</option>
+                            <option value="#">- News Small Thumbnail</option>
+                            <option value="#">- News Post Detail</option>
+                            <option value="#">Features</option>
+                            <option value="#">- Shortcodes</option>
+                            <option value="#">- 404</option>
+                            <option value="#">- Password Protected</option>
+                            <option value="#">- Price Table</option>
+                            <option value="#">- News</option>
+                            <option value="#">Contact Us</option>
+                            <option value="#">Shop</option>
+                            <option value="#">- Cart</option>
+                            <option value="#">- My Account</option>
+                            <option value="#">- Logout</option>
+                            <option value="#">- Checkout</option>
+                            <option value="">- Checkout → Pay</option>
+                        </select>
+                    </nav>
+                    <!-- Navigation End -->
+                    <div class="search-sec">
+                        <form action="#" id="searchform" method="get" role="search">
+                            <input name="s" class="search-input" value="Search for:" type="text">
+                            <label><input name="" value="" class="search-btn" type="submit"></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Container End -->
+    </header>
+    <div class="wrapper-band">
+        <div class="breadcrumb fullwidth default-image">
+            <!-- Container Start -->
+            <div class="container">
+                <div class="breadcrumb-inner">
+                    <div class="subtitle float-left bgcolr">
+                        <h1 class="page-title test">Events</h1>
+                    </div>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-home"></i>Home
+                                </a>
+                            </li>
+                            <li class="cs-active">Events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Container End -->
+        </div>
+        <div class="clear"></div>
+        <!-- Content Section Start -->
+        <div id="main" role="main">
+            <!-- Container Start -->
+            <div class="container">
+                <!-- Row Start -->
+                <div class="row">
+                    <div class="col-sm-9 col-md-9 ">
+                        <header class="cs-heading-title"></header>
+                        <div class="event">
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a class="ajax-link" href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">Toast – Tribute To Oasis</a></h2>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                Crescent, Avoch, Highland UK
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                November 23, 2016, 02:00-02:30
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-buynow cs-btn backcolr" href="#">
+                                                Buy Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">
+                                                Night of the Living Fest
+                                            </a>
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                2843 Sherman Ave Camden, india
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                August 02, 2016, 02:00-02:30
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-fullbook cs-btn">Sold Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">
+                                                Rock for Alzheimers at 1DC
+                                            </a>
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                Startford London, UK
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                July 29, 2016, 02:00-02:30
+                                            </li>
+                                            <li><i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-cancel cs-btn">Cancelled</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">The Counterfeit Stones</a>
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                Cleator, Cumbria, UK
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                July 25, 2016, 02:00-02:30
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-free cs-btn">Free Entry</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">The Rat Pack is Back- ValentineR...</a>
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>Cambridgeshire, UK
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                July 22, 2016, 02:00-02:30
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-buynow cs-btn backcolr" href="#">
+                                                Buy Ticket
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">The Bon Jovi Experience</a>
+                                        </h2>
+                                        <ul>
+                                            <li><i class="fa fa-map-marker"></i>2843 Sherman Ave Camden, india</li>
+                                            <li><i class="fa fa-calendar"></i>July 17, 2016,
+                                                02:00-02:30
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-buynow cs-btn backcolr" href="#">Buy Ticket</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">The Doors Alive</a>
+                                        </h2>
+                                        <ul>
+                                            <li><i class="fa fa-map-marker"></i>Trading Estate, Benfleet, Essex</li>
+                                            <li><i class="fa fa-calendar"></i>July 12, 2016,
+                                                02:00-02:30
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+                                        <div class="cs-event-btns">
+                                            <a class="cs-fullbook cs-btn">Sold Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="event-inn">
+                                    <figure>
+                                        <a href="#">
+                                            <img src="web/uploads/test_event.jpg" alt="">
+                                        </a>
+                                        <figcaption>
+                                            <a class="backcolr" href="#">
+                                                <i class="fa fa-calendar fa-2x"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text">
+                                        <h2 class="cs-post-title cs-heading-color">
+                                            <a class="colrhover" href="#">Let’s Hang On</a>
+                                        </h2>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-map-marker"></i>
+                                                County Durham , UK
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                July 07, 2016,02:00-02:30
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-facebook"></i>
+                                                <a class="colrhover" href="#">https://www.facebook.com/envato</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="cs-event-btns">
+                                            <a class="cs-cancel cs-btn">Cancelled</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <nav class="pagination fullwidth">
+                                <ul>
+                                    <li><a class="active">1</a></li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li class="next">
+                                        <a href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="widget widget-event">
+                            <header class="cs-heading-title">
+                                <h2 class="cs-section-title cs-heading-color">
+                                    Upcoming Events
+                                </h2>
+                            </header><!-- Events Widget Start -->
+                            <article>
+                                <figure>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="cs-post-title cs-heading-color">
+                                        <a href="#">Toast – Tribut...</a>
+                                    </h2>
+                                    <time>
+                                        63 Days to go
+                                    </time>
+                                </div>
+                            </article>
+                            <!-- Events Widget End -->
+                        </div>
+                        <div class="widget widget_categories">
+                            <header class="cs-heading-title">
+                                <h2 class="cs-section-title cs-heading-color">Blog Categories</h2>
+                            </header>
+                            <ul>
+                                <li class="cat-item">
+                                    <a href="#">Masonary</a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="#">Masonary</a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="#">Masonary</a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="#">Masonary</a>
+                                </li>
+                                <li class="cat-item">
+                                    <a href="#">Masonary</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="widget widget-latestnews">
+                            <header class="cs-heading-title">
+                                <h2 class="cs-section-title cs-heading-color">Featured Blogs</h2>
+                            </header>
+                            <!-- Recent Posts Start -->
+                            <!-- Upcoming Widget Start -->
+                            <article>
+                                <figure>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a></figure>
+                                <div class="text webkit">
+                                    <h2 class="cs-post-title cs-heading-color"><a
+                                            href="#" class="colrhover">Vulputate
+                                        portaraesent semper ...</a></h2>
+
+                                    <time>December 11, 2013</time>
+                                </div>
+                            </article>
+                            <!-- Upcoming Widget Start -->
+                            <article>
+                                <figure>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="text webkit">
+                                    <h2 class="cs-post-title cs-heading-color">
+                                        <a href="#" class="colrhover">Aliquam fringilla sem posuere ...</a>
+                                    </h2>
+                                    <time>November 11, 2013</time>
+                                </div>
+                            </article>
+                            <!-- Upcoming Widget Start -->
+                            <article>
+                                <figure>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </figure>
+                                <div class="text webkit">
+                                    <h2 class="cs-post-title cs-heading-color"><a
+                                            href="#" class="colrhover">Nullam
+                                        placerat imperdiet faci...</a></h2>
+
+                                    <time>October 11, 2013</time>
+                                </div>
+                            </article>
+                            <!-- Recent Posts End -->
+                        </div>
+                        <div class="widget widget_gallery">
+                            <header class="cs-heading-title">
+                                <h2 class="cs-section-title cs-heading-color">Featured Gallery</h2>
+                            </header>
+                            <ul class="gallery-list light-box">
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="web/uploads/test_event.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col Md 12 End -->
+            </div>
+            <!-- Row End -->
+        </div>
+        <!-- Container End -->
+    </div>
+    <!-- Content Section End -->
+    <div class="twitter_sign webkit">
+        <div class="container">
+            <div class="tweets-wrapper">
+                <div class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <article>
+                                <div class="text webkit"><h2 class="cs-post-title cs-heading-color">It's
+                                    so easy to lose track of time just browsing all the amazing fonts on
+                                    Elements. Check them out for yourself at… https://t.co/XFNuFR3K6w</h2>
+                                    <p>11 Hours Ago</p></div>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <article>
+                                <div class="text webkit"><h2 class="cs-post-title cs-heading-color">These
+                                    submissions to our
+                                    Photo Animator contest are really cool.
+
+                                    Want to make your own? Entries are still open at… https://t.co/Tsy8dqu4fR</h2>
+                                    <p>16 Hours Ago</p></div>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <article>
+                                <div class="text webkit"><h2 class="cs-post-title cs-heading-color">These
+                                    submissions to our
+                                    Photo Animator contest are really cool.
+
+                                    Want to make your own? Entries are still open at… https://t.co/Tsy8dqu4fR</h2>
+                                    <p>16 Hours Ago</p></div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!-- Footer Widgets Start -->
+    <div id="footer-widgets" class="fullwidth  parallax-fullwidth">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="widget widget_text">
+                        <div class="textwidget">
+                            <div class="text-info home-info">
+                                <figure>
+                                    <img src="web/img/logo_sm.png" alt="">
+                                </figure>
+                                <p> 123 ABC House Rd <br>South bay , NY, 12345</p>
+                                <p>Call: + 1234 567 810 <br>Email: <a href="#">info
+                                    @website.com</a></p>
+                                <div class="social-network">
+                                    <a class="colrhover" href="#">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                    <a class="colrhover" href="#">
+                                        <i class="fa fa-twitter "></i>
+                                    </a>
+                                    <a class="colrhover" href="#">
+                                        <i class="fa fa-google-plus "></i>
+                                    </a>
+                                    <a class="colrhover" href="#">
+                                        <i class="fa fa-dribbble "></i>
+                                    </a>
+                                    <a class="colrhover" href="#">
+                                        <i class="fa fa-linkedin "></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget widget_gallery">
+                        <header class="cs-heading-title">
+                            <h2 class="cs-section-title cs-heading-color">Featured
+                                Gallery</h2>
+                        </header>
+                        <ul class="gallery-list light-box">
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget widget_categories">
+                        <header class="cs-heading-title">
+                            <h2 class="cs-section-title cs-heading-color">
+                                Blog Categories</h2>
+                        </header>
+                        <ul>
+                            <li class="cat-item cat-item-17"><a
+                                    href="#">Band</a>
+                            </li>
+                            <li class="cat-item cat-item-13"><a
+                                    href="#">Blog</a>
+                            </li>
+                            <li class="cat-item cat-item-18"><a
+                                    href="#">Folk</a>
+                            </li>
+                            <li class="cat-item cat-item-20"><a
+                                    href="#">Jazz</a>
+                            </li>
+                            <li class="cat-item cat-item-21"><a
+                                    href="#">Masonary</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="widget widget-latestnews">
+                        <header class="cs-heading-title">
+                            <h2 class="cs-section-title cs-heading-color">
+                                Featured Blogs
+                            </h2>
+                        </header>
+                        <!-- Recent Posts Start -->
+                        <!-- Upcoming Widget Start -->
+                        <article>
+                            <figure>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </figure>
+                            <div class="text webkit">
+                                <h2 class="cs-post-title cs-heading-color">
+                                    <a href="#" class="colrhover">Aliquam fringilla sem posuere ...</a>
+                                </h2>
+                                <time datetime="November 11, 2013">November 11, 2013</time>
+                            </div>
+                        </article>
+                        <!-- Upcoming Widget Start -->
+                        <article>
+                            <figure>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </figure>
+                            <div class="text webkit">
+                                <h2 class="cs-post-title cs-heading-color">
+                                    <a href="#" class="colrhover">Aliquam fringilla sem posuere ...</a>
+                                </h2>
+                                <time datetime="November 11, 2013">November 11, 2013</time>
+                            </div>
+                        </article>
+                        <!-- Upcoming Widget Start -->
+                        <article>
+                            <figure>
+                                <a href="#">
+                                    <img src="web/uploads/test_event.jpg" alt="">
+                                </a>
+                            </figure>
+                            <div class="text webkit">
+                                <h2 class="cs-post-title cs-heading-color">
+                                    <a href="#" class="colrhover">
+                                        Nullam placerat imperdiet faci...</a>
+                                </h2>
+                                <time datetime="October 11, 2013">October 11, 2013</time>
+                            </div>
+                        </article>
+                        <!-- Recent Posts End -->
+                    </div>
+                    <!-- Footer Widgets End -->
+                </div>
+            </div>
+            <!-- Container End -->
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer>
+        <!-- Copyright Start -->
+        <div class="copyright">
+            <!-- Container Start -->
+            <div class="container">
+                <p>©2014 Atom Band WordPress All rights reserved.</p>
+                <a id="back-top" class="gotop" href="#"><i class="fa fa-angle-up fa-2x"></i></a>
+            </div>
+            <!-- Container End -->
+        </div>
+        <!-- Copyright End -->
+    </footer>
+    <!-- Footer End -->
+    <div class="clear"></div>
+</div>
+
+<script src="web/js/jquery.min.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/custom.js"></script>
+</body>
+</html>

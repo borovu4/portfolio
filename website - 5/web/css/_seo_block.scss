@@ -1,0 +1,48 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+.seo-block {
+  padding: 20px 10px 40px;
+  &.clear_seo {
+    padding-bottom: 0;
+    .social-block {
+      padding-top: 43px;
+    }
+  }
+  .title {
+    color: #242731;
+    font-size: 34px;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  .seo-block-content {
+    color: #45474e;
+    font-family: $font-family-sub;
+    font-size: 15px;
+    p {
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+  }
+  .social-block {
+    border-top: 3px solid #efefef;
+    .list-inline {
+      margin-bottom: 45px;
+      margin-top: 20px;
+      .label {
+        color: $brand-info;
+        font-family: $font-family-sub;
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .seo-block {
+    padding: 20px 10px;
+    .title {
+      font-size: 26px;
+    }
+  }
+}

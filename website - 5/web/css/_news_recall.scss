@@ -1,0 +1,163 @@
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+.company-group .media .media-right .btn-clear {
+  &.recall {
+    @include border-radius(25px);
+    min-width: 210px;
+    @media (max-width: $screen-xs-max) {
+      min-width: 100%;
+    }
+  }
+}
+
+.news_recall {
+  h1, .h1 {
+    color: #242731;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 300;
+    margin-top: 0;
+  }
+  .media-left {
+    padding-right: 25px;
+    text-align: center;
+    min-width: 225px;
+    img {
+      display: block;
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+    .recall-user-name {
+      color: #647080;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    .recall-user-status {
+      color: $brand-primary;
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 3px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .recall-user-loc {
+      font-family: $font-family-sub;
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 10px;
+      .fa {
+        color: #57758a;
+        font-size: 24px;
+        vertical-align: -3px;
+      }
+
+    }
+  }
+  .media-body {
+    blockquote {
+      border: none;
+      margin: 0;
+      padding: 8px 0 0 50px;
+      quotes: "\201C""\201D""\2018""\2019";
+      position: relative;
+      &:before,
+      &:after {
+        color: #e0e2e5;
+        font-family: $font-family-sub;
+        font-size: 128px;
+        line-height: 0;
+      }
+      &:before {
+        content: open-quote;
+        left: 0;
+        position: absolute;
+        top: 53px;
+        vertical-align: 0;
+      }
+      &:after {
+        content: close-quote;
+        vertical-align: -0.6em;
+      }
+      .recall-content {
+        margin-bottom: 18px;
+        color: #45474e;
+        font-family: $font-family-sub;
+        font-size: 15px;
+        line-height: 24px;
+      }
+      .recall-content-status {
+        color: #585858;
+        display: inline;
+        font-family: $font-family-sub;
+        font-size: 15px;
+        line-height: 24px;
+        .pluse {
+          display: block;
+        }
+        .minus {
+        }
+        span {
+          color: #57758a;
+          font-size: 17px;
+          font-weight: 600;
+          margin-right: 8px;
+        }
+        .fa {
+          font-size: 17px;
+          margin-right: 5px;
+        }
+      }
+    }
+    .recall-btn {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      .btn {
+        @include border-radius(25px);
+        margin-left: 50px;
+        min-width: 230px;
+        border: 1px solid #647080;
+        color: #647080;
+        font-size: 15px;
+        font-weight: 600;
+        height: 45px;
+        line-height: 20px;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $brand-primary;
+          border-color: $brand-primary;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  @media (max-width: $screen-xs-max) {
+    h1, .h1 {
+      font-size: 24px;
+      line-height: 1;
+    }
+    .media {
+      display: block;
+      .media-left {
+        display: block;
+      }
+      .media-body {
+        display: block;
+        width: auto;
+        blockquote {
+          padding: 15px 0 40px;
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+        .recall-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}

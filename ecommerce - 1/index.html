@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Itsju</title>
+    <link href="web/stylesheets/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="web/javascripts/html5shiv.min.js"></script>
+    <script src="web/javascripts/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top affix-top" data-spy="affix" data-offset-top="1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="web/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <span class="icon icon-like"></span>
+                                Favourites
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#login">
+                                <span class="icon icon-user"></span>
+                                Log in
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <span class="icon icon-menu"></span>
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu dropdown-mega">
+                                <li class="dropdown-header hidden-xs">
+                                    <a href="#" data-toggle="dropdown" role="button"
+                                       aria-haspopup="true"
+                                       aria-expanded="false">
+                                    </a>
+                                </li>
+                                <li><a href="#">How it works</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Sign up</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon icon-designer"></span>
+                                You are designer
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="video-block" id="video">
+    <video class="video-block--video" preload="auto" autoplay="" loop="">
+        <source src="web/video/video.mp4" type="video/mp4">
+        <source src="web/video/video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-block--overlay"></div>
+    <div class="video-block--text">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9 col-md-offset-2">
+                    <div class="h1">Discover your dream fashion designer</div>
+                    <div class="h2">and get your own custom-made piece.</div>
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <a href="#" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#mystart">GET STARTED</a>
+                        </div>
+                    </div>
+                    <div><a href="#great" class="btn btn-link btn-lg">Or check out what's already been created</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 main-title">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title text-center">Examples of original pieces from our designers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="great" class="container-fluid main-content">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+            <div class="main-content--position">
+                #1
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div class="main-content--title">
+                        Impression
+                    </div>
+                    <div class="main-content--title-sub">
+                        Summer Dress and Shoes
+                    </div>
+                </div>
+            </div>
+            <div class="main-content--maket clearfix">
+                <img src="web/images/home-img/test_left_photo.jpg" alt="..." class="img-responsive">
+            </div>
+            <div class="main-content--maket2 clearfix">
+                <a href="#">
+                    <img src="web/images/home-img/test_left_photo2.jpg" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                    <div class="main-content--list">
+                        <div class="title">Product</div>
+                        <div class="title-sub">Duration & Costs</div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-design-fabric.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Design & Fabric:
+                                </div>
+                                4 weeks
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-handcrafting.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Hand crafting:
+                                </div>
+                                4 weeks
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-delivery.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Delivery:
+                                </div>
+                                3 days
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-total-duration.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Total duration:
+                                </div>
+                                31 days
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-dollar.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Costs:
+                                </div>
+                                € 750
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 main-img">
+            <img src="web/images/home-img/model.jpg" alt="..." class="img-responsive">
+            <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart " aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="col-md-3 right-col">
+            <div class="autor">
+                <div class="autor-group">
+                    <div class="autor-group--author">
+                        Designed by
+                    </div>
+                    <div class="autor-group--author-name">
+                        Lorenzo
+                    </div>
+                    <div class="autor-group--author-location">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        Melbourne
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <div class="autor-group--author--img">
+                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                        <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <span class="fa-stack fa-lg" aria-hidden="true">
+                              <i class="fa fa-circle fa-stack-2x"></i>
+                              <i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="autor-group">
+                    <div class="autor-group--author">
+                        Designed by
+                    </div>
+                    <div class="autor-group--author-name">
+                        Lorenzo
+                    </div>
+                    <div class="autor-group--author-location">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        Melbourne
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <div class="autor-group--author--img">
+                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid main-content">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+            <div class="main-content--position">
+                #1
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div class="main-content--title">
+                        Impression
+                    </div>
+                    <div class="main-content--title-sub">
+                        Summer Dress and Shoes
+                    </div>
+                </div>
+            </div>
+            <div class="main-content--maket clearfix">
+                <img src="web/images/home-img/test_left_photo.jpg" alt="..." class="img-responsive">
+            </div>
+            <div class="main-content--maket2 clearfix">
+                <a href="#">
+                    <img src="web/images/home-img/test_left_photo2.jpg" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                    <div class="main-content--list">
+                        <div class="title">Product</div>
+                        <div class="title-sub">Duration & Costs</div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-design-fabric.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Design & Fabric:
+                                </div>
+                                4 weeks
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-handcrafting.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Hand crafting:
+                                </div>
+                                4 weeks
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-delivery.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Delivery:
+                                </div>
+                                3 days
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-total-duration.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Total duration:
+                                </div>
+                                31 days
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-dollar.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Costs:
+                                </div>
+                                € 750
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 main-img">
+            <img src="web/images/home-img/model.jpg" alt="..." class="img-responsive">
+            <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart " aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="col-md-3 right-col">
+            <div class="autor">
+                <div class="autor-group">
+                    <div class="autor-group--author">
+                        Designed by
+                    </div>
+                    <div class="autor-group--author-name">
+                        Lorenzo
+                    </div>
+                    <div class="autor-group--author-location">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        Melbourne
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <div class="autor-group--author--img">
+                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                        <span class="fa-stack fa-lg" aria-hidden="true">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="autor-group">
+                    <div class="autor-group--author">
+                        Designed by
+                    </div>
+                    <div class="autor-group--author-name">
+                        Lorenzo
+                    </div>
+                    <div class="autor-group--author-location">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        Melbourne
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <div class="autor-group--author--img">
+                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid main-content">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-1">
+            <div class="main-content--position">
+                #1
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2">
+                    <div class="main-content--title">
+                        Impression
+                    </div>
+                    <div class="main-content--title-sub">
+                        Summer Dress and Shoes
+                    </div>
+                </div>
+            </div>
+            <div class="main-content--maket clearfix">
+                <img src="web/images/home-img/test_left_photo.jpg" alt="..." class="img-responsive">
+            </div>
+            <div class="main-content--maket2 clearfix">
+                <a href="#">
+                    <img src="web/images/home-img/test_left_photo2.jpg" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                    <div class="main-content--list">
+                        <div class="title">Product</div>
+                        <div class="title-sub">Duration & Costs</div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-design-fabric.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Design & Fabric:
+                                </div>
+                                4 weeks
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-handcrafting.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Hand crafting:
+                                </div>
+                                4 weeks
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-delivery.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Delivery:
+                                </div>
+                                3 days
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-total-duration.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Total duration:
+                                </div>
+                                31 days
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <img src="web/images/icon/icon-dollar.png" class="media-object" alt="...">
+                            </div>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    Costs:
+                                </div>
+                                € 750
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 main-img">
+            <img src="web/images/home-img/model.jpg" alt="..." class="img-responsive">
+            <button type="button" class="btn btn-link" data-toggle="button" aria-pressed="false" autocomplete="off">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <i class="fa fa-heart " aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="col-md-3 right-col">
+            <div class="autor">
+                <div class="autor-group">
+                    <div class="autor-group--author">
+                        Designed by
+                    </div>
+                    <div class="autor-group--author-name">
+                        Lorenzo
+                    </div>
+                    <div class="autor-group--author-location">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        Melbourne
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <div class="autor-group--author--img">
+                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                        <span class="fa-stack fa-lg" aria-hidden="true">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-heart-o fa-stack-1x"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="autor-group">
+                    <div class="autor-group--author">
+                        Designed by
+                    </div>
+                    <div class="autor-group--author-name">
+                        Lorenzo
+                    </div>
+                    <div class="autor-group--author-location">
+                        <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+                        Melbourne
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                    <div class="autor-group--author--img">
+                        <img src="web/images/home-img/test_author.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-2">
+                <div class="row">
+                    <div class="col-md-3 col-xs-12">
+                        <a href="#">
+                            <img src="web/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                ITSJU
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Shall we start?</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Register</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Login</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">How it works</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <ul class="list-unstyled">
+                            <li class="text-uppercase">
+                                Links
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Inspiration</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Our top 25</a>
+                            </li>
+                            <li>
+                                <a href="#">Become a designer</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">Faq</a>
+                            </li>
+                            <li class="text-uppercase">
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <ul class="list-unstyled social">
+                            <li class="text-uppercase">
+                                Follow us
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                    youtube
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                                    pintrest
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--modals-->
+<!-- Modals -->
+<div class="modal fade modal-theme" id="login" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row login">
+                    <div class="col-md-10 col-md-offset-1">
+                        <a href="#" class="btn btn-info btn-block">
+                            log in with facebook
+                        </a>
+                        or
+                        <h4>log in with email</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="sr-only">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <a href="#">Forgot your password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">log in</button>
+                        </form>
+
+                        <p>Don't have an ITSJU account?</p>
+                        <p>
+                            <a href="#" class="registration">Register here</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-theme" id="mystart" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body mystart">
+                <div class="h1">Great to have you!</div>
+                <div class="h1 text-primary">This is how ITSJU works</div>
+                <img src="web/images/modal/modal.png" alt="..." class="img-responsive hidden-xs">
+                <div class="center-block text-center visible-xs">
+                    <img src="web/images/modal/modal-1.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-2.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-3.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-4.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-5.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-6.png" alt="..." class="img-responsive">
+                    <img src="web/images/modal/modal-7.png" alt="..." class="img-responsive">
+                </div>
+                <a href="#" class="btn btn-primary" data-dismiss="modal">continue</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modals-->
+
+<script src="web/javascripts/jquery.min.js"></script>
+<script src="web/javascripts/bootstrap.min.js"></script>
+<script src="web/javascripts/custom.js"></script>
+</body>
+</html>
